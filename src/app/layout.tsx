@@ -1,9 +1,10 @@
+import "./globals.scss";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
-import "./globals.css";
 import { cn } from "@/_core/components/lib/utils";
-import WrapperProvider from "@/_core/providers/wrapper.provider";
+
 import AppToast from "@/_shared/components/app-toast";
+import WrapperProvider from "@/_core/providers/wrapper.provider";
 import AppLoading from "@/_shared/components/loading/app-loading";
 
 const geistSans = localFont({

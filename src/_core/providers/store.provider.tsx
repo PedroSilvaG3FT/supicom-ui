@@ -1,3 +1,5 @@
+"use client";
+
 import { ReactNode } from "react";
 import { STORE_PROVIDERS } from "@/_store/_providers.store";
 

@@ -1,5 +1,3 @@
-"use client";
-
 import { ReactNode, Suspense } from "react";
 import { StoreProvider } from "./store.provider";
 import { ThemeProvider } from "./theme.provider";
