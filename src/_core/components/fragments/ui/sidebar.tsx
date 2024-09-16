@@ -1,13 +1,13 @@
-"use client";
-import { cn } from "@/_core/components/lib/utils";
+import { cn } from "../../lib/utils";
+import { ChevronRight } from "lucide-react";
 import Link, { LinkProps } from "next/link";
-import React, { useState, createContext, useContext } from "react";
-import { AnimatePresence, motion } from "framer-motion";
 import { IconMenu2, IconX } from "@tabler/icons-react";
+import { AnimatePresence, motion } from "framer-motion";
+import React, { useState, createContext, useContext } from "react";
 
 interface Links {
-  label: string;
   href: string;
+  label: string;
   icon: React.JSX.Element | React.ReactNode;
 }
 
@@ -46,7 +46,7 @@ export const SidebarProvider = ({
   const setOpen = setOpenProp !== undefined ? setOpenProp : setOpenState;
 
   return (
-    <SidebarContext.Provider value={{ open, setOpen, animate: animate }}>
+    <SidebarContext.Provider value={{ open, setOpen, animate }}>
       {children}
     </SidebarContext.Provider>
   );
@@ -70,11 +70,17 @@ export const Sidebar = ({
   );
 };
 
-export const SidebarBody = (props: React.ComponentProps<typeof motion.div>) => {
+interface ISidebarBodyProps extends React.ComponentProps<typeof motion.div> {
+  containerClassName?: string;
+}
+export const SidebarBody = (props: ISidebarBodyProps) => {
   return (
     <>
       <DesktopSidebar {...props} />
-      <MobileSidebar {...(props as React.ComponentProps<"div">)} />
+      <MobileSidebar
+        containerClassName={props.containerClassName}
+        {...(props as IMobileSideBarProps)}
+      />
     </>
   );
 };
@@ -85,37 +91,54 @@ export const DesktopSidebar = ({
   ...props
 }: React.ComponentProps<typeof motion.div>) => {
   const { open, setOpen, animate } = useSidebar();
+  const maxSize = "200px";
   return (
     <>
       <motion.div
         className={cn(
-          "h-full px-4 py-4 hidden  md:flex md:flex-col bg-neutral-100 dark:bg-neutral-800 w-[300px] flex-shrink-0",
-          className
+          "h-full px-4 py-4 hidden relative md:flex md:flex-col bg-neutral-100 dark:bg-secondary w-[200px] flex-shrink-0",
+          className,
+          !open && "px-1.5"
         )}
         animate={{
-          width: animate ? (open ? "300px" : "60px") : "300px",
+          width: animate ? (open ? maxSize : "60px") : maxSize,
         }}
-        onMouseEnter={() => setOpen(true)}
-        onMouseLeave={() => setOpen(false)}
         {...props}
       >
-        {children}
+        <>
+          <button
+            className={cn(
+              "absolute bg-muted shadow-lg p-1 scale-75 hover:scale-90 opacity-70 hover:opacity-100 hover:text-primary transition-all duration-500 rounded-full right-[-14px] top-40 flex items-center justify-center",
+              open && "rotate-180"
+            )}
+            onClick={() => setOpen(!open)}
+          >
+            <ChevronRight className={cn("h-5 w-5")} />
+          </button>
+          {children}
+        </>
       </motion.div>
     </>
   );
 };
 
+interface IMobileSideBarProps extends React.ComponentProps<"div"> {
+  containerClassName?: string;
+}
+
 export const MobileSidebar = ({
   className,
   children,
+  containerClassName,
   ...props
-}: React.ComponentProps<"div">) => {
+}: IMobileSideBarProps) => {
   const { open, setOpen } = useSidebar();
   return (
     <>
       <div
         className={cn(
-          "h-10 px-4 py-4 flex flex-row md:hidden  items-center justify-between bg-neutral-100 dark:bg-neutral-800 w-full"
+          "h-10 px-4 py-4 flex flex-row md:hidden  items-center justify-between bg-neutral-100 dark:bg-neutral-800 w-full",
+          containerClassName
         )}
         {...props}
       >
@@ -158,13 +181,17 @@ export const MobileSidebar = ({
 export const SidebarLink = ({
   link,
   className,
+  isForceOpen = false,
   ...props
 }: {
   link: Links;
   className?: string;
   props?: LinkProps;
+  isForceOpen?: boolean;
 }) => {
   const { open, animate } = useSidebar();
+
+  const isOpen = isForceOpen || open;
   return (
     <Link
       href={link.href}
@@ -178,8 +205,12 @@ export const SidebarLink = ({
 
       <motion.span
         animate={{
-          display: animate ? (open ? "inline-block" : "none") : "inline-block",
-          opacity: animate ? (open ? 1 : 0) : 1,
+          display: animate
+            ? isOpen
+              ? "inline-block"
+              : "none"
+            : "inline-block",
+          opacity: animate ? (isOpen ? 1 : 0) : 1,
         }}
         className="text-neutral-700 dark:text-neutral-200 text-sm group-hover/sidebar:translate-x-1 transition duration-150 whitespace-pre inline-block !p-0 !m-0"
       >
