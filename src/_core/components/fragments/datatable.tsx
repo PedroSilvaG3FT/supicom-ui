@@ -20,7 +20,7 @@ import {
 } from "./table";
 
 import { useState } from "react";
-import { Button } from "@/_core/components/ui/button";
+import { Button } from "@/_core/components/fragments/button";
 import { ArrowUpDown, ChevronLeft, ChevronRight } from "lucide-react";
 
 export interface IDataTablePagination extends PaginationState {}

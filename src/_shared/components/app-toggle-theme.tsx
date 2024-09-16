@@ -4,7 +4,7 @@ import * as React from "react";
 import { useTheme } from "next-themes";
 import { Moon, Sun } from "lucide-react";
 import { EThemeType } from "../enums/theme.enum";
-import { Button } from "@/_core/components/ui/button";
+import { Button } from "@/_core/components/fragments/button";
 
 export function AppToggleTheme() {
   const { setTheme, theme } = useTheme();

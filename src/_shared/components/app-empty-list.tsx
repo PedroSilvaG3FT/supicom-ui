@@ -1,6 +1,6 @@
 import { LucideIcon } from "lucide-react";
 import { cn } from "@/_core/components/lib/utils";
-import { Button } from "@/_core/components/ui/button";
+import { Button } from "@/_core/components/fragments/button";
 
 interface IAppEmptyListProps {
   message: string;
