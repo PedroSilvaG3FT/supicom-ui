@@ -1,39 +1,42 @@
 import {
-  Database,
-  FileChartColumn,
-  Flame,
-  LayoutGrid,
-  LayoutPanelTop,
-  Rotate3D,
-  Shapes,
-  Table,
-  TextCursorInput,
   User,
+  Flame,
+  Table,
+  Shapes,
+  Rotate3D,
+  Database,
+  LayoutPanelTop,
+  FileChartColumn,
+  TextCursorInput,
 } from "lucide-react";
-import { IMenuGroup, IMenuItem } from "../_interfaces/menu.interface";
-
-export const MAIN_MENU_ITEMS: IMenuItem[] = [
-  { url: `/`, icon: LayoutGrid, title: `Casos` },
-];
+import { IMenuGroup } from "../_interfaces/menu.interface";
 
 export const DOC_MENU_GROUPS: IMenuGroup[] = [
   {
     icon: Shapes,
     title: "Features",
     items: [
-      { url: `/`, icon: TextCursorInput, title: `Form` },
-      { url: `/`, icon: Table, title: `Datatable` },
-      { url: `/`, icon: Rotate3D, title: `Aceternity` },
-      { url: `/`, icon: LayoutPanelTop, title: `Shadcn/ui` },
+      { url: `/doc/features/form`, icon: TextCursorInput, title: `Form` },
+      { url: `/doc/features/datatable`, icon: Table, title: `Datatable` },
+      { url: `/doc/features/aceternity`, icon: Rotate3D, title: `Aceternity` },
+      {
+        url: `/doc/features/shadcn-ui`,
+        icon: LayoutPanelTop,
+        title: `Shadcn/ui`,
+      },
     ],
   },
   {
     icon: Flame,
     title: "Firebase",
     items: [
-      { url: `/`, icon: User, title: `Authentication` },
-      { url: `/`, icon: Database, title: `Database` },
-      { url: `/`, icon: FileChartColumn, title: `Storage` },
+      {
+        url: `/doc/firebase/authentication`,
+        icon: User,
+        title: `Authentication`,
+      },
+      { url: `/doc/firebase/database`, icon: Database, title: `Database` },
+      { url: `/doc/firebase/storage`, icon: FileChartColumn, title: `Storage` },
     ],
   },
 ];

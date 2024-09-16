@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useState } from "react";
 import Each from "@/_shared/components/app-each";
 import Show from "@/_shared/components/app-show";
@@ -42,7 +43,18 @@ export default function DocLayout({ children }: IBaseLayoutProps) {
 
             <Show>
               <Show.When condition={open}>
-                <footer className="mt-auto">Documentation</footer>
+                <footer className="mt-auto w-full flex items-center justify-center">
+                  <small className="w-full text-center text-xs opacity-40">
+                    Developed by <br />
+                    <Link
+                      href="https://www.linkedin.com/in/pedro-silva-65996a181/"
+                      target="_blank"
+                      className="hover:underline"
+                    >
+                      Pedro Silva
+                    </Link>
+                  </small>
+                </footer>
               </Show.When>
             </Show>
           </section>
