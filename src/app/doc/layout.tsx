@@ -8,6 +8,7 @@ import { cn } from "@/_core/components/lib/utils";
 import MenuGroup from "./_components/ui/menu-group";
 import { DOC_MENU_GROUPS } from "./_constants/menu.constant";
 import MenuGroupPopover from "./_components/ui/menu-group-popover";
+import { AppToggleTheme } from "@/_shared/components/app-toggle-theme";
 import { IBaseLayoutProps } from "@/_shared/interface/layout.interface";
 import { Sidebar, SidebarBody } from "@/_core/components/fragments/ui/sidebar";
 
@@ -41,9 +42,11 @@ export default function DocLayout({ children }: IBaseLayoutProps) {
               )}
             />
 
-            <Show>
-              <Show.When condition={open}>
-                <footer className="mt-auto w-full flex items-center justify-center">
+            <footer className="mt-auto w-full flex items-center justify-center">
+              <AppToggleTheme />
+
+              <Show>
+                <Show.When condition={open}>
                   <small className="w-full text-center text-xs opacity-40">
                     Developed by <br />
                     <Link
@@ -54,9 +57,9 @@ export default function DocLayout({ children }: IBaseLayoutProps) {
                       Pedro Silva
                     </Link>
                   </small>
-                </footer>
-              </Show.When>
-            </Show>
+                </Show.When>
+              </Show>
+            </footer>
           </section>
         </SidebarBody>
       </Sidebar>

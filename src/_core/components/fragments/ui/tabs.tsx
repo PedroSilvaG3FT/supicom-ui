@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { ReactNode, useState } from "react";
 import { motion } from "framer-motion";
 import { cn } from "@/_core/components/lib/utils";
 
@@ -62,7 +62,7 @@ export const Tabs = ({
                 layoutId="clickedbutton"
                 transition={{ type: "spring", bounce: 0.3, duration: 0.6 }}
                 className={cn(
-                  "absolute inset-0 bg-gray-200 dark:bg-zinc-800 rounded-full ",
+                  "absolute inset-0 bg-secondary rounded-full ",
                   activeTabClassName
                 )}
               />
@@ -106,8 +106,8 @@ export const FadeInDiv = ({
           key={tab.value}
           layoutId={tab.value}
           style={{
-            scale: 1 - idx * 0.1,
-            top: hovering ? idx * -50 : 0,
+            scale: 1 - idx * 0.05,
+            top: hovering ? idx * -16 : 0,
             zIndex: -idx,
             opacity: idx < 3 ? 1 - idx * 0.1 : 0,
           }}
@@ -120,5 +120,43 @@ export const FadeInDiv = ({
         </motion.div>
       ))}
     </div>
+  );
+};
+
+export const TabWrapper = ({
+  children,
+  className = "",
+}: {
+  className?: string;
+  children: ReactNode;
+}) => {
+  return (
+    <section
+      className={cn(
+        "[perspective:1000px] relative flex flex-col max-w-5xl mx-auto w-full items-start justify-start",
+        className
+      )}
+    >
+      {children}
+    </section>
+  );
+};
+
+export const TabContent = ({
+  children,
+  className = "",
+}: {
+  className?: string;
+  children: ReactNode;
+}) => {
+  return (
+    <article
+      className={cn(
+        "h-auto w-full relative rounded-2xl p-4 text-foreground bg-secondary",
+        className
+      )}
+    >
+      {children}
+    </article>
   );
 };

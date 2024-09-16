@@ -64,7 +64,7 @@ export default function DatatablePage() {
         Complete guide
       </LinkPreview>
 
-      <h5 className="mt-4 font-semibold">Example:</h5>
+      <h5 className="my-4 font-semibold">Example:</h5>
       <DataTable data={items} columns={columns} />
     </section>
   );
