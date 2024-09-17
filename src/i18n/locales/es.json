@@ -1,0 +1,12 @@
+{
+  "locales": {
+    "english": "Inglés",
+    "spanish": "Español",
+    "portuguese": "Portugués"
+  },
+  "example": {
+    "title": "Hola mundo!",
+    "subtitle": "Este es un texto en Español (ES)",
+    "description": "En los últimos años, el desarrollo web ha evolucionado significativamente, y la demanda de aplicaciones eficientes y escalables ha aumentado.\nPara abordar esta necesidad, hemos creado un proyecto de boilerplate que combina Next.js, Tailwind CSS, Shadcn UI y Firebase. Este stack permite a los desarrolladores construir aplicaciones web modernas de manera rápida y efectiva.\n\nNext.js es un potente marco de trabajo de React que proporciona renderizado del lado del servidor y generación de sitios estáticos. Mejora el rendimiento y el SEO, lo que lo convierte en una excelente opción para los desarrolladores. Tailwind CSS, por otro lado, es un marco de CSS basado en utilidades que permite un desarrollo rápido de la interfaz de usuario, con un enfoque en la personalización y la capacidad de respuesta. Shadcn UI complementa esto al proporcionar componentes pre-diseñados que son fáciles de integrar y personalizar.\n\nAceternity es otra biblioteca de componentes de interfaz de usuario que se destaca por su capacidad de crear experiencias visuales impresionantes e interactivas. Al igual que Shadcn UI, Aceternity ofrece una colección de componentes pre-diseñados que facilitan la construcción de interfaces modernas y responsivas. Sin embargo, lo que diferencia a Aceternity es su integración con Framer, que permite a los desarrolladores crear elementos de UI en 3D con perspectiva. Este enfoque innovador enriquece la experiencia del usuario al proporcionar interacciones dinámicas y diseños visualmente atractivos.\n\nFirebase sirve como la solución de backend, ofreciendo capacidades de base de datos en tiempo real, autenticación y alojamiento. Al aprovechar Firebase, los desarrolladores pueden centrarse en construir características sin preocuparse por la gestión del servidor. Este proyecto de boilerplate sirve como una base sólida para cualquiera que busque iniciar su viaje en el desarrollo web con estas tecnologías modernas."
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "locales": {
+    "english": "Inglês",
+    "spanish": "Espanhol",
+    "portuguese": "Português"
+  },
+  "example": {
+    "title": "Olá mundo!",
+    "subtitle": "Esse é um texto em Português (pt-BR)",
+    "description": "Nos últimos anos, o desenvolvimento web evoluiu significativamente, e a demanda por aplicações eficientes e escaláveis aumentou.\nPara atender a essa necessidade, criamos um projeto de boilerplate que combina Next.js, Tailwind CSS, Shadcn UI e Firebase. Este stack permite que os desenvolvedores construam aplicações web modernas de forma rápida e eficaz.\n\nNext.js é um poderoso framework React que oferece renderização do lado do servidor e geração de sites estáticos. Ele melhora o desempenho e o SEO, tornando-se uma excelente escolha para os desenvolvedores. O Tailwind CSS, por sua vez, é um framework CSS baseado em utilitários que possibilita um desenvolvimento rápido da interface do usuário, com foco na personalização e na responsividade. O Shadcn UI complementa isso, fornecendo componentes pré-desenhados que são fáceis de integrar e personalizar.\n\nAceternity é outra biblioteca de componentes de interface do usuário que se destaca por sua capacidade de criar experiências visuais impressionantes e interativas. Assim como o Shadcn UI, o Aceternity oferece uma coleção de componentes pré-desenhados que facilitam a construção de interfaces modernas e responsivas. No entanto, o que diferencia o Aceternity é sua integração com o Framer, permitindo que os desenvolvedores criem elementos de UI em 3D e com perspectiva. Essa abordagem inovadora enriquece a experiência do usuário, proporcionando interações dinâmicas e designs visualmente atraentes.\n\nO Firebase serve como a solução de backend, oferecendo recursos de banco de dados em tempo real, autenticação e hospedagem. Ao aproveitar o Firebase, os desenvolvedores podem se concentrar na construção de recursos sem se preocupar com a gestão do servidor. Este projeto de boilerplate serve como uma base sólida para qualquer pessoa que deseje iniciar sua jornada no desenvolvimento web com essas tecnologias modernas."
+  }
+}
