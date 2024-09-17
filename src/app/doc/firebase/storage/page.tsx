@@ -127,7 +127,7 @@ export default function StoragePage() {
       <h1 className="page-title">Storage</h1>
       <Separator className="my-4" />
 
-      <article className="grid gap-4 grid-cols-2">
+      <article className="grid gap-4 grid-cols-2 mobile:grid-cols-1">
         <section className="flex gap-4 flex-col items-center">
           <FileUpload
             maxFiles={1}
@@ -135,11 +135,17 @@ export default function StoragePage() {
             onChange={handleFileUpload}
             backgroundEl={<BackgroundBeams />}
           />
-          <Button onClick={handleSubmit} disabled={!files.length}>
+          <Button
+            className="mobile:w-full"
+            onClick={handleSubmit}
+            disabled={!files.length}
+          >
             Create file
             <Plus className="ml-2" />
           </Button>
         </section>
+
+        <Separator className="hidden my-4 mobile:block" />
 
         <DataTable data={items} columns={columns} />
       </article>

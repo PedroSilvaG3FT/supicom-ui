@@ -31,7 +31,7 @@ export default function AppLocaleInline({ onSelect, className = "" }: IProps) {
                 size="xs"
                 variant="ghost"
                 onClick={() => onSelect(item)}
-                className="p-0 transition-all duration-500 hover:scale-125"
+                className="p-0 h-auto transition-all duration-500 hover:scale-125 hover:bg-transparent"
               >
                 <AppLocaleFlag locale={item} />
               </Button>

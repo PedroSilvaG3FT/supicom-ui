@@ -152,7 +152,7 @@ export const TabContent = ({
   return (
     <article
       className={cn(
-        "h-auto w-full relative rounded-2xl p-4 text-foreground bg-secondary",
+        "h-auto w-full relative rounded-2xl p-4 text-foreground bg-gray-100 dark:bg-zinc-900",
         className
       )}
     >

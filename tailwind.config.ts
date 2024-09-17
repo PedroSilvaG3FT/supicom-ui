@@ -9,7 +9,13 @@ const config: Config = {
     "./components/**/*.{ts,tsx}",
   ],
   theme: {
+    fontFamily: { body: "montserrat" },
     extend: {
+      screens: {
+        mobile: { min: "1px", max: "640px" },
+        tablet: { min: "641px", max: "1023px" },
+        desktop: { min: "1024px", max: "4024px" },
+      },
       fontSize: {
         h1: ["2.25rem", { lineHeight: "2.5rem" }],
         h2: ["1.875rem", { lineHeight: "2.25rem" }],

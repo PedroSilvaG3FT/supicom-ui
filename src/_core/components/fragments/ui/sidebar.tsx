@@ -1,5 +1,5 @@
 import { cn } from "../../lib/utils";
-import { ChevronRight } from "lucide-react";
+import { ChevronRight, LayoutDashboard } from "lucide-react";
 import Link, { LinkProps } from "next/link";
 import { IconMenu2, IconX } from "@tabler/icons-react";
 import { AnimatePresence, motion } from "framer-motion";
@@ -96,7 +96,7 @@ export const DesktopSidebar = ({
     <>
       <motion.div
         className={cn(
-          "h-full px-4 py-4 hidden relative md:flex md:flex-col bg-neutral-100 dark:bg-secondary w-[200px] flex-shrink-0",
+          "h-full px-4 py-4 hidden relative md:flex md:flex-col bg-neutral-100 dark:bg-secondary w-[60px] flex-shrink-0",
           className,
           !open && "px-1.5"
         )}
@@ -133,20 +133,23 @@ export const MobileSidebar = ({
   ...props
 }: IMobileSideBarProps) => {
   const { open, setOpen } = useSidebar();
+
   return (
     <>
       <div
         className={cn(
-          "h-10 px-4 py-4 flex flex-row md:hidden  items-center justify-between bg-neutral-100 dark:bg-neutral-800 w-full",
+          "h-12 px-4 py-4 flex flex-row md:hidden items-center justify-between bg-neutral-100 dark:bg-neutral-800 w-full",
           containerClassName
         )}
         {...props}
       >
-        <div className="flex justify-end z-20 w-full">
-          <IconMenu2
-            className="text-neutral-800 dark:text-neutral-200"
+        <div className="flex z-20 justify-between w-full">
+          <LayoutDashboard
+            className="cursor-pointer text-primary"
             onClick={() => setOpen(!open)}
           />
+
+          <h5 className="font-semibold">Next boilerplate</h5>
         </div>
         <AnimatePresence>
           {open && (
@@ -181,20 +184,24 @@ export const MobileSidebar = ({
 export const SidebarLink = ({
   link,
   className,
+  isMobile = false,
   isForceOpen = false,
   ...props
 }: {
   link: Links;
   className?: string;
   props?: LinkProps;
+  isMobile?: boolean;
   isForceOpen?: boolean;
 }) => {
-  const { open, animate } = useSidebar();
+  const { open, animate, setOpen } = useSidebar();
 
   const isOpen = isForceOpen || open;
+
   return (
     <Link
       href={link.href}
+      onClick={() => isMobile && setOpen(false)}
       className={cn(
         "flex items-center justify-start gap-2  group/sidebar py-2",
         className
