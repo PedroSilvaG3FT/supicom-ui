@@ -5,6 +5,7 @@ import {
   Shapes,
   Rotate3D,
   Database,
+  Languages,
   LayoutPanelTop,
   FileChartColumn,
   TextCursorInput,
@@ -18,6 +19,11 @@ export const DOC_MENU_GROUPS: IMenuGroup[] = [
     items: [
       { url: `/doc/features/form`, icon: TextCursorInput, title: `Form` },
       { url: `/doc/features/datatable`, icon: Table, title: `Datatable` },
+      {
+        url: `/doc/features/internationalization`,
+        icon: Languages,
+        title: `Internationalization`,
+      },
       { url: `/doc/features/aceternity`, icon: Rotate3D, title: `Aceternity` },
       {
         url: `/doc/features/shadcn-ui`,
