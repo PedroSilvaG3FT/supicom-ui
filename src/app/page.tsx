@@ -25,7 +25,7 @@ export default function Home() {
   ];
 
   return (
-    <section className="relative p-16 h-[100dvh] flex flex-col items-center justify-end">
+    <section className="relative p-16 h-[100dvh] flex flex-col items-center justify-end mobile:px-3">
       <BackgroundBeams />
 
       <article className="flex flex-col justify-center items-center px-4">
@@ -38,11 +38,14 @@ export default function Home() {
 
         <Separator className="my-4" />
 
-        <section className="mb-4 text-2xl text-center mx-auto font-normal">
+        <h1 className="text-2xl text-center mx-auto font-normal">
           Estamos preparando um novo portal para você!
-          <br />
-          <FlipWords words={words} className="!text-primary text-center" />{" "}
-        </section>
+        </h1>
+
+        <FlipWords
+          words={words}
+          className="!text-primary text-xl my-4 text-center"
+        />
 
         <Button asChild className="z-10">
           <Link href="#">
