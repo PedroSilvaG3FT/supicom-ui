@@ -1,17 +1,17 @@
-import Link from "next/link";
+// import Link from "next/link";
 import Image from "next/image";
-import { IconBrandWhatsapp } from "@tabler/icons-react";
-import { WhatsAppUtil } from "@/_shared/utils/whatsapp.util";
-import { Button } from "@/_core/components/fragments/button";
+// import { IconBrandWhatsapp } from "@tabler/icons-react";
+// import { WhatsAppUtil } from "@/_shared/utils/whatsapp.util";
+// import { Button } from "@/_core/components/fragments/button";
 import { Separator } from "@/_core/components/fragments/separator";
 import { FlipWords } from "@/_core/components/fragments/ui/flip-words";
 import { BackgroundBeams } from "@/_core/components/fragments/ui/background-beams";
 
 export default function Home() {
-  const phoneNumberRedirect = WhatsAppUtil.buildLink(
-    WhatsAppUtil.contacts.service,
-    `Olá, gostaria de conversar com um representante.`
-  );
+  // const phoneNumberRedirect = WhatsAppUtil.buildLink(
+  //   WhatsAppUtil.contacts.service,
+  //   `Olá, gostaria de conversar com um representante.`
+  // );
 
   const words = [
     "Inovação Industrial",
@@ -53,12 +53,12 @@ export default function Home() {
           className="!text-primary text-xl my-4 text-center"
         />
 
-        <Button asChild className="z-10">
+        {/* <Button asChild className="z-10">
           <Link href={phoneNumberRedirect} target="_blank">
             Falar com um atendente
             <IconBrandWhatsapp className="ml-4" />
           </Link>
-        </Button>
+        </Button> */}
       </article>
     </section>
   );
