@@ -1,14 +1,14 @@
 export const FIREBASE_STORAGE_ERROR = {
   objectNotFound: {
-    key: 'storage/object-not-found',
+    key: "storage/object-not-found",
     message: `File doesn't exist`,
   },
   unauthorized: {
-    key: 'storage/unauthorized',
+    key: "storage/unauthorized",
     message: `User doesn't have permission to access the object`,
   },
   canceled: {
-    key: 'storage/canceled',
+    key: "storage/canceled",
     message: `User canceled the upload`,
   },
 };

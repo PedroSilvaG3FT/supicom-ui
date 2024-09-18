@@ -216,3 +216,5 @@ export const FileUpload = forwardRef<FileUploadRef, IFileUploadProps>(
     );
   }
 );
+
+FileUpload.displayName = "FileUpload";

@@ -4,9 +4,9 @@ export class DownloadUtil {
     fileName: string,
     preventClick: boolean = false
   ): HTMLAnchorElement {
-    const anchor = document.createElement('a');
+    const anchor = document.createElement("a");
     anchor.href = content as string;
-    anchor.setAttribute('download', fileName);
+    anchor.setAttribute("download", fileName);
 
     if (!preventClick) anchor.click();
 
@@ -21,11 +21,11 @@ export class DownloadUtil {
   static processBlobByUrl(url: string, fileName: string) {
     const xhr = new XMLHttpRequest();
 
-    xhr.responseType = 'blob';
+    xhr.responseType = "blob";
     xhr.onload = () => {
       this.blob(xhr.response as Blob, fileName);
     };
-    xhr.open('GET', url);
+    xhr.open("GET", url);
     xhr.send();
   }
 }
