@@ -6,5 +6,6 @@ export const FIREBASE_CONFIG = {
   projectId: enviroments.NEXT_PUBLIC_FIREBASE_PROJECT_ID,
   authDomain: enviroments.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN,
   storageBucket: enviroments.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET,
+  measurementId: enviroments.NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID,
   messagingSenderId: enviroments.NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID,
 };
