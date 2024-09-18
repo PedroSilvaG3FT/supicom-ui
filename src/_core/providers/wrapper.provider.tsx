@@ -9,7 +9,7 @@ export default function WrapperProvider({ children }: { children: ReactNode }) {
     <StoreProvider>
       <AuthProvider>
         <TooltipProvider>
-          <ThemeProvider attribute="class" defaultTheme="dark">
+          <ThemeProvider attribute="class" defaultTheme="light">
             {children}
           </ThemeProvider>
         </TooltipProvider>

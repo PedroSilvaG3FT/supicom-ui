@@ -1,29 +1,56 @@
 import Link from "next/link";
-import { ArrowRight } from "lucide-react";
+import Image from "next/image";
+import { IconBrandWhatsapp } from "@tabler/icons-react";
+import { Button } from "@/_core/components/fragments/button";
+import { Separator } from "@/_core/components/fragments/separator";
 import { FlipWords } from "@/_core/components/fragments/ui/flip-words";
-import { WavyBackground } from "@/_core/components/fragments/ui/wavy-background";
+import { BackgroundBeams } from "@/_core/components/fragments/ui/background-beams";
 
 export default function Home() {
-  const words = ["better", "cute", "beautiful", "modern"];
-  return (
-    <WavyBackground>
-      <section className="p-16 h-screen flex flex-col items-center justify-end text-white">
-        <div className="flex flex-col justify-center items-center px-4">
-          <div className="text-4xl mx-auto font-normal text-neutral-400">
-            Build
-            <FlipWords words={words} className="text-white" /> <br />
-            projects with Next boilerplate
-          </div>
+  const words = [
+    "Inovação Industrial",
+    "Qualidade Superior",
+    "Tecnologia Avançada",
+    "Soluções Personalizadas",
+    "Eficiência Operacional",
+    "Equipamentos Específicos",
+    "Manutenção Especializada",
+    "Desempenho Confiável",
+    "Peças e Acessórios",
+    "Serviços de Excelência",
+    "Compromisso com a Qualidade",
+    "Atendimento Personalizado",
+    "Sustentabilidade e Inovação",
+    "Máquinas de Alto Desempenho",
+  ];
 
-          <Link
-            href="/doc"
-            className="self-start mt-4 underline flex items-center gap-1 group"
-          >
-            Documentation
-            <ArrowRight className="scale-75 relative top-0.5 transition-all duration-500 right-0 group-hover:right-[-8px]" />
+  return (
+    <section className="relative p-16 h-screen flex flex-col items-center justify-end">
+      <BackgroundBeams />
+
+      <article className="flex flex-col justify-center items-center px-4">
+        <Image
+          width={400}
+          height={100}
+          alt="Supicom"
+          src={"/images/logo.svg"}
+        />
+
+        <Separator className="my-4" />
+
+        <section className="mb-4 text-2xl text-center mx-auto font-normal">
+          Estamos preparando um novo portal para você!
+          <br />
+          <FlipWords words={words} className="!text-primary text-center" />{" "}
+        </section>
+
+        <Button asChild className="z-10">
+          <Link href="#">
+            Falar com um atendente
+            <IconBrandWhatsapp className="ml-4" />
           </Link>
-        </div>
-      </section>
-    </WavyBackground>
+        </Button>
+      </article>
+    </section>
   );
 }
