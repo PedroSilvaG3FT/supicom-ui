@@ -25,7 +25,7 @@ export default function Home() {
   ];
 
   return (
-    <section className="relative p-16 h-screen flex flex-col items-center justify-end">
+    <section className="relative p-16 h-[100dvh] flex flex-col items-center justify-end">
       <BackgroundBeams />
 
       <article className="flex flex-col justify-center items-center px-4">
