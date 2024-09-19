@@ -55,9 +55,9 @@ export default function PortalServices() {
                 <div className="absolute w-full h-full top-0 left-0 transition duration-300 bg-black opacity-60 group-hover/card:opacity-70"></div>
 
                 <article className="text mt-auto content text-white relative z-10">
-                  <h1 className="font-bold text-xl md:text-2xl ">
+                  <h3 className="font-bold text-xl md:text-2xl ">
                     {item.title}
-                  </h1>
+                  </h3>
                   <p className="font-normal text-sm my-4 relative left-0 transition-all duration-500 group-hover/card:left-2">
                     {item.description}
                   </p>
