@@ -59,7 +59,9 @@ export default function PortalServices() {
                   <h1 className="font-bold text-xl md:text-2xl ">
                     {item.title}
                   </h1>
-                  <p className="font-normal text-sm my-4">{item.description}</p>
+                  <p className="font-normal text-sm my-4 relative left-0 transition-all duration-500 group-hover/card:left-2">
+                    {item.description}
+                  </p>
                   <Link
                     href="#"
                     className="flex items-center font-semibold opacity-0 group-hover/card:opacity-100 transition-all duration-500 mobile:!opacity-100"

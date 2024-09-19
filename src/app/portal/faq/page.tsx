@@ -1,6 +1,6 @@
 export default function FaqPage() {
   return (
-    <section>
+    <section className="portal-page-container">
       <h4>FaqPage</h4>
     </section>
   );

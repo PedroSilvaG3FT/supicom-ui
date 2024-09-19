@@ -27,7 +27,7 @@ export default function PortalHero() {
 
   return (
     <AuroraBackground className="shadow-md p-4 bg-black text-white border-zinc-200 h-[40rem] mobile:h-[92dvh] overflow-hidden">
-      <section className="app-container pt-24 mobile:px-0">
+      <section className="app-container app-container-pt mobile:px-0">
         <section className="h-full w-full grid grid-cols-2 mobile:grid-cols-1">
           <div className="h-full flex flex-col justify-center mobile:items-center">
             <h1 className="font-semibold whitespace-pre-line text-6xl mobile:text-4xl mobile:text-center">
