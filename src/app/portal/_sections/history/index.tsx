@@ -8,25 +8,25 @@ export default function PortalHistory() {
       title: `Desde 1994 no mercado`,
       imageURL: `/images/mockup.jpg`,
       className: `col-span-1 lg:col-span-4 border-b lg:border-r`,
-      description: `Track and manage your project issues with ease using our intuitive interface.`,
+      description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry`,
     },
     {
-      title: `Capture pictures with AI`,
+      title: `Lorem Ipsum is simply dummy`,
       imageURL: `/images/mockup.jpg`,
       className: `border-b col-span-1 lg:col-span-2`,
-      description: `Capture stunning photos effortlessly using our advanced AI technology.`,
+      description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry`,
     },
     {
-      title: `Watch our AI on YouTube`,
+      title: `Lorem Ipsum is simply dummy`,
       imageURL: `/images/mockup.jpg`,
       className: `col-span-1 lg:col-span-3 lg:border-r `,
-      description: `Whether its you or Tyler Durden, you can get to know about our product on YouTube`,
+      description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry`,
     },
     {
-      title: `Watch our AI on YouTube`,
+      title: `Lorem Ipsum is simply dummy`,
       imageURL: `/images/mockup.jpg`,
       className: `col-span-1 lg:col-span-3 lg:border-r `,
-      description: `Whether its you or Tyler Durden, you can get to know about our product on YouTube`,
+      description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry`,
     },
   ];
 
