@@ -6,7 +6,35 @@
   },
   "example": {
     "title": "Hello world!",
-    "subtitle": "This is a text in English (EN)",
-    "description": "In recent years, web development has evolved significantly, and the demand for efficient and scalable applications has increased.\nTo address this need, we have created a boilerplate project that combines Next.js, Tailwind CSS, Shadcn UI, and Firebase. This stack allows developers to build modern web applications quickly and effectively.\n\nNext.js is a powerful React framework that provides server-side rendering and static site generation. It enhances performance and SEO, making it an excellent choice for developers. Tailwind CSS, on the other hand, is a utility-first CSS framework that enables rapid UI development with a focus on customization and responsiveness. Shadcn UI complements this by providing pre-designed components that are easy to integrate and customize.\n\nAceternity is another UI component library that stands out for its ability to create impressive and interactive visual experiences. Similar to Shadcn UI, Aceternity offers a collection of pre-designed components that facilitate the construction of modern and responsive interfaces. However, what sets Aceternity apart is its integration with Framer, allowing developers to create 3D UI elements with perspective. This innovative approach enriches user experience by providing dynamic interactions and visually appealing designs.\n\nFirebase serves as the backend solution, offering real-time database capabilities, authentication, and hosting. By leveraging Firebase, developers can focus on building features without worrying about server management. This boilerplate project serves as a solid foundation for anyone looking to kickstart their web development journey with these modern technologies."
+    "subtitle": "This is a text in Portuguese (pt-BR)",
+    "description": "In recent years, web development has evolved significantly, and the demand for efficient and scalable applications has increased.\nTo meet this need, we created a boilerplate project that combines Next.js, Tailwind CSS, Shadcn UI, and Firebase. This stack allows developers to quickly and effectively build modern web applications.\n\nNext.js is a powerful React framework that offers server-side rendering and static site generation. It enhances performance and SEO, making it an excellent choice for developers. Tailwind CSS, on the other hand, is a utility-based CSS framework that enables fast user interface development, focusing on customization and responsiveness. Shadcn UI complements this by providing pre-designed components that are easy to integrate and customize.\n\nAceternity is another UI component library that stands out for its ability to create stunning and interactive visual experiences. Like Shadcn UI, Aceternity offers a collection of pre-designed components that make building modern, responsive interfaces easier. However, what sets Aceternity apart is its integration with Framer, allowing developers to create 3D UI elements with perspective. This innovative approach enriches the user experience by providing dynamic interactions and visually appealing designs.\n\nFirebase serves as the backend solution, offering real-time database, authentication, and hosting features. By leveraging Firebase, developers can focus on building features without worrying about server management. This boilerplate project serves as a solid foundation for anyone looking to start their journey into web development with these modern technologies."
+  },
+  "phrases": {
+    "industrial_innovation": "Industrial Innovation",
+    "superior_quality": "Superior Quality",
+    "advanced_technology": "Advanced Technology",
+    "customized_solutions": "Customized Solutions",
+    "operational_efficiency": "Operational Efficiency",
+    "specific_equipment": "Specific Equipment",
+    "specialized_maintenance": "Specialized Maintenance",
+    "reliable_performance": "Reliable Performance",
+    "parts_accessories": "Parts and Accessories",
+    "excellence_services": "Excellence in Services",
+    "commitment_quality": "Commitment to Quality",
+    "personalized_service": "Personalized Service",
+    "sustainability_innovation": "Sustainability and Innovation",
+    "high_performance_machines": "High-Performance Machines"
+  },
+  "base": {
+    "contact": "Contact",
+    "products": "Products",
+    "customers": "Customers",
+    "request_quote": "Request a Quote"
+  },
+  "portal": {
+    "hero": {
+      "title": "Reference\nin Quality",
+      "satisfaction": "Satisfaction"
+    }
   }
 }

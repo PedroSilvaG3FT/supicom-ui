@@ -1,5 +1,6 @@
 import "./globals.scss";
 import type { Metadata } from "next";
+import { enviroments } from "@/env/enviroments";
 import { cn } from "@/_core/components/lib/utils";
 import { NextIntlClientProvider } from "next-intl";
 import AppToast from "@/_shared/components/app-toast";
@@ -8,7 +9,6 @@ import { getLocale, getMessages } from "next-intl/server";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import WrapperProvider from "@/_core/providers/wrapper.provider";
 import AppLoading from "@/_shared/components/loading/app-loading";
-import { enviroments } from "@/env/enviroments";
 
 const fontSans = FontSans({
   subsets: ["latin"],
