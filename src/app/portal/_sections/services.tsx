@@ -1,7 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
 import { ArrowRight } from "lucide-react";
-import { useTranslations } from "next-intl";
 import Each from "@/_shared/components/app-each";
 import { cn } from "@/_core/components/lib/utils";
 import RequestQuoteButton from "../_components/request-quote-button";
@@ -35,7 +34,7 @@ export default function PortalServices() {
         Soluções Industriais Personalizadas para o Seu Negócio
       </h5>
 
-      <section className="grid gap-12 grid-cols-3 mobile:grid-cols-1">
+      <section className="grid gap-8 grid-cols-3 mobile:grid-cols-1">
         <Each
           data={items}
           render={(item) => (
