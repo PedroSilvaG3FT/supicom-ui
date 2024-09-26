@@ -26,6 +26,7 @@
     "high_performance_machines": "High-Performance Machines"
   },
   "base": {
+    "years": "",
     "contact": "Contact",
     "products": "Products",
     "customers": "Customers",
@@ -34,6 +35,7 @@
   "portal": {
     "hero": {
       "title": "Reference\nin Quality",
+      "description": "",
       "satisfaction": "Satisfaction"
     }
   }

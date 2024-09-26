@@ -26,6 +26,7 @@
     "high_performance_machines": "Máquinas de Alto Desempenho"
   },
   "base": {
+    "years": "Anos",
     "contact": "Contato",
     "products": "Produtos",
     "customers": "Clientes",
@@ -33,7 +34,8 @@
   },
   "portal": {
     "hero": {
-      "title": "Referência\nem qualidade",
+      "title": "Nós movemos\na industria",
+      "description": "Na industria, cada segundo conta. Por isso, oferecemos soluções completas\npara que sua operação nunca pare.",
       "satisfaction": "Satisfação"
     }
   }

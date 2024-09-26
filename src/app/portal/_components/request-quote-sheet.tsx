@@ -1,0 +1,103 @@
+"use client";
+
+import {
+  Sheet,
+  SheetTitle,
+  SheetHeader,
+  SheetContent,
+  SheetTrigger,
+  SheetDescription,
+} from "@/_core/components/fragments/sheet";
+
+import { z } from "zod";
+import { ReactNode } from "react";
+import { useForm } from "react-hook-form";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { Button } from "@/_core/components/fragments/button";
+import AppFormInput from "@/_shared/components/form/form-input";
+import { FormContainer } from "@/_core/components/fragments/form";
+import AppFormTextarea from "@/_shared/components/form/form-textarea";
+
+const formSchema = z.object({
+  obervation: z.string(),
+  name: z.string().min(1, "Required field"),
+  email: z.string().min(1, "Required field"),
+  phoneNumber: z.string().min(1, "Required field"),
+});
+
+interface IFormData extends z.infer<typeof formSchema> {}
+
+interface IProps {
+  children: ReactNode;
+}
+
+export function RequestQuoteSheet(props: IProps) {
+  const { children } = props;
+
+  const form = useForm<IFormData>({
+    resolver: zodResolver(formSchema),
+    defaultValues: {
+      name: "",
+      email: "",
+      obervation: "",
+      phoneNumber: "",
+    },
+  });
+
+  function onSubmit(values: IFormData) {
+    console.log("[request quote submit]: ", values);
+  }
+
+  return (
+    <Sheet>
+      <SheetTrigger asChild>{children}</SheetTrigger>
+      <SheetContent>
+        <SheetHeader>
+          <SheetTitle>Solicitar cotação</SheetTitle>
+          <SheetDescription>
+            Insira os seus dados, em instantes um atendente entrará em contato
+            com você
+          </SheetDescription>
+        </SheetHeader>
+
+        <FormContainer {...form}>
+          <form
+            className="space-y-4 mt-8"
+            onSubmit={form.handleSubmit(onSubmit)}
+          >
+            <AppFormInput
+              name="name"
+              label="Nome"
+              control={form.control}
+              placeholder="Insira o seu nome"
+            />
+
+            <AppFormInput
+              type="email"
+              name="email"
+              label="e-mail"
+              control={form.control}
+              placeholder="Insira o seu e-mail"
+            />
+
+            <AppFormInput
+              label="Celular"
+              name="phoneNumber"
+              control={form.control}
+              placeholder="Insira o seu contato"
+            />
+
+            <AppFormTextarea
+              label="Observação"
+              name="observation"
+              control={form.control}
+              placeholder="Ex: lorem ipsum dor lorem"
+            />
+
+            <Button className="mt-5 w-full">Enviar</Button>
+          </form>
+        </FormContainer>
+      </SheetContent>
+    </Sheet>
+  );
+}

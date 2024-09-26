@@ -28,51 +28,58 @@ export default function PortalHero() {
   return (
     <AuroraBackground className="shadow-md p-4 bg-black text-white border-zinc-200 h-[40rem] mobile:h-[92dvh] overflow-hidden">
       <section className="app-container app-container-pt mobile:px-0">
-        <section className="h-full w-full grid grid-cols-2 mobile:grid-cols-1">
-          <div className="h-full flex flex-col justify-center mobile:items-center">
-            <h1 className="font-semibold whitespace-pre-line text-6xl mobile:text-4xl mobile:text-center">
-              {t("portal.hero.title")}
-            </h1>
+        <section className="h-full w-full flex flex-col">
+          <h1 className="font-semibold whitespace-pre-line text-6xl mobile:text-4xl mobile:text-center">
+            {t("portal.hero.title")}
+          </h1>
 
+          <p className="whitespace-pre-line my-4 mobile:text-center">
+            {t("portal.hero.description")}
+          </p>
+
+          <RequestQuoteButton />
+
+          <article className="w-full mobile:flex items-center justify-center">
             <FlipWords
               words={words}
               className="text-xl text-white my-4 mobile:text-center mobile:my-6"
             />
+          </article>
 
-            <RequestQuoteButton />
+          <section className="mt-12 flex gap-12 mobile:justify-center">
+            <article className="flex gap-3 items-center mobile:flex-col mobile:justify-center">
+              <Users className="w-8 h-8 text-primary" />
 
-            <section className="mt-12 flex gap-12">
-              <article className="flex gap-3 items-center mobile:flex-col mobile:justify-center">
-                <Users className="w-8 h-8 text-primary" />
+              <div>
+                <h2 className="font-semibold mobile:text-center">+1.000</h2>
+                <h5 className="text-primary mobile:text-center">
+                  {t("base.customers")}
+                </h5>
+              </div>
+            </article>
 
-                <div>
-                  <h2 className="font-semibold mobile:text-center">+1.000</h2>
-                  <h5 className="text-primary mobile:text-center">
-                    {t("base.customers")}
-                  </h5>
-                </div>
-              </article>
+            <article className="flex gap-3 items-center mobile:flex-col mobile:justify-center mobile:hidden">
+              <Medal className="w-8 h-8 text-primary" />
 
-              <article className="flex gap-3 items-center mobile:flex-col mobile:justify-center">
-                <Medal className="w-8 h-8 text-primary" />
+              <div>
+                <h2 className="font-semibold mobile:text-center">100%</h2>
+                <h5 className="text-primary mobile:text-center">
+                  {t("portal.hero.satisfaction")}
+                </h5>
+              </div>
+            </article>
 
-                <div>
-                  <h2 className="font-semibold mobile:text-center">100%</h2>
-                  <h5 className="text-primary mobile:text-center">
-                    {t("portal.hero.satisfaction")}
-                  </h5>
-                </div>
-              </article>
-            </section>
-          </div>
+            <article className="flex gap-3 items-center mobile:flex-col mobile:justify-center">
+              <Medal className="w-8 h-8 text-primary" />
 
-          <Image
-            alt="Gear"
-            width={1350}
-            height={1200}
-            className="opacity-10 mobile:hidden"
-            src="/images/elements/hero-gear.png"
-          />
+              <div>
+                <h2 className="font-semibold mobile:text-center">
+                  +30 {t("base.years")}
+                </h2>
+                <h5 className="text-primary mobile:text-center">No mercado</h5>
+              </div>
+            </article>
+          </section>
         </section>
       </section>
     </AuroraBackground>

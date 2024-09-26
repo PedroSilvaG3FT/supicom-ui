@@ -30,8 +30,8 @@ export default function PortalFooter() {
   ];
 
   return (
-    <footer>
-      <section className="app-container bg-black text-white flex flex-col pt-12">
+    <footer className="bg-black text-white">
+      <section className="app-container  flex flex-col pt-12">
         <section className="mb-12 grid gap-8 grid-cols-[30%_1fr_1fr_1fr_1fr] tablet:grid-cols-1 mobile:grid-cols-1">
           <article className="flex gap-4 flex-col">
             <Image
@@ -67,7 +67,7 @@ export default function PortalFooter() {
         </section>
       </section>
 
-      <div className="mt-auto bg-zinc-900 text-white text-sm flex gap-1 items-center justify-center">
+      <div className="mt-auto py-2 bg-black/95 text-white text-sm flex gap-1 items-center justify-center">
         <small className="text-xs">Desenvolvido por</small>
 
         <Link

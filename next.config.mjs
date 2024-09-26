@@ -10,7 +10,13 @@ const __dirname = dirname(__filename);
 const withNextIntl = createNextIntlPlugin();
 
 export default withNextIntl({
-  images: { domains: ["api.microlink.io", "assets.aceternity.com"] },
+  images: {
+    domains: [
+      "api.microlink.io",
+      "images.unsplash.com",
+      "assets.aceternity.com",
+    ],
+  },
   sassOptions: {
     includePaths: [join(__dirname, "styles")],
   },
