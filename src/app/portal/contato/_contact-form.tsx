@@ -37,7 +37,7 @@ export default function ContactForm() {
     <FormContainer {...form}>
       <form
         onSubmit={form.handleSubmit(onSubmit)}
-        className="rounded-3xl p-5 px-8 shadow-md bg-background"
+        className="rounded-3xl p-5 px-8 shadow-md bg-background lg:scale-90"
       >
         <h4 className="font-semibold">Entre em contato</h4>
 
@@ -55,7 +55,7 @@ export default function ContactForm() {
           control={form.control}
         />
 
-        <section className="my-4 w-full grid gap-4 grid-cols-2">
+        <section className="my-2 w-full grid gap-4 grid-cols-1">
           <AppFormInput
             required
             type="email"

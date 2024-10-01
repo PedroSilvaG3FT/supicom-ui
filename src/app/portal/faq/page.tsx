@@ -6,10 +6,9 @@ import {
 } from "@/_core/components/fragments/accordion";
 
 import Link from "next/link";
-import { ArrowRight } from "lucide-react";
 import Each from "@/_shared/components/app-each";
 import { Button } from "@/_core/components/fragments/button";
-import { Separator } from "@/_core/components/fragments/separator";
+import { ArrowRight, MessageCircleQuestion } from "lucide-react";
 
 export default function FaqPage() {
   const items = [
@@ -48,32 +47,34 @@ export default function FaqPage() {
   ];
 
   return (
-    <section className="portal-page-container">
-      <h2>Perguntas frequentes</h2>
-      <h5>Não encontrou o que precisava ?</h5>
+    <section className="portal-page-container grid grid-cols-1 lg:grid-cols-[30%_1fr]">
+      <section>
+        <article className="lg:sticky top-24">
+          <h2>Perguntas frequentes</h2>
+          <h5>Não encontrou o que precisava ?</h5>
 
-      <Button
-        asChild
-        size="lg"
-        variant="default"
-        className={
-          "self-start mt-4 group rounded-full cursor-pointer z-10 mobile:self-center"
-        }
-      >
-        <Link href="/portal/contato">
-          Entre em contato
-          <ArrowRight className="ml-2 group-hover:ml-4 transition-all duration-500" />
-        </Link>
-      </Button>
+          <Button
+            asChild
+            size="lg"
+            variant="default"
+            className={
+              "self-start mt-4 group rounded-full cursor-pointer z-10 mobile:self-center"
+            }
+          >
+            <Link href="/portal/contato">
+              Entre em contato
+              <ArrowRight className="ml-2 group-hover:ml-4 transition-all duration-500" />
+            </Link>
+          </Button>
+        </article>
+      </section>
 
-      <Separator className="my-8" />
-
-      <section className="w-full flex items-center justify-center">
+      <section className="w-full lg:border-l lg:pl-8">
         <Accordion
           type="single"
           defaultValue="0"
           collapsible
-          className="w-2/4 mobile:w-full tablet:w-full"
+          className="w-full"
         >
           <Each
             data={items}

@@ -29,7 +29,7 @@ export default function ContactContent() {
 
   return (
     <section>
-      <h1 className="font-semibold mb-4">Contato</h1>
+      <h1 className="mb-4">Contato</h1>
       <p className="w-3/4 mobile:w-full">
         Entre em contato conosco para obter suporte, enviar sugestões ou
         discutir parcerias. Estamos sempre prontos para ajudar.
