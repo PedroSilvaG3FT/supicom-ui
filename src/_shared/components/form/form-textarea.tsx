@@ -20,7 +20,12 @@ export default function AppFormTextarea(props: IAppFormTextareaProps) {
       control={props.control}
       render={({ field }) => (
         <FormItem>
-          <FormLabel>{props.label}</FormLabel>
+          {props.label && (
+            <FormLabel>
+              {props.required && <span className="text-red-400 mr-0.5">*</span>}
+              {props.label}
+            </FormLabel>
+          )}
           <FormControl>
             <Textarea {...props} {...field} />
           </FormControl>
