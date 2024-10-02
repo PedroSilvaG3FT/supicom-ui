@@ -12,8 +12,8 @@ export default function PortalPage() {
       <PortalHero />
       <PortalTimeline />
       <PortalServices />
-      <PortalPartners />
       <PortalProducts />
+      <PortalPartners />
       <PortalNews />
       <PortalAddress />
     </>

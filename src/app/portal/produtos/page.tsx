@@ -1,7 +1,11 @@
+import ProductCatalog from "./_product-catalog";
+import ProductCarousel from "./_product-carousel";
+
 export default function ProductPage() {
   return (
     <section className="portal-page-container">
-      <h4>ProductPage</h4>
+      <ProductCarousel />
+      <ProductCatalog />
     </section>
   );
 }
