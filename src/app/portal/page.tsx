@@ -14,8 +14,8 @@ export default function PortalPage() {
       <PortalServices />
       <PortalProducts />
       <PortalPartners />
-      <PortalNews />
       <PortalAddress />
+      <PortalNews />
     </>
   );
 }

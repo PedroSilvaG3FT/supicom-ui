@@ -16,7 +16,7 @@ export default function PortalProductCard(props: IProps) {
   const t = useTranslations();
 
   return (
-    <article className="bg-secondary overflow-hidden rounded-xl group">
+    <article className="bg-secondary overflow-hidden rounded group">
       <figure className={cn("h-56 relative overflow-hidden")}>
         <Image
           layout="fill"

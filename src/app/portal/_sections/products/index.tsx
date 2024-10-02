@@ -22,7 +22,7 @@ export default function PortalProducts() {
 
         <Link
           href="/portal/produtos"
-          className="bg-secondary rounded-xl p-4 flex flex-col items-center justify-center group"
+          className="bg-secondary rounded p-4 flex flex-col items-center justify-center group"
         >
           <figure className="rounded-full h-14 w-14 mb-4 flex items-center justify-center bg-primary text-white transition-transform duration-500 group-hover:scale-110">
             <PackageSearch />

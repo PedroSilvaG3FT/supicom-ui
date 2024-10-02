@@ -7,7 +7,7 @@ export default function PortalNews() {
   const t = useTranslations();
 
   return (
-    <section className="bg-secondary my-4 pb-8">
+    <section className="bg-secondary mt-4 pb-8">
       <section className="app-container">
         <h2 className="mt-4">{t("portal.news.title")}</h2>
         <h5 className="mb-6">{t("portal.news.subtitle")}</h5>

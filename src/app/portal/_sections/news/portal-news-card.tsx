@@ -1,12 +1,9 @@
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowRight, Eye } from "lucide-react";
-import { cn } from "@/_core/components/lib/utils";
-import { Separator } from "@/_core/components/fragments/separator";
-import { IProductItem } from "@/_shared/interface/product.interface";
-import RequestQuoteButton from "../../_components/request-quote-button";
-import { INewsItem } from "@/_shared/interface/news.interfaces";
+import { ArrowRight } from "lucide-react";
 import { useTranslations } from "next-intl";
+import { cn } from "@/_core/components/lib/utils";
+import { INewsItem } from "@/_shared/interface/news.interfaces";
 
 interface IProps {
   data: INewsItem;
@@ -17,7 +14,7 @@ export default function PortalNewsCard(props: IProps) {
   const t = useTranslations();
 
   return (
-    <article className="overflow-hidden rounded-xl bg-background group">
+    <article className="overflow-hidden rounded bg-background group">
       <figure className={cn("h-48 relative overflow-hidden")}>
         <Image
           layout="fill"
