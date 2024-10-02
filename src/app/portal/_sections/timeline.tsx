@@ -46,7 +46,7 @@ export default function PortalTimeline() {
       }),
     },
     {
-      title: "Dias atuais",
+      title: "Hoje",
       content: _buildSection({
         title: `Inovação com Aluguel de Equipamentos`,
         imageURL: `https://assets.aceternity.com/pro/hero-sections.png`,

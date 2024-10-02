@@ -7,6 +7,9 @@ export default function useProductData() {
   const getCategoryById = (id: number) =>
     categories.find((item) => item.id === id) || ({} as IProductCategory);
 
+  const getProductyBySlug = (slug: string) =>
+    products.find((item) => item.slug === slug) || ({} as IProductItem);
+
   const categories: IProductCategory[] = [
     { id: 1, title: "Máquinas para Indústria Madeireira" },
     { id: 2, title: "Máquinas para Indústria Cerâmica" },
@@ -58,5 +61,5 @@ export default function useProductData() {
     },
   ];
 
-  return { categories, products };
+  return { categories, products, getCategoryById, getProductyBySlug };
 }

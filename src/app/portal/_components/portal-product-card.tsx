@@ -1,10 +1,10 @@
 import Link from "next/link";
 import Image from "next/image";
-import { ExternalLink, Eye, Star } from "lucide-react";
+import { Star } from "lucide-react";
 import { cn } from "@/_core/components/lib/utils";
+import RequestQuoteButton from "./request-quote-button";
 import { Separator } from "@/_core/components/fragments/separator";
 import { IProductItem } from "@/_shared/interface/product.interface";
-import RequestQuoteButton from "./request-quote-button";
 
 interface IProps {
   data: IProductItem;
@@ -50,8 +50,7 @@ export default function PortalProductCard(props: IProps) {
           <RequestQuoteButton size="sm" variant="link" className="pl-0" />
 
           <Link
-            href="#"
-            target="_blank"
+            href={`/portal/produtos/${data.slug}`}
             className="font-semibold text-xs text-foreground/60 flex gap-2 items-center"
           >
             Ver mais

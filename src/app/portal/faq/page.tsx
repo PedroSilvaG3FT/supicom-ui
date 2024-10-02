@@ -6,9 +6,10 @@ import {
 } from "@/_core/components/fragments/accordion";
 
 import Link from "next/link";
+import { ArrowRight } from "lucide-react";
 import Each from "@/_shared/components/app-each";
 import { Button } from "@/_core/components/fragments/button";
-import { ArrowRight, MessageCircleQuestion } from "lucide-react";
+import { Separator } from "@/_core/components/fragments/separator";
 
 export default function FaqPage() {
   const items = [
@@ -58,7 +59,7 @@ export default function FaqPage() {
             size="lg"
             variant="default"
             className={
-              "self-start mt-4 group rounded-full cursor-pointer z-10 mobile:self-center"
+              "self-start mt-4 group rounded-full cursor-pointer z-10 mobile:w-full"
             }
           >
             <Link href="/portal/contato">
@@ -68,6 +69,8 @@ export default function FaqPage() {
           </Button>
         </article>
       </section>
+
+      <Separator className="w-full hidden mobile:block mobile:my-6" />
 
       <section className="w-full lg:border-l lg:pl-8">
         <Accordion
