@@ -26,17 +26,87 @@
     "high_performance_machines": "Máquinas de Alto Desempenho"
   },
   "base": {
+    "name": "Nome",
     "years": "Anos",
+    "today": "Hoje",
+    "send": "Enviar",
     "contact": "Contato",
+    "catalog": "Catálogo",
     "products": "Produtos",
+    "see_more": "Ver mais",
+    "services": "Serviços",
     "customers": "Clientes",
+    "smart_phone": "Celular",
+    "description": "Descrição",
+    "consulting": "Consultando",
+    "observation": "Observação",
+    "on_the_market": "No mercado",
+    "developed_by": "Desenvolvido por",
+    "get_in_touch": "Entre em contato",
+    "quality_supicom": "Qualidade Supicom",
     "request_quote": "Solicite uma cotação"
   },
   "portal": {
+    "about_us": "Sobre nós",
+    "where_are_we": "Onde estamos?",
     "hero": {
-      "title": "Nós movemos\na industria",
-      "description": "Na industria, cada segundo conta. Por isso, oferecemos soluções completas\npara que sua operação nunca pare.",
+      "title": "Nós movemos\na indústria",
+      "description": "Na indústria, cada segundo conta. Oferecemos soluções completas\npara garantir que sua operação nunca pare.",
       "satisfaction": "Satisfação"
+    },
+    "product": {
+      "title": "Produtos",
+      "not_fount": "Produto não encontrado",
+      "see_full_catalog": "Ver catálogo completo",
+      "check_catalog": "Confira nosso catálogo de produtos",
+      "subtitle": "Máquinas e Equipamentos de Alta Qualidade",
+      "banner_01_title": "Inovações\npara sua empresa",
+      "banner_01_description": "Explore as máquinas e equipamentos mais recentes\nque vão revolucionar sua linha de produção!",
+      "banner_02_title": "Flexibilidade\npara o Seu Negócio",
+      "banner_02_description": "Acesse os melhores equipamentos quando precisar.\nAlugue com praticidade e eficiência!",
+      "banner_03_title": "Parcerias\nque Geram Resultados",
+      "banner_03_description": "Descubra como nossas soluções podem agregar valor ao seu negócio.\nJuntos, somos mais fortes!"
+    },
+    "news": {
+      "title": "Destaques",
+      "subtitle": "Fique por dentro das últimas notícias"
+    },
+    "service": {
+      "subtitle": "Soluções Industriais Personalizadas para o seu negócio",
+      "manufacturing_title": "Fabricação",
+      "manufacturing_description": "Fornecemos máquinas e equipamentos especializados para diversos setores industriais, como madeireiras, indústria gráfica e refino de petróleo.",
+      "rent_title": "Aluguel",
+      "rent_description": "Oferecemos locação de máquinas e equipamentos comerciais e industriais sem operador, adequados para diversas necessidades.",
+      "maintenance_title": "Manutenção",
+      "maintenance_description": "Prestamos serviços de manutenção e reparação de máquinas industriais, garantindo a máxima eficiência e longevidade dos equipamentos."
+    },
+    "faq": {
+      "title": "Perguntas frequentes",
+      "subtitle": "Não encontrou o que precisava",
+      "question_01_title": "Uma dúvida frequente",
+      "question_01_description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages"
+    },
+    "contact": {
+      "description": "Entre em contato conosco para obter suporte, enviar sugestões ou discutir parcerias. Estamos sempre prontos para ajudar.",
+      "customer_support": "Suporte ao cliente",
+      "customer_support_description": "Tem dúvidas ou precisa de ajuda? Fale conosco para suporte imediato.",
+      "suggestions": "Sugestões",
+      "suggestions_description": "Envie suas sugestões e ajude-nos a melhorar nossos serviços.",
+      "partnerships": "Parcerias",
+      "partnerships_description": "Interessado em parcerias? Fale conosco para explorar oportunidades de colaboração.",
+      "form": {
+        "title": "Entre em contato",
+        "subtitle": "Preencha o formulário abaixo e descreva sua solicitação. Nossa equipe retornará em breve!"
+      }
+    },
+    "request_quote": {
+      "title": "Solicitar cotação",
+      "subtitle": "Insira os seus dados, em instantes um atendente entrará em contato com você"
+    },
+    "footer": {
+      "site_map": "Mapa do site",
+      "institutional": "Institucional",
+      "treatment": "Atendimento"
     }
   }
 }

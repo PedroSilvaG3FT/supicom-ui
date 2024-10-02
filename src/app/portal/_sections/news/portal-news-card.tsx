@@ -6,6 +6,7 @@ import { Separator } from "@/_core/components/fragments/separator";
 import { IProductItem } from "@/_shared/interface/product.interface";
 import RequestQuoteButton from "../../_components/request-quote-button";
 import { INewsItem } from "@/_shared/interface/news.interfaces";
+import { useTranslations } from "next-intl";
 
 interface IProps {
   data: INewsItem;
@@ -13,6 +14,7 @@ interface IProps {
 
 export default function PortalNewsCard(props: IProps) {
   const { data } = props;
+  const t = useTranslations();
 
   return (
     <article className="overflow-hidden rounded-xl bg-background group">
@@ -40,7 +42,7 @@ export default function PortalNewsCard(props: IProps) {
           target="_blank"
           className="flex text-sm items-center font-semibold mt-auto"
         >
-          Ver mais
+          {t("base.see_more")}
           <ArrowRight className="ml-2 sca group-hover:ml-4 transition-all duration-500" />
         </Link>
       </section>

@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { Medal, Users } from "lucide-react";
 import RequestQuoteButton from "../_components/request-quote-button";
@@ -76,7 +75,9 @@ export default function PortalHero() {
                 <h2 className="font-semibold mobile:text-center">
                   +30 {t("base.years")}
                 </h2>
-                <h5 className="text-primary mobile:text-center">No mercado</h5>
+                <h5 className="text-primary mobile:text-center">
+                  {t("base.on_the_market")}
+                </h5>
               </div>
             </article>
           </section>

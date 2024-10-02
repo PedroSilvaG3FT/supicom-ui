@@ -2,6 +2,7 @@
 
 import { z } from "zod";
 import { useForm } from "react-hook-form";
+import { useTranslations } from "next-intl";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Button } from "@/_core/components/fragments/button";
 import AppFormInput from "@/_shared/components/form/form-input";
@@ -19,6 +20,8 @@ const formSchema = z.object({
 interface IFormData extends z.infer<typeof formSchema> {}
 
 export default function ContactForm() {
+  const t = useTranslations();
+
   const form = useForm<IFormData>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -39,11 +42,10 @@ export default function ContactForm() {
         onSubmit={form.handleSubmit(onSubmit)}
         className="rounded-3xl p-5 px-8 shadow-md bg-background lg:scale-90"
       >
-        <h4 className="font-semibold">Entre em contato</h4>
+        <h4 className="font-semibold">{t("portal.contact.form.title")}</h4>
 
         <small className="text-foreground/60">
-          Preencha o formulário abaixo e descreva sua solicitação. Nossa equipe
-          retornará em breve!
+          {t("portal.contact.form.subtitle")}
         </small>
 
         <Separator className="my-4" />
@@ -66,21 +68,21 @@ export default function ContactForm() {
 
           <AppFormInput
             required
-            name="phoneNumber"
-            label="Celular"
             mask="()"
+            name="phoneNumber"
             control={form.control}
+            label={t("base.smart_phone")}
           />
         </section>
 
         <AppFormTextarea
           required
-          label="Descrição"
           name="description"
           control={form.control}
+          label={t("base.description")}
         />
 
-        <Button className="w-full mt-8">Enviar</Button>
+        <Button className="w-full mt-8">{t("base.send")}</Button>
       </form>
     </FormContainer>
   );

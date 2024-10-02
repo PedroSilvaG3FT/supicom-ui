@@ -12,6 +12,7 @@ import {
 import { z } from "zod";
 import { ReactNode } from "react";
 import { useForm } from "react-hook-form";
+import { useTranslations } from "next-intl";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Button } from "@/_core/components/fragments/button";
 import AppFormInput from "@/_shared/components/form/form-input";
@@ -33,6 +34,7 @@ interface IProps {
 
 export function RequestQuoteSheet(props: IProps) {
   const { children } = props;
+  const t = useTranslations();
 
   const form = useForm<IFormData>({
     resolver: zodResolver(formSchema),
@@ -53,10 +55,9 @@ export function RequestQuoteSheet(props: IProps) {
       <SheetTrigger asChild>{children}</SheetTrigger>
       <SheetContent>
         <SheetHeader>
-          <SheetTitle>Solicitar cotação</SheetTitle>
+          <SheetTitle>{t("portal.request_quote.title")}</SheetTitle>
           <SheetDescription>
-            Insira os seus dados, em instantes um atendente entrará em contato
-            com você
+            {t("portal.request_quote.subtitle")}
           </SheetDescription>
         </SheetHeader>
 
@@ -67,9 +68,8 @@ export function RequestQuoteSheet(props: IProps) {
           >
             <AppFormInput
               name="name"
-              label="Nome"
+              label={t("base.name")}
               control={form.control}
-              placeholder="Insira o seu nome"
             />
 
             <AppFormInput
@@ -77,24 +77,21 @@ export function RequestQuoteSheet(props: IProps) {
               name="email"
               label="e-mail"
               control={form.control}
-              placeholder="Insira o seu e-mail"
             />
 
             <AppFormInput
-              label="Celular"
               name="phoneNumber"
               control={form.control}
-              placeholder="Insira o seu contato"
+              label={t("base.smart_phone")}
             />
 
             <AppFormTextarea
-              label="Observação"
               name="observation"
               control={form.control}
-              placeholder="Ex: lorem ipsum dor lorem"
+              label={t("base.observation")}
             />
 
-            <Button className="mt-5 w-full">Enviar</Button>
+            <Button className="mt-5 w-full">{t("base.send")}</Button>
           </form>
         </FormContainer>
       </SheetContent>

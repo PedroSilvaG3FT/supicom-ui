@@ -1,16 +1,18 @@
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 import { PackageSearch } from "lucide-react";
 import Each from "@/_shared/components/app-each";
 import useProductData from "@/_shared/hooks/data/product.hook";
 import PortalProductCard from "../../_components/portal-product-card";
 
 export default function PortalProducts() {
+  const t = useTranslations();
   const { products } = useProductData();
 
   return (
     <section className="app-container">
-      <h2 className="mt-4">Produtos</h2>
-      <h5 className="mb-6">Máquinas e Equipamentos de Alta Qualidade</h5>
+      <h2 className="mt-4">{t("portal.product.title")}</h2>
+      <h5 className="mb-6">{t("portal.product.subtitle")}</h5>
 
       <section className="w-full grid gap-4 grid-cols-4 tablet:grid-cols-2 mobile:grid-cols-1 relative z-10">
         <Each
@@ -27,8 +29,7 @@ export default function PortalProducts() {
           </figure>
 
           <h4 className="text-center font-semibold transition-transform duration-500 group-hover:scale-95">
-            Ver catálogo <br />
-            completo
+            {t("portal.product.see_full_catalog")}
           </h4>
         </Link>
       </section>

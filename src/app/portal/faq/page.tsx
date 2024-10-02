@@ -7,43 +7,34 @@ import {
 
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
+import { useTranslations } from "next-intl";
 import Each from "@/_shared/components/app-each";
 import { Button } from "@/_core/components/fragments/button";
 import { Separator } from "@/_core/components/fragments/separator";
 
 export default function FaqPage() {
+  const t = useTranslations();
+
   const items = [
     {
-      title: "Uma dúvida frequente",
-      text: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages`,
+      title: t("portal.faq.question_01_title"),
+      text: t("portal.faq.question_01_description"),
     },
     {
-      title: "Uma dúvida frequente",
-      text: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages`,
+      title: t("portal.faq.question_01_title"),
+      text: t("portal.faq.question_01_description"),
     },
     {
-      title: "Uma dúvida frequente",
-      text: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages`,
+      title: t("portal.faq.question_01_title"),
+      text: t("portal.faq.question_01_description"),
     },
     {
-      title: "Uma dúvida frequente",
-      text: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages`,
+      title: t("portal.faq.question_01_title"),
+      text: t("portal.faq.question_01_description"),
     },
     {
-      title: "Uma dúvida frequente",
-      text: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages`,
-    },
-    {
-      title: "Uma dúvida frequente",
-      text: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages`,
-    },
-    {
-      title: "Uma dúvida frequente",
-      text: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages`,
-    },
-    {
-      title: "Uma dúvida frequente",
-      text: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages`,
+      title: t("portal.faq.question_01_title"),
+      text: t("portal.faq.question_01_description"),
     },
   ];
 
@@ -51,8 +42,8 @@ export default function FaqPage() {
     <section className="portal-page-container grid grid-cols-1 lg:grid-cols-[30%_1fr]">
       <section>
         <article className="lg:sticky top-24">
-          <h2>Perguntas frequentes</h2>
-          <h5>Não encontrou o que precisava ?</h5>
+          <h2>{t("portal.faq.title")}</h2>
+          <h5>{t("portal.faq.subtitle")}</h5>
 
           <Button
             asChild
@@ -63,7 +54,7 @@ export default function FaqPage() {
             }
           >
             <Link href="/portal/contato">
-              Entre em contato
+              {t("base.get_in_touch")}
               <ArrowRight className="ml-2 group-hover:ml-4 transition-all duration-500" />
             </Link>
           </Button>

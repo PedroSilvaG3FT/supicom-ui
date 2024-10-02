@@ -1,24 +1,27 @@
+import { useTranslations } from "next-intl";
 import { Handshake, Settings, Wrench } from "lucide-react";
 
 export default function useServiceData() {
+  const t = useTranslations();
+
   const services = [
     {
       icon: Settings,
-      title: `Fabricação`,
+      title: t("portal.service.manufacturing_title"),
       imageURL: `/images/services/manufacturing.jpg`,
-      description: `Fornecemos máquinas e equipamentos especializados para diversos setores industriais, como madeireiras, indústria gráfica, e refino de petróleo.`,
+      description: t("portal.service.manufacturing_description"),
     },
     {
       icon: Handshake,
-      title: `Aluguel`,
+      title: t("portal.service.rent_title"),
       imageURL: `/images/services/rent.jpg`,
-      description: `Oferecemos locação de máquinas e equipamentos comerciais e industriais sem operador, adequados para diversas necessidades.`,
+      description: t("portal.service.rent_description"),
     },
     {
       icon: Wrench,
-      title: `Manutenção`,
+      title: t("portal.service.maintenance_title"),
       imageURL: `/images/services/maintenance.jpg`,
-      description: `Prestamos serviços de manutenção e reparação de máquinas industriais, garantindo a máxima eficiência e longevidade dos equipamentos.`,
+      description: t("portal.service.maintenance_description"),
     },
   ];
 

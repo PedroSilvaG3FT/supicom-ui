@@ -1,14 +1,14 @@
-import Each from "@/_shared/components/app-each";
-import { useTranslations } from "next-intl";
-import Image from "next/image";
 import Link from "next/link";
+import Image from "next/image";
+import { useTranslations } from "next-intl";
+import Each from "@/_shared/components/app-each";
 
 export default function PortalFooter() {
   const t = useTranslations();
 
   const groups = [
     {
-      title: `Mapa do site`,
+      title: t("portal.footer.site_map"),
       links: [
         { title: "Home", url: "/portal" },
         { title: t("base.products"), url: "/portal/produtos" },
@@ -17,14 +17,14 @@ export default function PortalFooter() {
       ],
     },
     {
-      title: `Institucional`,
+      title: t("portal.footer.institutional"),
       links: [
-        { title: `Nossa história`, url: `/portal` },
+        { title: t("portal.about_us"), url: `/portal` },
         { title: `FAQ`, url: `/portal/faq` },
       ],
     },
     {
-      title: `Atendimento`,
+      title: t("portal.footer.treatment"),
       links: [{ title: t("base.contact"), url: "/portal/contato" }],
     },
   ];
@@ -68,12 +68,12 @@ export default function PortalFooter() {
       </section>
 
       <div className="mt-auto py-2 bg-black/95 text-white text-sm flex gap-1 items-center justify-center">
-        <small className="text-xs">Desenvolvido por</small>
+        <small className="text-xs">{t("base.developed_by")}</small>
 
         <Link
-          href="https://www.linkedin.com/in/pedro-silva-65996a181/"
           target="_blank"
           className="text-xs"
+          href="https://www.linkedin.com/in/pedro-silva-65996a181/"
         >
           Pedro Silva
         </Link>

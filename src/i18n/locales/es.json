@@ -5,38 +5,108 @@
     "portuguese": "Portugués"
   },
   "example": {
-    "title": "¡Hola mundo!",
+    "title": "¡Hola Mundo!",
     "subtitle": "Este es un texto en Portugués (pt-BR)",
-    "description": "En los últimos años, el desarrollo web ha evolucionado significativamente y la demanda de aplicaciones eficientes y escalables ha aumentado.\nPara satisfacer esta necesidad, creamos un proyecto de plantilla que combina Next.js, Tailwind CSS, Shadcn UI y Firebase. Este stack permite a los desarrolladores construir aplicaciones web modernas de forma rápida y eficaz.\n\nNext.js es un poderoso marco de React que ofrece renderización del lado del servidor y generación de sitios estáticos. Mejora el rendimiento y el SEO, lo que lo convierte en una excelente opción para los desarrolladores. Tailwind CSS, por otro lado, es un marco de CSS basado en utilidades que permite un desarrollo rápido de la interfaz de usuario, con un enfoque en la personalización y la capacidad de respuesta. Shadcn UI complementa esto al proporcionar componentes prediseñados que son fáciles de integrar y personalizar.\n\nAceternity es otra biblioteca de componentes de interfaz de usuario que destaca por su capacidad para crear experiencias visuales impresionantes e interactivas. Al igual que Shadcn UI, Aceternity ofrece una colección de componentes prediseñados que facilitan la construcción de interfaces modernas y responsivas. Sin embargo, lo que diferencia a Aceternity es su integración con Framer, lo que permite a los desarrolladores crear elementos de UI en 3D con perspectiva. Este enfoque innovador enriquece la experiencia del usuario al proporcionar interacciones dinámicas y diseños visualmente atractivos.\n\nFirebase sirve como la solución de backend, ofreciendo funciones de base de datos en tiempo real, autenticación y hosting. Al aprovechar Firebase, los desarrolladores pueden centrarse en construir funciones sin preocuparse por la gestión del servidor. Este proyecto de plantilla sirve como una base sólida para cualquier persona que desee comenzar su viaje en el desarrollo web con estas tecnologías modernas."
+    "description": "En los últimos años, el desarrollo web ha evolucionado significativamente y la demanda de aplicaciones eficientes y escalables ha aumentado. Para satisfacer esta necesidad, creamos un proyecto boilerplate que combina Next.js, Tailwind CSS, Shadcn UI y Firebase. Este stack permite a los desarrolladores construir aplicaciones web modernas de manera rápida y eficaz.\n\nNext.js es un poderoso framework React que ofrece renderización del lado del servidor y generación de sitios estáticos. Mejora el rendimiento y el SEO, lo que lo convierte en una excelente opción para los desarrolladores. Tailwind CSS, por su parte, es un framework CSS basado en utilidades que permite un desarrollo rápido de la interfaz de usuario, con enfoque en la personalización y la capacidad de respuesta. Shadcn UI complementa esto proporcionando componentes pre-diseñados que son fáciles de integrar y personalizar.\n\nAceternity es otra biblioteca de componentes de interfaz de usuario que se destaca por crear experiencias visuales impresionantes e interactivas. Al igual que Shadcn UI, Aceternity ofrece una colección de componentes pre-diseñados que facilitan la creación de interfaces modernas y receptivas. Lo que diferencia a Aceternity es su integración con Framer, que permite a los desarrolladores crear elementos de UI en 3D y con perspectiva. Este enfoque innovador enriquece la experiencia del usuario, proporcionando interacciones dinámicas y diseños visualmente atractivos.\n\nFirebase actúa como la solución de backend, ofreciendo funciones de base de datos en tiempo real, autenticación y alojamiento. Al aprovechar Firebase, los desarrolladores pueden concentrarse en crear características sin preocuparse por la gestión del servidor. Este proyecto boilerplate sirve como una base sólida para cualquiera que desee comenzar su viaje en el desarrollo web con estas tecnologías modernas."
   },
   "phrases": {
     "industrial_innovation": "Innovación Industrial",
     "superior_quality": "Calidad Superior",
     "advanced_technology": "Tecnología Avanzada",
     "customized_solutions": "Soluciones Personalizadas",
-    "operational_efficiency": "Eficiencia Operacional",
+    "operational_efficiency": "Eficiencia Operativa",
     "specific_equipment": "Equipos Específicos",
     "specialized_maintenance": "Mantenimiento Especializado",
-    "reliable_performance": "Desempeño Confiable",
+    "reliable_performance": "Rendimiento Confiable",
     "parts_accessories": "Piezas y Accesorios",
-    "excellence_services": "Excelencia en los Servicios",
+    "excellence_services": "Excelencia en Servicios",
     "commitment_quality": "Compromiso con la Calidad",
     "personalized_service": "Servicio Personalizado",
     "sustainability_innovation": "Sostenibilidad e Innovación",
     "high_performance_machines": "Máquinas de Alto Rendimiento"
   },
   "base": {
-    "years": "",
+    "name": "Nombre",
+    "years": "Años",
+    "today": "Hoy",
+    "send": "Enviar",
     "contact": "Contacto",
+    "catalog": "Catálogo",
     "products": "Productos",
+    "see_more": "Ver más",
+    "services": "Servicios",
     "customers": "Clientes",
-    "request_quote": "Solicitar una Cotización"
+    "smart_phone": "Teléfono móvil",
+    "description": "Descripción",
+    "consulting": "Consultoría",
+    "observation": "Observación",
+    "on_the_market": "En el mercado",
+    "developed_by": "Desarrollado por",
+    "get_in_touch": "Ponte en contacto",
+    "quality_supicom": "Calidad Supicom",
+    "request_quote": "Solicita una cotización"
   },
   "portal": {
+    "about_us": "Sobre nosotros",
+    "where_are_we": "¿Dónde estamos?",
     "hero": {
-      "title": "Referencia\nen Calidad",
-      "description": "",
+      "title": "Movemos\nla industria",
+      "description": "En la industria, cada segundo cuenta. Ofrecemos soluciones completas\npara garantizar que tu operación nunca se detenga.",
       "satisfaction": "Satisfacción"
+    },
+    "product": {
+      "title": "Productos",
+      "not_fount": "Producto no encontrado",
+      "see_full_catalog": "Ver catálogo completo",
+      "check_catalog": "Consulta nuestro catálogo de productos",
+      "subtitle": "Máquinas y Equipos de Alta Calidad",
+      "banner_01_title": "Innovaciones\npara tu empresa",
+      "banner_01_description": "Explora las máquinas y equipos más recientes\nque revolucionarán tu línea de producción.",
+      "banner_02_title": "Flexibilidad\npara tu negocio",
+      "banner_02_description": "Accede a los mejores equipos cuando lo necesites.\n¡Alquila con practicidad y eficiencia!",
+      "banner_03_title": "Alianzas\nque generan resultados",
+      "banner_03_description": "Descubre cómo nuestras soluciones pueden agregar valor a tu negocio.\n¡Juntos, somos más fuertes!"
+    },
+    "news": {
+      "title": "Destacados",
+      "subtitle": "Mantente al día con las últimas noticias"
+    },
+    "service": {
+      "subtitle": "Soluciones Industriales Personalizadas para tu negocio",
+      "manufacturing_title": "Fabricación",
+      "manufacturing_description": "Proporcionamos máquinas y equipos especializados para diversos sectores industriales, como procesamiento de madera, industria gráfica y refinación de petróleo.",
+      "rent_title": "Alquiler",
+      "rent_description": "Ofrecemos alquiler de maquinaria y equipos comerciales e industriales sin operador, adecuados para diversas necesidades.",
+      "maintenance_title": "Mantenimiento",
+      "maintenance_description": "Ofrecemos servicios de mantenimiento y reparación de maquinaria industrial, asegurando la máxima eficiencia y longevidad de los equipos."
+    },
+    "faq": {
+      "title": "Preguntas frecuentes",
+      "subtitle": "¿No encontraste lo que necesitabas?",
+      "question_01_title": "Una pregunta frecuente",
+      "question_01_description": "Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen."
+    },
+    "contact": {
+      "description": "Contáctanos para soporte, enviar sugerencias o discutir alianzas. Siempre estamos listos para ayudar.",
+      "customer_support": "Soporte al Cliente",
+      "customer_support_description": "¿Tienes dudas o necesitas ayuda? Contáctanos para asistencia inmediata.",
+      "suggestions": "Sugerencias",
+      "suggestions_description": "Envía tus sugerencias y ayúdanos a mejorar nuestros servicios.",
+      "partnerships": "Alianzas",
+      "partnerships_description": "¿Interesado en alianzas? Contáctanos para explorar oportunidades de colaboración.",
+      "form": {
+        "title": "Ponte en contacto",
+        "subtitle": "Rellena el siguiente formulario y describe tu solicitud. ¡Nuestro equipo te responderá pronto!"
+      }
+    },
+    "request_quote": {
+      "title": "Solicitar una cotización",
+      "subtitle": "Ingresa tus datos y un representante se pondrá en contacto contigo en breve."
+    },
+    "footer": {
+      "site_map": "Mapa del sitio",
+      "institutional": "Institucional",
+      "treatment": "Atención"
     }
   }
 }

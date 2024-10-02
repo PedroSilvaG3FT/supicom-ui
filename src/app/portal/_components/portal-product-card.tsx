@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { Star } from "lucide-react";
+import { useTranslations } from "next-intl";
 import { cn } from "@/_core/components/lib/utils";
 import RequestQuoteButton from "./request-quote-button";
 import { Separator } from "@/_core/components/fragments/separator";
@@ -12,6 +13,7 @@ interface IProps {
 
 export default function PortalProductCard(props: IProps) {
   const { data } = props;
+  const t = useTranslations();
 
   return (
     <article className="bg-secondary overflow-hidden rounded-xl group">
@@ -27,7 +29,7 @@ export default function PortalProductCard(props: IProps) {
 
       <section className="px-4 py-2">
         <span className="px-4 py-0.5 rounded-full border text-primary text-xs border-primary">
-          Qualidade Supicom
+          {t("base.quality_supicom")}
         </span>
 
         <h5 className="font-semibold mt-2">{data.title}</h5>
@@ -53,7 +55,7 @@ export default function PortalProductCard(props: IProps) {
             href={`/portal/produtos/${data.slug}`}
             className="font-semibold text-xs text-foreground/60 flex gap-2 items-center"
           >
-            Ver mais
+            {t("base.see_more")}
           </Link>
         </footer>
       </section>

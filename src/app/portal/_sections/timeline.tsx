@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 import { Timeline } from "@/_core/components/fragments/ui/timeline";
 
 interface ISectionData {
@@ -9,6 +10,8 @@ interface ISectionData {
 }
 
 export default function PortalTimeline() {
+  const t = useTranslations();
+
   const _buildSection = (data: ISectionData) => (
     <div>
       <h5 className="font-semibold">{data.title}</h5>
@@ -46,7 +49,7 @@ export default function PortalTimeline() {
       }),
     },
     {
-      title: "Hoje",
+      title: t("base.today"),
       content: _buildSection({
         title: `Inovação com Aluguel de Equipamentos`,
         imageURL: `https://assets.aceternity.com/pro/hero-sections.png`,
@@ -54,11 +57,11 @@ export default function PortalTimeline() {
       }),
     },
   ];
+
   return (
     <section className="w-full">
       <section className="app-container">
-        <h2 className="mt-4">Sobre nós</h2>
-        <h5 className="mb-6">Máquinas e Equipamentos de Alta Qualidade</h5>
+        <h2 className="mt-4">{t("portal.about_us")}</h2>
       </section>
 
       <Timeline data={data} />

@@ -1,7 +1,11 @@
+import { useTranslations } from "next-intl";
+
 export default function PortalAddress() {
+  const t = useTranslations();
+
   return (
     <section className="app-container">
-      <h2 className="mb-4">Onde estamos ?</h2>
+      <h2 className="mb-4">{t("portal.where_are_we")}</h2>
 
       <iframe
         width="600"

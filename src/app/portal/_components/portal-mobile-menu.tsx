@@ -4,7 +4,6 @@ import Each from "@/_shared/components/app-each";
 import { IPortalMenuLink } from "./portal-header";
 import { Separator } from "@/_core/components/fragments/separator";
 import AppToggleLocale from "@/_shared/components/locale/app-toggle-locale";
-import { BackgroundGradientAnimation } from "@/_core/components/fragments/ui/background-gradient-animation";
 
 interface IProps {
   onClose: Function;

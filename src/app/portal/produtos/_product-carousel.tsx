@@ -12,28 +12,30 @@ import { useRef } from "react";
 import Autoplay from "embla-carousel-autoplay";
 import Each from "@/_shared/components/app-each";
 import { cn } from "@/_core/components/lib/utils";
+import { useTranslations } from "next-intl";
 
 export default function ProductCarousel() {
+  const t = useTranslations();
   const plugin = useRef(Autoplay({ delay: 4500 }));
 
   const items = [
     {
+      title: t("portal.product.banner_01_title"),
+      description: t("portal.product.banner_01_description"),
       containerClassName: `bg-banner-gradient mobile:bg-primary`,
-      title: `Inovações\npara sua empresa`,
-      description: `Explore as últimas máquinas e equipamentos\nque vão revolucionar sua linha de produção!`,
       contentClassName: `text-white`,
     },
     {
-      containerClassName: `bg-banner-glass`,
-      title: `Flexibilidade\npara o Seu Negócio`,
-      description: `Tenha acesso aos melhores equipamentos quando precisar.\nAlugue com facilidade e eficiência!`,
       contentClassName: ``,
+      containerClassName: `bg-banner-glass`,
+      title: t("portal.product.banner_02_title"),
+      description: t("portal.product.banner_02_description"),
     },
     {
-      containerClassName: `bg-banner-arrow`,
-      title: `Parcerias\nque Geram Resultados`,
-      description: `Descubra como nossas soluções podem agregar valor ao seu negócio.\nJuntos, somos mais fortes!`,
       contentClassName: `text-white`,
+      containerClassName: `bg-banner-arrow`,
+      title: t("portal.product.banner_03_title"),
+      description: t("portal.product.banner_03_description"),
     },
   ];
 

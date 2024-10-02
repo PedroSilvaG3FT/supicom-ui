@@ -5,9 +5,9 @@
     "portuguese": "Portuguese"
   },
   "example": {
-    "title": "Hello world!",
+    "title": "Hello World!",
     "subtitle": "This is a text in Portuguese (pt-BR)",
-    "description": "In recent years, web development has evolved significantly, and the demand for efficient and scalable applications has increased.\nTo meet this need, we created a boilerplate project that combines Next.js, Tailwind CSS, Shadcn UI, and Firebase. This stack allows developers to quickly and effectively build modern web applications.\n\nNext.js is a powerful React framework that offers server-side rendering and static site generation. It enhances performance and SEO, making it an excellent choice for developers. Tailwind CSS, on the other hand, is a utility-based CSS framework that enables fast user interface development, focusing on customization and responsiveness. Shadcn UI complements this by providing pre-designed components that are easy to integrate and customize.\n\nAceternity is another UI component library that stands out for its ability to create stunning and interactive visual experiences. Like Shadcn UI, Aceternity offers a collection of pre-designed components that make building modern, responsive interfaces easier. However, what sets Aceternity apart is its integration with Framer, allowing developers to create 3D UI elements with perspective. This innovative approach enriches the user experience by providing dynamic interactions and visually appealing designs.\n\nFirebase serves as the backend solution, offering real-time database, authentication, and hosting features. By leveraging Firebase, developers can focus on building features without worrying about server management. This boilerplate project serves as a solid foundation for anyone looking to start their journey into web development with these modern technologies."
+    "description": "In recent years, web development has significantly evolved, and the demand for efficient and scalable applications has increased. To meet this need, we created a boilerplate project that combines Next.js, Tailwind CSS, Shadcn UI, and Firebase. This stack allows developers to build modern web applications quickly and effectively.\n\nNext.js is a powerful React framework offering server-side rendering and static site generation. It enhances performance and SEO, making it an excellent choice for developers. Tailwind CSS, on the other hand, is a utility-first CSS framework that enables fast UI development with a focus on customization and responsiveness. Shadcn UI complements this by providing pre-designed components that are easy to integrate and customize.\n\nAceternity is another UI component library that excels in creating impressive and interactive visual experiences. Like Shadcn UI, Aceternity offers a collection of pre-designed components, simplifying the creation of modern and responsive interfaces. What sets Aceternity apart is its integration with Framer, allowing developers to create 3D and perspective-based UI elements. This innovative approach enriches the user experience, offering dynamic interactions and visually attractive designs.\n\nFirebase serves as the backend solution, offering real-time database, authentication, and hosting features. By leveraging Firebase, developers can focus on building features without worrying about server management. This boilerplate project serves as a solid foundation for anyone looking to start their web development journey with these modern technologies."
   },
   "phrases": {
     "industrial_innovation": "Industrial Innovation",
@@ -18,25 +18,95 @@
     "specific_equipment": "Specific Equipment",
     "specialized_maintenance": "Specialized Maintenance",
     "reliable_performance": "Reliable Performance",
-    "parts_accessories": "Parts and Accessories",
+    "parts_accessories": "Parts & Accessories",
     "excellence_services": "Excellence in Services",
     "commitment_quality": "Commitment to Quality",
     "personalized_service": "Personalized Service",
-    "sustainability_innovation": "Sustainability and Innovation",
+    "sustainability_innovation": "Sustainability & Innovation",
     "high_performance_machines": "High-Performance Machines"
   },
   "base": {
-    "years": "",
+    "name": "Name",
+    "years": "Years",
+    "today": "Today",
+    "send": "Send",
     "contact": "Contact",
+    "catalog": "Catalog",
     "products": "Products",
+    "see_more": "See More",
+    "services": "Services",
     "customers": "Customers",
+    "smart_phone": "Cell Phone",
+    "description": "Description",
+    "consulting": "Consulting",
+    "observation": "Observation",
+    "on_the_market": "On the Market",
+    "developed_by": "Developed by",
+    "get_in_touch": "Get in Touch",
+    "quality_supicom": "Supicom Quality",
     "request_quote": "Request a Quote"
   },
   "portal": {
+    "about_us": "About Us",
+    "where_are_we": "Where are we?",
     "hero": {
-      "title": "Reference\nin Quality",
-      "description": "",
+      "title": "We Move\nIndustry Forward",
+      "description": "In the industry, every second counts. We provide complete solutions\nto ensure your operation never stops.",
       "satisfaction": "Satisfaction"
+    },
+    "product": {
+      "title": "Products",
+      "not_fount": "Product Not Found",
+      "see_full_catalog": "See Full Catalog",
+      "check_catalog": "Check out our product catalog",
+      "subtitle": "High-Quality Machines and Equipment",
+      "banner_01_title": "Innovations\nfor Your Business",
+      "banner_01_description": "Explore the latest machines and equipment\nthat will revolutionize your production line!",
+      "banner_02_title": "Flexibility\nfor Your Business",
+      "banner_02_description": "Access the best equipment when you need it.\nRent with ease and efficiency!",
+      "banner_03_title": "Partnerships\nThat Deliver Results",
+      "banner_03_description": "Discover how our solutions can add value to your business.\nTogether, we are stronger!"
+    },
+    "news": {
+      "title": "Highlights",
+      "subtitle": "Stay updated with the latest news"
+    },
+    "service": {
+      "subtitle": "Customized Industrial Solutions for Your Business",
+      "manufacturing_title": "Manufacturing",
+      "manufacturing_description": "We provide specialized machines and equipment for various industrial sectors, such as wood processing, graphic industry, and oil refining.",
+      "rent_title": "Rent",
+      "rent_description": "We offer rental of commercial and industrial machinery and equipment without an operator, suitable for various needs.",
+      "maintenance_title": "Maintenance",
+      "maintenance_description": "We provide maintenance and repair services for industrial machines, ensuring maximum efficiency and equipment longevity."
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "subtitle": "Couldn't find what you needed?",
+      "question_01_title": "A Common Question",
+      "question_01_description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
+    },
+    "contact": {
+      "description": "Contact us for support, send suggestions, or discuss partnerships. We are always ready to help.",
+      "customer_support": "Customer Support",
+      "customer_support_description": "Have questions or need help? Contact us for immediate assistance.",
+      "suggestions": "Suggestions",
+      "suggestions_description": "Send your suggestions and help us improve our services.",
+      "partnerships": "Partnerships",
+      "partnerships_description": "Interested in partnerships? Get in touch to explore collaboration opportunities.",
+      "form": {
+        "title": "Get in Touch",
+        "subtitle": "Fill out the form below and describe your request. Our team will get back to you soon!"
+      }
+    },
+    "request_quote": {
+      "title": "Request a Quote",
+      "subtitle": "Enter your details, and a representative will contact you shortly."
+    },
+    "footer": {
+      "site_map": "Site Map",
+      "institutional": "Institutional",
+      "treatment": "Service"
     }
   }
 }

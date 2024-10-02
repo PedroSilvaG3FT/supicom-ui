@@ -1,39 +1,39 @@
 import Link from "next/link";
 import { Mail } from "lucide-react";
+import { useTranslations } from "next-intl";
 import Each from "@/_shared/components/app-each";
 import { IconBrandWhatsapp } from "@tabler/icons-react";
 import { Button } from "@/_core/components/fragments/button";
 import { WhatsAppUtil } from "@/_shared/utils/whatsapp.util";
 import { Separator } from "@/_core/components/fragments/separator";
 
-const phoneNumberRedirect = WhatsAppUtil.buildLink(
-  WhatsAppUtil.contacts.service,
-  `Olá, gostaria de conversar com um representante.`
-);
-
 export default function ContactContent() {
+  const t = useTranslations();
+
+  const phoneNumberRedirect = WhatsAppUtil.buildLink(
+    WhatsAppUtil.contacts.service,
+    `Olá, gostaria de conversar com um representante.`
+  );
+
   const items = [
     {
-      title: `Suporte ao cliente`,
-      description: `Tem dúvidas ou problemas? Fale conosco para receber suporte.`,
+      title: t("portal.contact.customer_support"),
+      description: t("portal.contact.customer_support_description"),
     },
     {
-      title: `Sugestões`,
-      description: `Compartilhe suas ideias e sugestões para melhorarmos nossos serviços.`,
+      title: t("portal.contact.suggestions"),
+      description: t("portal.contact.suggestions_description"),
     },
     {
-      title: `Parceirias`,
-      description: `Interessado em parcerias? Entre em contato para colaborar conosco.`,
+      title: t("portal.contact.partnerships"),
+      description: t("portal.contact.partnerships_description"),
     },
   ];
 
   return (
     <section>
-      <h1 className="mb-4">Contato</h1>
-      <p className="w-3/4 mobile:w-full">
-        Entre em contato conosco para obter suporte, enviar sugestões ou
-        discutir parcerias. Estamos sempre prontos para ajudar.
-      </p>
+      <h1 className="mb-4">{t("base.contact")}</h1>
+      <p className="w-3/4 mobile:w-full">{t("portal.contact.description")}</p>
 
       <section className="mt-6 flex gap-2">
         <Button asChild variant="secondary" className="rounded-full">

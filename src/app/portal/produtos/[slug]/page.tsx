@@ -1,22 +1,23 @@
 "use client";
 
+import Link from "next/link";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 import { useEffect, useState } from "react";
 import { useParams } from "next/navigation";
+import Show from "@/_shared/components/app-show";
 import Each from "@/_shared/components/app-each";
+import { ArrowLeft, Search } from "lucide-react";
+import { Button } from "@/_core/components/fragments/button";
 import useProductData from "@/_shared/hooks/data/product.hook";
 import AppStarsLabel from "@/_shared/components/app-stars-label";
+import { Separator } from "@/_core/components/fragments/separator";
 import { IProductItem } from "@/_shared/interface/product.interface";
 import RequestQuoteButton from "../../_components/request-quote-button";
-import Show from "@/_shared/components/app-show";
-import AppLoadingIndicator from "@/_shared/components/loading/app-loading-indicator";
-import { ArrowLeft, Search, SearchCheck } from "lucide-react";
-import { Button } from "@/_core/components/fragments/button";
-import Link from "next/link";
-import { Separator } from "@/_core/components/fragments/separator";
 
 export default function ProductDetail() {
   const params = useParams();
+  const t = useTranslations();
 
   const { getProductyBySlug } = useProductData();
   const [isLoaded, setIsLoaded] = useState(false);
@@ -46,14 +47,14 @@ export default function ProductDetail() {
         <Show.When condition={!isLoaded}>
           <section className="min-h-[80dvh] flex flex-col items-center justify-center">
             <Search className="w-12 h-12 mb-4" />
-            <h3>Consultando Produto...</h3>
+            <h3>{t("base.consulting")}...</h3>
           </section>
         </Show.When>
 
         <Show.When condition={!hasProduct}>
           <section className="min-h-[80dvh] flex flex-col items-center justify-center">
             <Search className="w-12 h-12 mb-4" />
-            <h3>Produto não encontrado</h3>
+            <h3>{t("portal.product.not_fount")}...</h3>
           </section>
         </Show.When>
 
@@ -62,7 +63,7 @@ export default function ProductDetail() {
             <Button asChild variant="link" className="relative left-[-18px]">
               <Link href="/portal/produtos">
                 <ArrowLeft className="mr-4" />
-                Ver catálogo completo
+                {t("portal.product.see_full_catalog")}
               </Link>
             </Button>
 
@@ -104,7 +105,7 @@ export default function ProductDetail() {
                 </h5>
 
                 <span className="px-4 py-0.5 rounded-full border text-primary text-xs border-primary">
-                  Qualidade Supicom
+                  {t("base.quality_supicom")}
                 </span>
 
                 <AppStarsLabel className="my-2" />
