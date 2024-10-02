@@ -114,7 +114,7 @@ export default function ProductDetail() {
                 <AppStarsLabel className="my-2" />
                 <Separator className="my-4" />
 
-                <p>{product.description}</p>
+                <p className="whitespace-pre-line">{product.description}</p>
               </section>
             </section>
           </section>

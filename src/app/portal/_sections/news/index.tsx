@@ -12,7 +12,7 @@ export default function PortalNews() {
         <h2 className="mt-4">{t("portal.news.title")}</h2>
         <h5 className="mb-6">{t("portal.news.subtitle")}</h5>
 
-        <section className="w-full grid gap-4 grid-cols-4 tablet:grid-cols-2 mobile:grid-cols-1 relative z-10">
+        <section className="w-full grid gap-4 grid-cols-4 tablet:grid-cols-2 relative z-10 app-scroll-snap__mobile">
           <Each
             data={NEWS_DATA}
             render={(item) => <PortalNewsCard data={item} />}

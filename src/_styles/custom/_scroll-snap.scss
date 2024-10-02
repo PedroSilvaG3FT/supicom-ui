@@ -1,0 +1,7 @@
+.app-scroll-snap__mobile {
+  @apply mobile:relative mobile:w-full mobile:!flex mobile:!gap-4 mobile:!snap-x mobile:overflow-x-auto mobile:pb-4;
+
+  > * {
+    @apply mobile:w-[75vw] mobile:snap-center mobile:shrink-0;
+  }
+}

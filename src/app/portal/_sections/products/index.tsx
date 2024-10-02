@@ -1,9 +1,10 @@
 import Link from "next/link";
 import { useTranslations } from "next-intl";
-import { PackageSearch } from "lucide-react";
+import { ArrowRight, PackageSearch } from "lucide-react";
 import Each from "@/_shared/components/app-each";
 import useProductData from "@/_shared/hooks/data/product.hook";
 import PortalProductCard from "../../_components/portal-product-card";
+import { Button } from "@/_core/components/fragments/button";
 
 export default function PortalProducts() {
   const t = useTranslations();
@@ -12,9 +13,20 @@ export default function PortalProducts() {
   return (
     <section className="app-container">
       <h2 className="mt-4">{t("portal.product.title")}</h2>
-      <h5 className="mb-6">{t("portal.product.subtitle")}</h5>
+      <h5>{t("portal.product.subtitle")}</h5>
 
-      <section className="w-full grid gap-4 grid-cols-4 tablet:grid-cols-2 mobile:grid-cols-1 relative z-10">
+      <Button
+        asChild
+        variant="link"
+        className="relative hidden mobile:flex left-[-18px]"
+      >
+        <Link href="/portal/produtos">
+          {t("portal.product.see_full_catalog")}
+          <ArrowRight className="mr-4" />
+        </Link>
+      </Button>
+
+      <section className="mt-2 w-full grid gap-4 grid-cols-4 tablet:grid-cols-2 mobile:grid-cols-1 relative z-10 app-scroll-snap__mobile">
         <Each
           data={[...products].slice(0, 3)}
           render={(item) => <PortalProductCard data={item} />}

@@ -14,7 +14,7 @@ export default function PortalNewsCard(props: IProps) {
   const t = useTranslations();
 
   return (
-    <article className="overflow-hidden rounded bg-background group">
+    <article className="overflow-hidden rounded bg-background group mobile:snap-center">
       <figure className={cn("h-48 relative overflow-hidden")}>
         <Image
           layout="fill"
