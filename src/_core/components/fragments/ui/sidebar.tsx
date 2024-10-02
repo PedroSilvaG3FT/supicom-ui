@@ -149,7 +149,7 @@ export const MobileSidebar = ({
             onClick={() => setOpen(!open)}
           />
 
-          <h5 className="font-semibold">Next boilerplate</h5>
+          <h5 className="font-semibold">Supicom</h5>
         </div>
         <AnimatePresence>
           {open && (

@@ -1,14 +1,15 @@
 "use client";
 
 import { z } from "zod";
+import Image from "next/image";
 import { useForm } from "react-hook-form";
+import { useRouter } from "next/navigation";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { ToastUtil } from "@/_shared/utils/toast.util";
 import { useAuth } from "@/_core/contexts/auth.context";
 import { Button } from "@/_core/components/fragments/button";
 import AppFormInput from "@/_shared/components/form/form-input";
 import { FormContainer } from "@/_core/components/fragments/form";
-import Image from "next/image";
 
 const formSchema = z.object({
   email: z.string().min(1, "Required field"),
@@ -18,6 +19,7 @@ const formSchema = z.object({
 interface IFormData extends z.infer<typeof formSchema> {}
 
 export default function LoginPage() {
+  const router = useRouter();
   const _authContext = useAuth();
 
   const form = useForm<IFormData>({
@@ -28,7 +30,7 @@ export default function LoginPage() {
   function onSubmit(values: IFormData) {
     _authContext
       .signIn(values.email, values.password)
-      .then(() => ToastUtil.success("Sign in successful"))
+      .then(() => router.push("admin/cotacao"))
       .catch(() => ToastUtil.error("Sign in error"));
   }
 

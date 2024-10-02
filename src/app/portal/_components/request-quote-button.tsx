@@ -1,12 +1,13 @@
 import { ArrowRight } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { cn } from "@/_core/components/lib/utils";
-import { RequestQuoteSheet } from "./request-quote-sheet";
+import { RequestQuoteSheet } from "../../../_shared/components/quote/sheet-request-quote";
 import { Button, ButtonProps } from "@/_core/components/fragments/button";
 
 interface IProps extends ButtonProps {
   text?: string;
   className?: string;
+  initialProductsSlug?: string[];
 }
 export default function RequestQuoteButton(props: IProps) {
   const t = useTranslations();
@@ -15,11 +16,12 @@ export default function RequestQuoteButton(props: IProps) {
     size = "lg",
     className = "",
     variant = "default",
+    initialProductsSlug = [],
     text = t("base.request_quote"),
   } = props;
 
   return (
-    <RequestQuoteSheet>
+    <RequestQuoteSheet initialProductsSlug={initialProductsSlug}>
       <Button
         size={size}
         variant={variant}

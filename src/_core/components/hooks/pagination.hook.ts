@@ -7,7 +7,12 @@ export function usePagination(initial: PaginationState) {
 
   const { pageIndex, pageSize } = pagination;
 
+  const filter = <Data>(list: Data[]) => {
+    return list.slice(pageIndex * pageSize, pageIndex + 1 * pageSize);
+  };
+
   return {
+    filter,
     totalItems,
     setTotalItems,
     limit: pageSize,

@@ -49,7 +49,12 @@ export default function PortalProductCard(props: IProps) {
         <Separator className="my-2" />
 
         <footer className="flex gap-6 flex-col items-center justify-between pr-2 pb-1.5">
-          <RequestQuoteButton size="sm" variant="link" className="pl-0" />
+          <RequestQuoteButton
+            size="sm"
+            variant="link"
+            className="pl-0"
+            initialProductsSlug={[data.slug]}
+          />
 
           <Link
             href={`/portal/produtos/${data.slug}`}

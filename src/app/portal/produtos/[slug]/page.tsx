@@ -94,7 +94,10 @@ export default function ProductDetail() {
                     />
                   </section>
 
-                  <RequestQuoteButton className="w-full rounded-full" />
+                  <RequestQuoteButton
+                    className="w-full rounded-full"
+                    initialProductsSlug={[product.slug]}
+                  />
                 </article>
               </div>
 

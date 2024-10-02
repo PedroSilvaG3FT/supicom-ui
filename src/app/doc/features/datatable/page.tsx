@@ -7,7 +7,6 @@ import {
   DataTable,
   DataTableHeader,
 } from "@/_core/components/fragments/datatable";
-import Link from "next/link";
 import { LinkPreview } from "@/_core/components/fragments/ui/link-preview";
 
 interface IExampleDataTable {
