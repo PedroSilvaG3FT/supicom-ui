@@ -78,7 +78,9 @@
       "rent_title": "Rent",
       "rent_description": "We offer rental of commercial and industrial machinery and equipment without an operator, suitable for various needs.",
       "maintenance_title": "Maintenance",
-      "maintenance_description": "We provide maintenance and repair services for industrial machines, ensuring maximum efficiency and equipment longevity."
+      "maintenance_description": "We provide maintenance and repair services for industrial machines, ensuring maximum efficiency and equipment longevity.",
+      "development_title": "Development",
+      "development_description": "We develop customized industrial projects, from planning to execution, ensuring innovative and efficient solutions for your business."
     },
     "faq": {
       "title": "Frequently Asked Questions",

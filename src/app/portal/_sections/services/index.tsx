@@ -12,7 +12,7 @@ export default function PortalServices() {
       <h2 className="mt-4">{t("base.services")}</h2>
       <h5 className="mb-6">{t("portal.service.subtitle")}</h5>
 
-      <section className="w-full grid grid-cols-3 tablet:grid-cols-2 mobile:grid-cols-1 relative z-10">
+      <section className="w-full grid grid-cols-4 tablet:grid-cols-2 mobile:grid-cols-1 relative z-10">
         <Each
           data={services}
           render={(item, index) => (

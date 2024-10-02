@@ -15,14 +15,14 @@ export default function PortalServiceCard(props: IProps) {
     <article
       className={cn(
         "light flex flex-col lg:border-r py-10 relative group/feature ",
-        (index === 0 || index === 3) && "lg:border-l ",
-        index < 3 && "lg:border-b "
+        (index === 0 || index === 4) && "lg:border-l ",
+        index < 4 && "lg:border-b "
       )}
     >
-      {index < 3 && (
+      {index < 4 && (
         <div className="opacity-0 group-hover/feature:opacity-100 transition duration-200 absolute inset-0 h-full w-full bg-gradient-to-t from-neutral-100 to-transparent pointer-events-none" />
       )}
-      {index >= 3 && (
+      {index >= 4 && (
         <div className="opacity-0 group-hover/feature:opacity-100 transition duration-200 absolute inset-0 h-full w-full bg-gradient-to-b from-neutral-100 to-transparent pointer-events-none" />
       )}
 
@@ -37,11 +37,11 @@ export default function PortalServiceCard(props: IProps) {
         </span>
       </section>
 
-      <p className="text-sm text-neutral-600 max-w-xs mobile:max-w-full relative z-10 px-10">
+      <p className="text-sm text-neutral-600 max-w-xs mobile:max-w-full relative z-10 px-10 mb-4">
         {description}
       </p>
 
-      <footer className="mt-4 max-w-full relative z-10 px-10">
+      <footer className="mt-auto max-w-full relative z-10 px-10">
         <RequestQuoteButton variant={"link"} className="pl-0" />
       </footer>
     </article>
