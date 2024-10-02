@@ -42,7 +42,7 @@ export default function PortalProductCard(props: IProps) {
           <Star fill="foreground" className="w-4 h-4" />
         </nav>
 
-        <p className="line-clamp-2 overflow-hidden text-ellipsis mt-4">
+        <p className="text-sm line-clamp-2 overflow-hidden text-ellipsis mt-4">
           {data.description}
         </p>
 

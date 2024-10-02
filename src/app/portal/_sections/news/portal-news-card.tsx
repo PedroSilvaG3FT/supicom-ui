@@ -30,7 +30,7 @@ export default function PortalNewsCard(props: IProps) {
           {data.title}
         </h5>
 
-        <p className="mb-4 line-clamp-3 overflow-hidden text-ellipsis">
+        <p className="text-sm mb-4 line-clamp-3 overflow-hidden text-ellipsis">
           {data.content}
         </p>
 
