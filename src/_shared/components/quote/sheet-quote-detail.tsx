@@ -55,11 +55,11 @@ export default function QuoteDetailSheet(props: IProps) {
 
             <nav className="flex flex-col justify-center">
               <SheetTitle className="text-left truncate w-64">
-                Cotação #{data.id}
+                Cotação
               </SheetTitle>
 
               <SheetDescription className="text-left">
-                {data?.creationDate && format(data?.creationDate, "dd/MM/yyyy")}
+                #{data.id}
               </SheetDescription>
             </nav>
           </section>
@@ -90,6 +90,15 @@ export default function QuoteDetailSheet(props: IProps) {
             `w-full h-full max-h-[84dvh] pb-16 overflow-y-auto transition-all duration-500 scroll-smooth`
           )}
         >
+          <div className="mb-2 text-sm flex gap-2 items-center">
+            <h5 className="font-semibold text-foreground/65">
+              Data de solicitação
+            </h5>
+            <p>
+              {data?.creationDate && format(data?.creationDate, "dd/MM/yyyy")}
+            </p>
+          </div>
+
           <h4 className="font-semibold my-4 flex items-center justify-between">
             Cliente
             <QuoteBadgeStatus status={data.status} />

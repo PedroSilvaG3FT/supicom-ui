@@ -29,7 +29,6 @@ export default function QuotePage() {
   const [detailData, setDetailData] = useState({} as IQuoteItem);
 
   const pagination = usePagination({ pageIndex: 0, pageSize: 5 });
-
   const filteredItems = pagination.filter(items);
 
   const getItems = () => {

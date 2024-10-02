@@ -28,6 +28,7 @@ export class QuoteModel {
 
   public buildRegisterDTO(model: IQuoteItem): IQuoteDB {
     return {
+      id: model.id || "",
       status: model.status || "",
       observation: model.observation || "",
 

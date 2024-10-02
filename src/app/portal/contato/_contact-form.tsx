@@ -4,11 +4,15 @@ import { z } from "zod";
 import { useForm } from "react-hook-form";
 import { useTranslations } from "next-intl";
 import { zodResolver } from "@hookform/resolvers/zod";
+import { loadingStore } from "@/_store/loading.store";
 import { Button } from "@/_core/components/fragments/button";
 import AppFormInput from "@/_shared/components/form/form-input";
 import { FormContainer } from "@/_core/components/fragments/form";
 import { Separator } from "@/_core/components/fragments/separator";
 import AppFormTextarea from "@/_shared/components/form/form-textarea";
+import { ContactService } from "@/_core/firebase/services/contact.service";
+import { IContactDB } from "@/_shared/interface/contact.interface";
+import { ToastUtil } from "@/_shared/utils/toast.util";
 
 const formSchema = z.object({
   name: z.string().min(1, "Campo obrigatório"),
@@ -19,8 +23,11 @@ const formSchema = z.object({
 
 interface IFormData extends z.infer<typeof formSchema> {}
 
+const _contactService = new ContactService();
+
 export default function ContactForm() {
   const t = useTranslations();
+  const _loadingStore = loadingStore((state) => state);
 
   const form = useForm<IFormData>({
     resolver: zodResolver(formSchema),
@@ -33,7 +40,31 @@ export default function ContactForm() {
   });
 
   function onSubmit(values: IFormData) {
-    console.log("FORM VALUE : ", values);
+    _loadingStore.setShow(true);
+    const modelDTO = _contactService._model.buildRegisterDTO({
+      id: "",
+      status: "",
+      name: values.name,
+      email: values.email,
+      description: values.description,
+      phoneNumber: values.phoneNumber,
+
+      updateDate: new Date(),
+      creationDate: new Date(),
+    });
+
+    _contactService
+      .create<IContactDB>(modelDTO)
+      .then(() => {
+        form.reset();
+        ToastUtil.success("Contato enviado com sucesso!");
+
+        _loadingStore.setShow(false);
+      })
+      .catch(() => {
+        ToastUtil.error("Ocorreu uma falha ao processar a solicitação");
+        _loadingStore.setShow(false);
+      });
   }
 
   return (
@@ -68,7 +99,6 @@ export default function ContactForm() {
 
           <AppFormInput
             required
-            mask="()"
             name="phoneNumber"
             control={form.control}
             label={t("base.smart_phone")}
@@ -82,7 +112,9 @@ export default function ContactForm() {
           label={t("base.description")}
         />
 
-        <Button className="w-full mt-8">{t("base.send")}</Button>
+        <Button disabled={!form.formState.isValid} className="w-full mt-8">
+          {t("base.send")}
+        </Button>
       </form>
     </FormContainer>
   );
