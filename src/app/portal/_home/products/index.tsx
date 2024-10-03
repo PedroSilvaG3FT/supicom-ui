@@ -19,7 +19,7 @@ export default function PortalProducts() {
       <Button
         asChild
         variant="link"
-        className="relative hidden mobile:flex left-[-18px]"
+        className="relative hidden mobile:flex justify-start left-[-18px]"
       >
         <Link href="/portal/produtos">
           {t("portal.product.see_full_catalog")}
