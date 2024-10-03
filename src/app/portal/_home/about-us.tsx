@@ -34,7 +34,7 @@ export default function PortalAboutUs() {
           playsInline
           className="w-full h-full object-cover rounded-md"
         >
-          <source src="/video/drone-company.mp4" type="video/mp4" />
+          <source src="/video/drone.mp4" type="video/mp4" />
           Seu navegador não suporta vídeos.
         </video>
       </section>
