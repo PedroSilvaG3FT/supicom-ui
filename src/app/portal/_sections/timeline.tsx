@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
+import { PORTAL_SECTION_ID } from "./_data";
 import { Timeline } from "@/_core/components/fragments/ui/timeline";
 
 interface ISectionData {
@@ -59,7 +60,7 @@ export default function PortalTimeline() {
   ];
 
   return (
-    <section className="w-full">
+    <section id={PORTAL_SECTION_ID.aboutUs} className="w-full">
       <section className="app-container">
         <h2 className="mt-4">{t("portal.about_us")}</h2>
       </section>

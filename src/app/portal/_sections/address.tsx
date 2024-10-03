@@ -1,10 +1,11 @@
 import { useTranslations } from "next-intl";
+import { PORTAL_SECTION_ID } from "./_data";
 
 export default function PortalAddress() {
   const t = useTranslations();
 
   return (
-    <section className="app-container">
+    <section id={PORTAL_SECTION_ID.address} className="app-container">
       <h2 className="mb-4">{t("portal.where_are_we")}</h2>
 
       <iframe

@@ -15,6 +15,7 @@ export default withNextIntl({
       "api.microlink.io",
       "images.unsplash.com",
       "assets.aceternity.com",
+      "firebasestorage.googleapis.com",
     ],
   },
   sassOptions: {

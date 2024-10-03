@@ -1,11 +1,14 @@
 "use client";
 
 import Link from "next/link";
+import { LogOut } from "lucide-react";
 import { useEffect, useState } from "react";
 import Each from "@/_shared/components/app-each";
 import Show from "@/_shared/components/app-show";
 import { cn } from "@/_core/components/lib/utils";
 import MenuGroup from "./_components/ui/menu-group";
+import { useAuth } from "@/_core/contexts/auth.context";
+import { Button } from "@/_core/components/fragments/button";
 import { ADMIN_MENU_GROUPS } from "./_constants/menu.contant";
 import MenuGroupPopover from "./_components/ui/menu-group-popover";
 import { IBaseLayoutProps } from "@/_shared/interface/layout.interface";
@@ -13,6 +16,7 @@ import { Sidebar, SidebarBody } from "@/_core/components/fragments/ui/sidebar";
 
 export default function AdminLayout({ children }: IBaseLayoutProps) {
   const [open, setOpen] = useState(false);
+  const { signOut } = useAuth();
 
   useEffect(() => {
     document.body.style.overflow = "hidden";
@@ -56,6 +60,15 @@ export default function AdminLayout({ children }: IBaseLayoutProps) {
                   </small>
                 </Show.When>
               </Show>
+
+              <Button
+                size="icon"
+                variant="ghost"
+                onClick={signOut}
+                className="text-red-400"
+              >
+                <LogOut />
+              </Button>
             </footer>
           </section>
         </SidebarBody>

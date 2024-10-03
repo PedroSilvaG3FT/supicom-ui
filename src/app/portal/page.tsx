@@ -10,9 +10,9 @@ export default function PortalPage() {
   return (
     <>
       <PortalHero />
-      <PortalTimeline />
       <PortalServices />
       <PortalProducts />
+      <PortalTimeline />
       <PortalPartners />
       <PortalAddress />
       <PortalNews />

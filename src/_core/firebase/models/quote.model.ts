@@ -13,10 +13,6 @@ export class QuoteModel {
       ...model,
       products,
       id: String(model.id),
-      status: model.status,
-      customer: model.customer,
-      observation: model.observation,
-      productsSlug: model.productsSlug,
       updateDate: model.creationDate?.toDate(),
       creationDate: model.creationDate?.toDate(),
     };
@@ -29,6 +25,7 @@ export class QuoteModel {
   public buildRegisterDTO(model: IQuoteItem): IQuoteDB {
     return {
       id: model.id || "",
+      note: model.note || "",
       status: model.status || "",
       observation: model.observation || "",
 

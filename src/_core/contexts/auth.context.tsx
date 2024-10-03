@@ -70,7 +70,10 @@ const AuthProvider: React.FC<IAuthProviderProps> = ({ children }) => {
     }
   };
 
-  const signOut = () => {};
+  const signOut = () => {
+    _authStore.reset();
+    _userService.signOut();
+  };
 
   return (
     <AuthContext.Provider

@@ -9,6 +9,7 @@ export interface IQuoteCustomer {
 
 export interface IQuoteDB {
   id?: string;
+  note: string;
   status: string;
   observation: string;
   productsSlug: string[];

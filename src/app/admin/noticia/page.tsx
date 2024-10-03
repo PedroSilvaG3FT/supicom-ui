@@ -69,16 +69,16 @@ export default function NewsPage() {
 
   const columns: ColumnDef<INewsItem>[] = [
     {
-      accessorKey: "author",
-      header: ({ column }) => <DataTableHeader column={column} title="Autor" />,
-      cell: ({ row }) => row.original.author,
-    },
-    {
       accessorKey: "title.pt",
       header: ({ column }) => (
         <DataTableHeader column={column} title="Titulo" />
       ),
       cell: ({ row }) => row.original.title.pt,
+    },
+    {
+      accessorKey: "author",
+      header: ({ column }) => <DataTableHeader column={column} title="Autor" />,
+      cell: ({ row }) => row.original.author,
     },
     {
       accessorKey: "createdDate",

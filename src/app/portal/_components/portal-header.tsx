@@ -20,9 +20,9 @@ export interface IPortalMenuLink {
 
 export default function PortalHeader() {
   const t = useTranslations();
-  const pathName = usePathname();
+  const pathname = usePathname();
 
-  const isHome = pathName === "/portal";
+  const isHome = pathname === "/portal";
   const isScrolled = useWindowScroll(600);
   const isApplyStyles = isHome ? isScrolled : true;
   const [isMenuOpen, setIsMenuOpen] = useState(false);

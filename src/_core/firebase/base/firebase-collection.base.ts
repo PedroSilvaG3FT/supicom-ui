@@ -2,6 +2,7 @@ import {
   doc,
   where,
   query,
+  Query,
   getDoc,
   addDoc,
   getDocs,
@@ -11,8 +12,8 @@ import {
   collection,
   getFirestore,
   DocumentData,
+  QueryConstraint,
   CollectionReference,
-  QueryFieldFilterConstraint,
 } from "firebase/firestore";
 import { FirebaseApp } from "firebase/app";
 import { FirebaseCollectionHelper } from "./firebase-collection.helper";
@@ -34,7 +35,8 @@ export class FirebaseCollectionBase {
     this.collection = collection(this.db, this.collectionName);
   }
 
-  public getAll<Data>(querys: QueryFieldFilterConstraint[] = []) {
+  public getAll<Data>(constraints: QueryConstraint[] = []) {
+    const querys = query(this.collection, ...constraints);
     return this.handlerGetAll<Data>(querys);
   }
 
@@ -92,11 +94,9 @@ export class FirebaseCollectionBase {
   }
 
   // #region: Protected methods
-  protected async handlerGetAll<Data>(
-    querys: QueryFieldFilterConstraint[] = []
-  ) {
+  protected async handlerGetAll<Data>(querys: Query) {
     try {
-      const snapshot = await getDocs(query(this.collection, ...querys));
+      const snapshot = await getDocs(querys);
       return this._helper.getCollectionData<Data>(snapshot);
     } catch (error) {
       throw error;

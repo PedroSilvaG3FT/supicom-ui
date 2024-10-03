@@ -1,3 +1,5 @@
+"use client";
+
 import {
   Sheet,
   SheetTitle,
@@ -19,6 +21,9 @@ import { Separator } from "@/_core/components/fragments/separator";
 import { IDrawerProps } from "@/_core/components/fragments/drawer";
 import { QuoteService } from "@/_core/firebase/services/quote.service";
 import { IQuoteDB, IQuoteItem } from "@/_shared/interface/quote.interface";
+import { useEffect, useState } from "react";
+import { Textarea } from "@/_core/components/fragments/textarea";
+import { ToastUtil } from "@/_shared/utils/toast.util";
 
 interface IProps extends IDrawerProps {
   data: IQuoteItem;
@@ -30,11 +35,17 @@ const _quoteService = new QuoteService();
 export default function QuoteDetailSheet(props: IProps) {
   const { isOpen, onOpenChange, onUpdated, data } = props;
 
+  const [note, setNote] = useState("");
+
   const customerData = [
     { title: `Nome`, text: data.customer?.name },
     { title: `e-mail`, text: data.customer?.email },
     { title: `Celular`, text: data.customer?.phoneNumber },
   ];
+
+  useEffect(() => {
+    setNote(data?.note || "");
+  }, [data]);
 
   const handleUpdateStatus = (status: EQuoteStatus) => {
     _quoteService
@@ -44,9 +55,21 @@ export default function QuoteDetailSheet(props: IProps) {
         onUpdated?.(data);
       });
   };
+
+  const handleUpdateNote = () => {
+    _quoteService
+      .update<Partial<IQuoteDB>>(String(data.id), { note })
+      .then(() => {
+        data.note = note;
+        onUpdated?.(data);
+        ToastUtil.success("Nota atualizada com sucesso");
+      })
+      .catch(() => ToastUtil.error("Ocorreu uma falha ao salvar nota"));
+  };
+
   return (
     <Sheet open={isOpen} onOpenChange={onOpenChange}>
-      <SheetContent className="bg-secondary mobile:w-screen">
+      <SheetContent className="text-sm bg-secondary mobile:w-screen">
         <SheetHeader className="mb-4">
           <section className="mb-2 flex items-center gap-2">
             <i className="bg-primary h-11 w-11 flex items-center justify-center rounded-lg">
@@ -142,6 +165,22 @@ export default function QuoteDetailSheet(props: IProps) {
               )}
             />
           </section>
+
+          <h4 className="font-semibold my-4">Nota</h4>
+
+          <Textarea
+            value={note}
+            onChange={(e) => setNote(e.target.value)}
+          ></Textarea>
+
+          <Button
+            size="sm"
+            disabled={!note}
+            className="mt-4 w-full"
+            onClick={handleUpdateNote}
+          >
+            Salvar
+          </Button>
         </section>
       </SheetContent>
     </Sheet>

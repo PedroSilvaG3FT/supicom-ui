@@ -17,7 +17,6 @@ import Each from "../app-each";
 import { useForm } from "react-hook-form";
 import AppEmptyList from "../app-empty-list";
 import { useTranslations } from "next-intl";
-import SelectProducts from "../select-products";
 import { ToastUtil } from "../../utils/toast.util";
 import { ArrayUtil } from "../../utils/array.util";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -25,6 +24,7 @@ import { loadingStore } from "@/_store/loading.store";
 import { EQuoteStatus } from "../../enums/quote.enum";
 import { Plus, SquareChartGantt, X } from "lucide-react";
 import { IQuoteDB } from "../../interface/quote.interface";
+import SelectProducts from "../form/select/select-products";
 import { Button } from "@/_core/components/fragments/button";
 import { ReactNode, useEffect, useRef, useState } from "react";
 import AppFormInput from "@/_shared/components/form/form-input";
@@ -33,10 +33,10 @@ import AppFormTextarea from "@/_shared/components/form/form-textarea";
 import { QuoteService } from "@/_core/firebase/services/quote.service";
 
 const formSchema = z.object({
-  observation: z.string(),
   name: z.string().min(1, ""),
   email: z.string().min(1, ""),
   phoneNumber: z.string().min(1, ""),
+  observation: z.string().min(1, ""),
 });
 
 interface IFormData extends z.infer<typeof formSchema> {}
@@ -64,6 +64,8 @@ export function RequestQuoteSheet(props: IProps) {
   const closeRef = useRef<HTMLButtonElement>(null);
 
   const [products, setProducts] = useState<string[]>([]);
+  const scrollContainerRef = useRef<HTMLDivElement>(null);
+  const [newProductAdded, setNewProductAdded] = useState(false);
 
   const descriptions = {
     submitButton: isPortalMode ? t("base.send") : "Salvar",
@@ -96,6 +98,7 @@ export function RequestQuoteSheet(props: IProps) {
     const productsSlug = products.filter((item) => !!item);
     const registerDTO = _quoteService._model.buildRegisterDTO({
       id: "",
+      note: "",
       products: [],
       productsSlug,
       updateDate: new Date(),
@@ -127,7 +130,11 @@ export function RequestQuoteSheet(props: IProps) {
       });
   }
 
-  const handleAddProduct = () => setProducts([...products, ""]);
+  const handleAddProduct = () => {
+    setNewProductAdded(true);
+    setProducts([...products, ""]);
+  };
+
   const handleRemoveProduct = (index: number) =>
     setProducts(ArrayUtil.removeByIndex(products, index));
 
@@ -142,13 +149,23 @@ export function RequestQuoteSheet(props: IProps) {
     return !form.formState.isValid || !hasProduct;
   };
 
+  useEffect(() => {
+    if (newProductAdded && scrollContainerRef.current) {
+      scrollContainerRef.current.scrollTop =
+        scrollContainerRef.current.scrollHeight;
+      setNewProductAdded(false);
+    }
+  }, [newProductAdded, products]);
+
   return (
     <Sheet>
       <SheetTrigger asChild>{children}</SheetTrigger>
       <SheetContent className="bg-secondary mobile:w-screen">
         <SheetHeader>
-          <SheetTitle>{descriptions.title}</SheetTitle>
-          <SheetDescription>{descriptions.subtitle}</SheetDescription>
+          <SheetTitle className="text-left">{descriptions.title}</SheetTitle>
+          <SheetDescription className="text-left">
+            {descriptions.subtitle}
+          </SheetDescription>
         </SheetHeader>
 
         <FormContainer {...form}>
@@ -156,7 +173,10 @@ export function RequestQuoteSheet(props: IProps) {
             onSubmit={form.handleSubmit(onSubmit)}
             className="relative flex flex-col mt-8 h-[86svh]"
           >
-            <section className="pb-14 h-full space-y-4 overflow-y-auto">
+            <section
+              ref={scrollContainerRef}
+              className="pb-32 h-full space-y-4 overflow-y-auto scroll-smooth"
+            >
               <Show>
                 <Show.When condition={!isPortalMode}>
                   <h5 className="font-semibold">Dados do cliente</h5>
@@ -164,12 +184,14 @@ export function RequestQuoteSheet(props: IProps) {
               </Show>
 
               <AppFormInput
+                required
                 name="name"
                 label={t("base.name")}
                 control={form.control}
               />
 
               <AppFormInput
+                required
                 type="email"
                 name="email"
                 label="e-mail"
@@ -177,12 +199,14 @@ export function RequestQuoteSheet(props: IProps) {
               />
 
               <AppFormInput
+                required
                 name="phoneNumber"
                 control={form.control}
                 label={t("base.smart_phone")}
               />
 
               <AppFormTextarea
+                required
                 name="observation"
                 control={form.control}
                 label={t("base.observation")}
@@ -224,7 +248,7 @@ export function RequestQuoteSheet(props: IProps) {
               />
             </section>
 
-            <SheetFooter className="w-full py-2 mt-auto sticky bottom-0 bg-background">
+            <SheetFooter className="w-full py-2 mt-auto sticky bottom-0 bg-secondary">
               <Button disabled={isSubmitDisabled()} className="w-full">
                 {descriptions.submitButton}
               </Button>

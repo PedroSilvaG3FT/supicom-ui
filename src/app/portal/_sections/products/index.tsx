@@ -1,17 +1,18 @@
 import Link from "next/link";
 import { useTranslations } from "next-intl";
-import { ArrowRight, PackageSearch } from "lucide-react";
+import { PORTAL_SECTION_ID } from "../_data";
 import Each from "@/_shared/components/app-each";
+import { ArrowRight, PackageSearch } from "lucide-react";
+import { Button } from "@/_core/components/fragments/button";
 import useProductData from "@/_shared/hooks/data/product.hook";
 import PortalProductCard from "../../_components/portal-product-card";
-import { Button } from "@/_core/components/fragments/button";
 
 export default function PortalProducts() {
   const t = useTranslations();
   const { products } = useProductData();
 
   return (
-    <section className="app-container">
+    <section id={PORTAL_SECTION_ID.product} className="app-container">
       <h2 className="mt-4">{t("portal.product.title")}</h2>
       <h5>{t("portal.product.subtitle")}</h5>
 

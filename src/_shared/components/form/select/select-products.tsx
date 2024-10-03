@@ -5,8 +5,8 @@ import {
   SelectContent,
   SelectTrigger,
 } from "@/_core/components/fragments/select";
-import useProductData from "../hooks/data/product.hook";
 import { FormLabel } from "@/_core/components/fragments/form";
+import useProductData from "@/_shared/hooks/data/product.hook";
 
 interface IProps {
   value?: string;

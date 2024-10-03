@@ -32,7 +32,7 @@ export default function SheetContactDetail(props: IProps) {
       <SheetContent className="bg-secondary mobile:w-screen">
         <SheetHeader className="mb-4">
           <section className="mb-2 flex items-center gap-2">
-            <i className="bg-primary h-11 w-11 flex items-center justify-center rounded-lg">
+            <i className="bg-primary h-11 w-11 flex items-center justify-center rounded-lg mobile:hidden">
               <ReceiptText className="h-5 w-5" />
             </i>
 

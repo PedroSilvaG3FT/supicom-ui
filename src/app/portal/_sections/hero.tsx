@@ -1,5 +1,6 @@
 import { useTranslations } from "next-intl";
 import { Medal, Users } from "lucide-react";
+import { PORTAL_SECTION_ID } from "./_data";
 import RequestQuoteButton from "../_components/request-quote-button";
 import { FlipWords } from "@/_core/components/fragments/ui/flip-words";
 import { AuroraBackground } from "@/_core/components/fragments/ui/aurora-background";
@@ -26,7 +27,10 @@ export default function PortalHero() {
 
   return (
     <AuroraBackground className="shadow-md p-4 bg-black text-white border-zinc-200 h-[40rem] mobile:h-[92dvh] overflow-hidden">
-      <section className="app-container app-container-pt mobile:px-0">
+      <section
+        id={PORTAL_SECTION_ID.hero}
+        className="app-container app-container-pt mobile:px-0"
+      >
         <section className="h-full w-full flex flex-col">
           <h1 className="font-semibold whitespace-pre-line text-6xl mobile:text-4xl mobile:text-center">
             {t("portal.hero.title")}

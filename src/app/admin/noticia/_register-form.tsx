@@ -6,6 +6,7 @@ import ReactQuill from "react-quill";
 import { useForm } from "react-hook-form";
 import { useEffect, useState } from "react";
 import { zodResolver } from "@hookform/resolvers/zod";
+import { LocaleShorted } from "@/_shared/enums/locale.enum";
 import { Button } from "@/_core/components/fragments/button";
 import { INewsItem } from "@/_shared/interface/news.interface";
 import AppImageCrop from "@/_shared/components/app-image-crop";
@@ -51,7 +52,7 @@ export default function NewsRegisterForm(props: IProps) {
     },
   });
 
-  const handleContentChange = (value: string, locale: "pt" | "en" | "es") => {
+  const handleContentChange = (value: string, locale: LocaleShorted) => {
     setContent((prevContent) => ({
       ...prevContent,
       [locale]: value,
@@ -110,7 +111,7 @@ export default function NewsRegisterForm(props: IProps) {
 
   return (
     <FormContainer {...form}>
-      <form className="pb-12" onSubmit={form.handleSubmit(onLocalSubmit)}>
+      <form className="pb-24" onSubmit={form.handleSubmit(onLocalSubmit)}>
         <nav className="flex justify-end mobile:mb-4">
           <Button
             type="submit"
@@ -167,7 +168,7 @@ export default function NewsRegisterForm(props: IProps) {
 
         <Separator className="my-4" />
 
-        <section className="grid gap-14 grid-cols-1 lg:grid-cols-3 lg:gap-4">
+        <section className="grid grid-cols-1 mobile:gap-24 tablet:gap-14 lg:grid-cols-3 lg:gap-4">
           <article>
             <h5 className="mb-2 text-sm font-medium">Conteúdo (Português)</h5>
             <ReactQuill

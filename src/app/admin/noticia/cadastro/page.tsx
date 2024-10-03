@@ -1,9 +1,9 @@
 "use client";
 
 import Link from "next/link";
+import dynamic from "next/dynamic";
 import { ArrowLeft } from "lucide-react";
 import { useRouter } from "next/navigation";
-import NewsRegisterForm from "../_register-form";
 import { FileUtil } from "@/_shared/utils/file.util";
 import { loadingStore } from "@/_store/loading.store";
 import { ToastUtil } from "@/_shared/utils/toast.util";
@@ -12,6 +12,10 @@ import { Separator } from "@/_core/components/fragments/separator";
 import { NewsService } from "@/_core/firebase/services/news.service";
 import { INewsDB, INewsItem } from "@/_shared/interface/news.interface";
 import { FirebaseStorageService } from "@/_core/firebase/base/firebase-storage.service";
+
+const NewsRegisterForm = dynamic(() => import("../_register-form"), {
+  ssr: false,
+});
 
 const _newsService = new NewsService();
 const _firebaseStorageService = new FirebaseStorageService();
