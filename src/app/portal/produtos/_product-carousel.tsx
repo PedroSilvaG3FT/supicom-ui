@@ -25,12 +25,12 @@ export default function ProductCarousel() {
       containerClassName: `bg-banner-gradient mobile:bg-primary`,
       contentClassName: `text-white`,
     },
-    {
-      contentClassName: ``,
-      containerClassName: `bg-banner-glass`,
-      title: t("portal.product.banner_02_title"),
-      description: t("portal.product.banner_02_description"),
-    },
+    // {
+    //   contentClassName: ``,
+    //   containerClassName: `bg-banner-glass`,
+    //   title: t("portal.product.banner_02_title"),
+    //   description: t("portal.product.banner_02_description"),
+    // },
     {
       contentClassName: `text-white`,
       containerClassName: `bg-banner-arrow`,

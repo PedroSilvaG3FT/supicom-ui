@@ -1,6 +1,6 @@
 import ContactForm from "./_contact-form";
 import ContactContent from "./_contact-content";
-import PortalAddress from "../_sections/address";
+import PortalAddress from "../_home/address";
 
 export default function ContactPage() {
   return (
