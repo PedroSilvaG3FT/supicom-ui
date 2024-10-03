@@ -1,4 +1,6 @@
 import "./globals.scss";
+import "react-quill/dist/quill.snow.css";
+
 import type { Metadata } from "next";
 import { enviroments } from "@/env/enviroments";
 import { cn } from "@/_core/components/lib/utils";
