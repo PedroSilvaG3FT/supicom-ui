@@ -1,11 +1,6 @@
-import dynamic from "next/dynamic";
 import PortalFooter from "./_components/portal-footer";
 import PortalHeader from "./_components/portal-header";
-
-const PortalRequestQuoteFab = dynamic(
-  () => import("./_components/portal-request-quote-fab"),
-  { ssr: false }
-);
+import PortalRequestQuoteFab from "./_components/portal-request-quote-fab";
 
 export default function PortalLayout({
   children,
