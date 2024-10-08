@@ -1,11 +1,13 @@
 import { cn } from "@/_core/components/lib/utils";
+import Each from "@/_shared/components/app-each";
 
 export interface IPortalDepartamentCardProps {
   title: string;
-  imageURL?: string;
+  images?: string[];
   className?: string;
   description: string;
   imageClassName?: string;
+  figureClassName?: string;
   contentClassName?: string;
   descriptionClassName?: string;
 }
@@ -16,7 +18,7 @@ export default function PortalDepartamentCard(
   return (
     <article
       className={cn(
-        "p-4 mobile:px-0 relative overflow-hidden light",
+        "p-4 mobile:px-0 relative overflow-hidden light group",
         props.className
       )}
     >
@@ -34,17 +36,32 @@ export default function PortalDepartamentCard(
           {props.description}
         </p>
 
-        {!!props.imageURL && (
-          <img
-            alt="header"
-            width={800}
-            height={800}
-            src={props.imageURL}
+        {!!props.images?.length && (
+          <figure
             className={cn(
-              "h-full w-full aspect-square object-cover object-left-top rounded-sm",
-              props.imageClassName
+              "h-full w-full aspect-square overflow-hidden relative",
+              props.figureClassName
             )}
-          />
+          >
+            <Each
+              data={props.images}
+              render={(item, index) => (
+                <img
+                  alt="header"
+                  src={item}
+                  width={800}
+                  height={800}
+                  className={cn(
+                    "h-full w-full absolute top-0 right-0 object-cover object-left-top rounded-sm transition-all duration-500",
+                    props.imageClassName,
+                    index === 0
+                      ? "opacity-100 group-hover:opacity-0"
+                      : "opacity-0 group-hover:opacity-100 group-hover:scale-105"
+                  )}
+                />
+              )}
+            />
+          </figure>
         )}
       </section>
     </article>

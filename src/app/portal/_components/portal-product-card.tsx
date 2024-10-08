@@ -32,7 +32,7 @@ export default function PortalProductCard(props: IProps) {
           {t("base.quality_supicom")}
         </span>
 
-        <h5 className="font-semibold mt-2">{data.title}</h5>
+        <h5 className="font-semibold mt-2 truncate">{data.title}</h5>
 
         <nav className="flex items-center">
           <Star fill="foreground" className="w-4 h-4" />
