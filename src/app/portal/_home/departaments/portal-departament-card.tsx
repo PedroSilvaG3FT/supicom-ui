@@ -1,9 +1,10 @@
 import { cn } from "@/_core/components/lib/utils";
 import Each from "@/_shared/components/app-each";
+import PortalDepartamentModal from "./portal-departament-modal";
 
 export interface IPortalDepartamentCardProps {
   title: string;
-  images?: string[];
+  images: string[];
   className?: string;
   description: string;
   imageClassName?: string;
@@ -26,25 +27,38 @@ export default function PortalDepartamentCard(
         {props.title}
       </h5>
 
-      <section className={props.contentClassName}>
-        <p
+      <section className={cn(props.contentClassName)}>
+        <div
           className={cn(
-            "text-sm text-left whitespace-pre-line",
+            "w-full flex-col py-4 mobile:order-2",
             props.descriptionClassName
           )}
         >
-          {props.description}
-        </p>
+          <p
+            className={cn(
+              "text-sm text-left whitespace-pre-line",
+              props.descriptionClassName
+            )}
+          >
+            {props.description}
+          </p>
+
+          <PortalDepartamentModal data={props}>
+            <a className="order-2 self-start mt-4 text-sm font-semibold h-6 cursor-pointer hover:text-primary">
+              Ver mais
+            </a>
+          </PortalDepartamentModal>
+        </div>
 
         {!!props.images?.length && (
           <figure
             className={cn(
-              "h-full w-full aspect-square overflow-hidden relative",
+              "h-full w-full aspect-square overflow-hidden relative self-end mobile:order-1",
               props.figureClassName
             )}
           >
             <Each
-              data={props.images}
+              data={[...props.images].slice(0, 2)}
               render={(item, index) => (
                 <img
                   alt="header"
