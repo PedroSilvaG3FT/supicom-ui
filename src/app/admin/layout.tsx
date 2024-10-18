@@ -27,6 +27,8 @@ export default function AdminLayout({ children }: IBaseLayoutProps) {
     setLocale(ELocale.PT_BR);
     document.body.style.overflow = "hidden";
 
+    setTimeout(() => setOpen(true), 750);
+
     return () => {
       document.body.style.overflow = "auto";
     };
