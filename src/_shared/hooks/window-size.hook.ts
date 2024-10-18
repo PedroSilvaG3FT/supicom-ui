@@ -11,7 +11,6 @@ const useWindowSize = () => {
   const updateDevice = () => {
     const width = window.innerWidth;
 
-    console.log(width < 640);
     setDevice({
       isMobile: width < 640,
       isDesktop: width > 1024,

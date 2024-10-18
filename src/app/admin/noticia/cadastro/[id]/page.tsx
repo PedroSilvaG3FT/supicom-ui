@@ -37,7 +37,6 @@ export default function NewsUpdatePage() {
         const data = _newsService._model.buildItem(response);
         setData(data);
 
-        console.log(data);
         _loadingStore.setShow(false);
       })
       .catch(() => {

@@ -1,7 +1,7 @@
 "use client";
 
 import { format } from "date-fns";
-import { Eye } from "lucide-react";
+import { Eye, Mail, Phone } from "lucide-react";
 import { useEffect, useState } from "react";
 import { ColumnDef } from "@tanstack/react-table";
 import { loadingStore } from "@/_store/loading.store";
@@ -19,6 +19,7 @@ import {
   DataTableHeader,
 } from "@/_core/components/fragments/datatable";
 import SheetContactDetail from "@/_shared/components/contact/sheet-contact-detail";
+import Link from "next/link";
 
 const _contactService = new ContactService();
 
@@ -72,14 +73,38 @@ export default function ContactPage() {
       header: ({ column }) => (
         <DataTableHeader column={column} title="Celular" />
       ),
-      cell: ({ row }) => row.original.phoneNumber,
+      cell: ({ row }) => {
+        const data = row.original.phoneNumber;
+
+        return (
+          <Link
+            href={`tel:${data}`}
+            className="hover:underline flex gap-2.5 items-center"
+          >
+            {data}
+            <Phone className="w-4 h-4" />
+          </Link>
+        );
+      },
     },
     {
-      accessorKey: "phoneNumber",
+      accessorKey: "email",
       header: ({ column }) => (
         <DataTableHeader column={column} title="e-mail" />
       ),
-      cell: ({ row }) => row.original.email,
+      cell: ({ row }) => {
+        const data = row.original.email;
+
+        return (
+          <Link
+            href={`mailto:${data}`}
+            className="hover:underline flex gap-2.5 items-center"
+          >
+            {data}
+            <Mail className="w-4 h-4" />
+          </Link>
+        );
+      },
     },
     {
       accessorKey: "createdDate",

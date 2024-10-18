@@ -1,3 +1,5 @@
+"use client";
+
 import {
   Select,
   SelectItem,
@@ -5,6 +7,8 @@ import {
   SelectContent,
   SelectTrigger,
 } from "@/_core/components/fragments/select";
+
+import { useTranslations } from "next-intl";
 import { FormLabel } from "@/_core/components/fragments/form";
 import useProductData from "@/_shared/hooks/data/product.hook";
 
@@ -17,12 +21,14 @@ interface IProps {
 }
 
 export default function SelectProducts(props: IProps) {
+  const t = useTranslations();
+
   const {
     value,
     label,
     onChange,
     className,
-    placeholder = "Selecione um produto...",
+    placeholder = t("base.select"),
   } = props;
 
   const { products } = useProductData();

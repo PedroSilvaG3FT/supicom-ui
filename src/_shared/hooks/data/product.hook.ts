@@ -2,8 +2,11 @@ import {
   IProductItem,
   IProductCategory,
 } from "@/_shared/interface/product.interface";
+import { useTranslations } from "next-intl";
 
 export default function useProductData() {
+  const t = useTranslations();
+
   const getCategoryById = (id: number) =>
     categories.find((item) => item.id === id) || ({} as IProductCategory);
 
@@ -11,11 +14,11 @@ export default function useProductData() {
     products.find((item) => item.slug === slug) || ({} as IProductItem);
 
   const categories: IProductCategory[] = [
-    { id: 1, title: `Torcedeiras/Trançadeiras` },
-    { id: 2, title: `Desenroladores e Bobinadores` },
-    { id: 3, title: `Trefilação` },
-    { id: 4, title: `Puxadores` },
-    { id: 5, title: `Linha SZ` },
+    { id: 1, title: t("portal.product.categories.stranders") },
+    { id: 2, title: t("portal.product.categories.pay_offs") },
+    { id: 3, title: t("portal.product.categories.wire_drawing") },
+    { id: 4, title: t("portal.product.categories.caterpillar_capstans") },
+    { id: 5, title: t("portal.product.categories.sz_line") },
   ];
 
   const products: IProductItem[] = [

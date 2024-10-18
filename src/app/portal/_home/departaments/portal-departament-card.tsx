@@ -1,5 +1,6 @@
-import { cn } from "@/_core/components/lib/utils";
+import { useTranslations } from "next-intl";
 import Each from "@/_shared/components/app-each";
+import { cn } from "@/_core/components/lib/utils";
 import PortalDepartamentModal from "./portal-departament-modal";
 
 export interface IPortalDepartamentCardProps {
@@ -16,6 +17,8 @@ export interface IPortalDepartamentCardProps {
 export default function PortalDepartamentCard(
   props: IPortalDepartamentCardProps
 ) {
+  const t = useTranslations();
+
   return (
     <article
       className={cn(
@@ -45,7 +48,7 @@ export default function PortalDepartamentCard(
 
           <PortalDepartamentModal data={props}>
             <a className="order-2 self-start mt-4 text-sm font-semibold h-6 cursor-pointer hover:text-primary">
-              Ver mais
+              {t("base.see_more")}
             </a>
           </PortalDepartamentModal>
         </div>

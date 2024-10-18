@@ -19,7 +19,7 @@ export default function PortalFooter() {
     {
       title: t("portal.footer.institutional"),
       links: [
-        { title: t("portal.about_us"), url: `/portal` },
+        { title: t("portal.about_us.title"), url: `/portal` },
         { title: `FAQ`, url: `/portal/faq` },
       ],
     },

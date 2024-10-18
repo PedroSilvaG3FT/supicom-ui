@@ -1,13 +1,15 @@
 "use client";
 
 import { format } from "date-fns";
-import { Eye, Plus, RotateCcw } from "lucide-react";
 import { useEffect, useState } from "react";
 import { ColumnDef } from "@tanstack/react-table";
+import { Eye, Mail, Phone, Plus, RotateCcw } from "lucide-react";
 import { loadingStore } from "@/_store/loading.store";
 import { ToastUtil } from "@/_shared/utils/toast.util";
 import { EQuoteStatus } from "@/_shared/enums/quote.enum";
 import { Button } from "@/_core/components/fragments/button";
+import { orderBy, QueryConstraint } from "firebase/firestore";
+import useProductData from "@/_shared/hooks/data/product.hook";
 import { Separator } from "@/_core/components/fragments/separator";
 import { QuoteService } from "@/_core/firebase/services/quote.service";
 import SelectMonth from "@/_shared/components/form/select/select-month";
@@ -21,16 +23,14 @@ import {
   DataTable,
   DataTableHeader,
 } from "@/_core/components/fragments/datatable";
-import {
-  orderBy,
-  QueryConstraint,
-  QueryFieldFilterConstraint,
-} from "firebase/firestore";
+import Link from "next/link";
 
 const _quoteService = new QuoteService();
 
 export default function QuotePage() {
+  const { products } = useProductData();
   const _loadingStore = loadingStore((state) => state);
+
   const [items, setItems] = useState<IQuoteItem[]>([]);
   const [isDetailOpen, setIsDetailOpen] = useState(false);
   const [detailData, setDetailData] = useState({} as IQuoteItem);
@@ -68,14 +68,14 @@ export default function QuotePage() {
     _quoteService
       .getAll<IQuoteDB[]>(constraints)
       .then((response) => {
-        const data = _quoteService._model.buildList(response);
+        const data = _quoteService._model.buildList(response, products);
 
         setItems(data);
         pagination.setTotalItems(data.length);
 
         _loadingStore.setShow(false);
       })
-      .catch(() => {
+      .catch((error) => {
         ToastUtil.error("Ocorreu uma falha ao processar a solicitação");
         _loadingStore.setShow(false);
       });
@@ -128,14 +128,38 @@ export default function QuotePage() {
       header: ({ column }) => (
         <DataTableHeader column={column} title="Celular" />
       ),
-      cell: ({ row }) => row.original.customer.phoneNumber,
+      cell: ({ row }) => {
+        const data = row.original.customer.phoneNumber;
+
+        return (
+          <Link
+            href={`tel:${data}`}
+            className="hover:underline flex gap-2.5 items-center"
+          >
+            {data}
+            <Phone className="w-4 h-4" />
+          </Link>
+        );
+      },
     },
     {
       accessorKey: "customer.email",
       header: ({ column }) => (
         <DataTableHeader column={column} title="e-mail" />
       ),
-      cell: ({ row }) => row.original.customer.email,
+      cell: ({ row }) => {
+        const data = row.original.customer.email;
+
+        return (
+          <Link
+            href={`mailto:${data}`}
+            className="hover:underline flex gap-2.5 items-center"
+          >
+            {data}
+            <Mail className="w-4 h-4" />
+          </Link>
+        );
+      },
     },
     {
       accessorKey: "status",

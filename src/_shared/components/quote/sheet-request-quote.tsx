@@ -87,8 +87,7 @@ export function RequestQuoteSheet(props: IProps) {
 
   useEffect(() => {
     if (initialProductsSlug) {
-      setProducts(initialProductsSlug);
-      console.log("INITIAL PRODUCTS :", initialProductsSlug);
+      setProducts([...products, ...initialProductsSlug]);
     }
   }, []);
 
@@ -213,7 +212,7 @@ export function RequestQuoteSheet(props: IProps) {
               />
 
               <h5 className="font-semibold flex items-center justify-between">
-                Produtos
+                {t("portal.product.title")}
                 <Button type="button" size="icon" onClick={handleAddProduct}>
                   <Plus />
                 </Button>
@@ -224,7 +223,7 @@ export function RequestQuoteSheet(props: IProps) {
                 empty={
                   <AppEmptyList
                     icon={SquareChartGantt}
-                    message="Adicione produtos a cotação"
+                    message={t("base.add_products_to_quote")}
                   />
                 }
                 render={(item, index) => (

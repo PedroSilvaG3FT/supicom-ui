@@ -27,12 +27,12 @@ export default function ProductCatalog() {
 
       <Separator className="my-6" />
 
-      <section className="mb-6 w-full flex gap-4 items-center">
+      <section className="pb-6 w-full flex gap-4 items-center overflow-x-auto">
         <Button
           onClick={() => setCategoryId(defaultCategoryId)}
           variant={categoryId === defaultCategoryId ? "default" : "outline"}
         >
-          Todos
+          {t("base.all")}
         </Button>
 
         <Each

@@ -1,11 +1,10 @@
 import { Timestamp } from "firebase/firestore";
-import useProductData from "@/_shared/hooks/data/product.hook";
+import { IProductItem } from "@/_shared/interface/product.interface";
 import { IQuoteDB, IQuoteItem } from "@/_shared/interface/quote.interface";
 
 export class QuoteModel {
-  public buildItem(model: IQuoteDB): IQuoteItem {
-    // eslint-disable-next-line react-hooks/rules-of-hooks
-    const products = useProductData().products.filter((item) => {
+  public buildItem(model: IQuoteDB, allProducts: IProductItem[]): IQuoteItem {
+    const products = allProducts.filter((item) => {
       return model.productsSlug.includes(item.slug);
     });
 
@@ -18,8 +17,8 @@ export class QuoteModel {
     };
   }
 
-  public buildList(model: IQuoteDB[]) {
-    return model.map((item) => this.buildItem(item));
+  public buildList(model: IQuoteDB[], allProducts: IProductItem[]) {
+    return model.map((item) => this.buildItem(item, allProducts));
   }
 
   public buildRegisterDTO(model: IQuoteItem): IQuoteDB {

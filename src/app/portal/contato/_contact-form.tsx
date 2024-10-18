@@ -84,7 +84,7 @@ export default function ContactForm() {
         <AppFormInput
           required
           name="name"
-          label="Nome"
+          label={t("base.name")}
           control={form.control}
         />
 

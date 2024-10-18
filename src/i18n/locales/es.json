@@ -5,16 +5,16 @@
     "portuguese": "Portugués"
   },
   "example": {
-    "title": "¡Hola Mundo!",
-    "subtitle": "Este es un texto en Portugués (pt-BR)",
-    "description": "En los últimos años, el desarrollo web ha evolucionado significativamente y la demanda de aplicaciones eficientes y escalables ha aumentado. Para satisfacer esta necesidad, creamos un proyecto boilerplate que combina Next.js, Tailwind CSS, Shadcn UI y Firebase. Este stack permite a los desarrolladores construir aplicaciones web modernas de manera rápida y eficaz.\n\nNext.js es un poderoso framework React que ofrece renderización del lado del servidor y generación de sitios estáticos. Mejora el rendimiento y el SEO, lo que lo convierte en una excelente opción para los desarrolladores. Tailwind CSS, por su parte, es un framework CSS basado en utilidades que permite un desarrollo rápido de la interfaz de usuario, con enfoque en la personalización y la capacidad de respuesta. Shadcn UI complementa esto proporcionando componentes pre-diseñados que son fáciles de integrar y personalizar.\n\nAceternity es otra biblioteca de componentes de interfaz de usuario que se destaca por crear experiencias visuales impresionantes e interactivas. Al igual que Shadcn UI, Aceternity ofrece una colección de componentes pre-diseñados que facilitan la creación de interfaces modernas y receptivas. Lo que diferencia a Aceternity es su integración con Framer, que permite a los desarrolladores crear elementos de UI en 3D y con perspectiva. Este enfoque innovador enriquece la experiencia del usuario, proporcionando interacciones dinámicas y diseños visualmente atractivos.\n\nFirebase actúa como la solución de backend, ofreciendo funciones de base de datos en tiempo real, autenticación y alojamiento. Al aprovechar Firebase, los desarrolladores pueden concentrarse en crear características sin preocuparse por la gestión del servidor. Este proyecto boilerplate sirve como una base sólida para cualquiera que desee comenzar su viaje en el desarrollo web con estas tecnologías modernas."
+    "title": "¡Hola mundo!",
+    "subtitle": "Este es un texto en portugués (pt-BR)",
+    "description": "En los últimos años, el desarrollo web ha evolucionado significativamente y la demanda de aplicaciones eficientes y escalables ha aumentado.\nPara satisfacer esta necesidad, creamos un proyecto boilerplate que combina Next.js, Tailwind CSS, Shadcn UI y Firebase. Este stack permite a los desarrolladores crear aplicaciones web modernas de manera rápida y eficaz.\n\nNext.js es un potente framework de React que ofrece renderización del lado del servidor y generación de sitios estáticos. Mejora el rendimiento y el SEO, lo que lo convierte en una excelente opción para los desarrolladores. Tailwind CSS, por su parte, es un framework CSS basado en utilidades que permite un desarrollo rápido de la interfaz de usuario, con un enfoque en la personalización y la capacidad de respuesta. Shadcn UI complementa esto, proporcionando componentes prediseñados que son fáciles de integrar y personalizar.\n\nAceternity es otra biblioteca de componentes de interfaz de usuario que destaca por su capacidad para crear experiencias visuales impresionantes e interactivas. Al igual que Shadcn UI, Aceternity ofrece una colección de componentes prediseñados que facilitan la construcción de interfaces modernas y receptivas. Sin embargo, lo que distingue a Aceternity es su integración con Framer, lo que permite a los desarrolladores crear elementos de interfaz de usuario en 3D y con perspectiva. Este enfoque innovador enriquece la experiencia del usuario, proporcionando interacciones dinámicas y diseños visualmente atractivos.\n\nFirebase sirve como la solución backend, ofreciendo características de base de datos en tiempo real, autenticación y alojamiento. Al aprovechar Firebase, los desarrolladores pueden centrarse en construir funciones sin preocuparse por la gestión del servidor. Este proyecto de boilerplate sirve como una base sólida para cualquiera que desee comenzar su viaje en el desarrollo web con estas tecnologías modernas."
   },
   "phrases": {
     "industrial_innovation": "Innovación Industrial",
     "superior_quality": "Calidad Superior",
     "advanced_technology": "Tecnología Avanzada",
     "customized_solutions": "Soluciones Personalizadas",
-    "operational_efficiency": "Eficiencia Operativa",
+    "operational_efficiency": "Eficiencia Operacional",
     "specific_equipment": "Equipos Específicos",
     "specialized_maintenance": "Mantenimiento Especializado",
     "reliable_performance": "Rendimiento Confiable",
@@ -26,87 +26,109 @@
     "high_performance_machines": "Máquinas de Alto Rendimiento"
   },
   "base": {
+    "all": "Todos",
     "name": "Nombre",
     "years": "Años",
     "today": "Hoy",
     "send": "Enviar",
     "contact": "Contacto",
+    "select": "Seleccionar",
     "catalog": "Catálogo",
     "products": "Productos",
     "see_more": "Ver más",
     "services": "Servicios",
     "customers": "Clientes",
-    "smart_phone": "Teléfono móvil",
+    "smart_phone": "Teléfono inteligente",
     "description": "Descripción",
-    "consulting": "Consultoría",
+    "consulting": "Consultando",
     "observation": "Observación",
     "on_the_market": "En el mercado",
     "developed_by": "Desarrollado por",
     "get_in_touch": "Ponte en contacto",
     "quality_supicom": "Calidad Supicom",
-    "request_quote": "Solicita una cotización"
+    "request_quote": "Solicitar una cotización",
+    "add_products_to_quote": "Añadir productos a la cotización"
   },
   "portal": {
-    "about_us": "Sobre nosotros",
+    "about_us": {
+      "title": "Sobre Nosotros",
+      "description": "Somos una empresa comprometida en proporcionar soluciones para el sector industrial de cables y conductores de energía, con equipos y servicios que garantizan la eficiencia y la continuidad de sus operaciones.\n\nCon décadas de experiencia en el mercado, fabricamos equipos de alto rendimiento para satisfacer las demandas personalizadas de las fábricas de cables conductores de energía.\n\nNuestro compromiso va más allá de la fabricación. Ofrecemos soporte técnico y mantenimiento especializado, garantizando que sus equipos siempre estén en pleno funcionamiento, minimizando el tiempo de inactividad y maximizando la productividad de su negocio. Sabemos que cada industria tiene desafíos únicos, por eso desarrollamos soluciones personalizadas para satisfacer las necesidades específicas de cada cliente."
+    },
+    "our_departments": {
+      "title": "Nuestros Departamentos",
+      "engineering_title": "Ingeniería",
+      "engineering_description": "Nuestro departamento de ingeniería es responsable de desarrollar soluciones innovadoras, diseñando equipos y sistemas que satisfacen las necesidades específicas de cada cliente, garantizando alta eficiencia y calidad.",
+      "machining_title": "Mecanizado",
+      "machining_description": "Nuestro departamento de Mecanizado está dedicado a la fabricación de piezas de alta precisión, utilizando centros de mecanizado CNC, tornos CNC, máquinas convencionales y equipos de última tecnología. Atendemos desde pequeñas demandas hasta proyectos complejos y a medida, siempre con un enfoque en la calidad, la eficiencia y los plazos estrictos.\n\nNuestra experiencia garantiza soluciones que cumplen con los más altos estándares, desde el desarrollo hasta la producción final, con especial atención a los detalles y los acabados.",
+      "assembly_title": "Montaje Mecánico y Electrónico",
+      "assembly_description": "Integramos componentes mecánicos y electrónicos, entregando sistemas completos y personalizados.\n\nNuestro equipo cualificado realiza montajes de dispositivos, máquinas y equipos de alta complejidad, siempre garantizando la perfecta interacción entre los componentes. Nos aseguramos de que cada solución entregada funcione de manera eficiente, segura y cumpla con las normas técnicas exigidas por el mercado."
+    },
     "where_are_we": "¿Dónde estamos?",
     "hero": {
-      "title": "Movemos\nla industria",
-      "description": "En la industria, cada segundo cuenta. Ofrecemos soluciones completas\npara garantizar que tu operación nunca se detenga.",
+      "title": "Movemos la Industria",
+      "description": "En la industria, cada segundo cuenta. Ofrecemos soluciones completas para garantizar que su operación nunca se detenga.",
       "satisfaction": "Satisfacción"
     },
     "product": {
       "title": "Productos",
       "not_fount": "Producto no encontrado",
       "see_full_catalog": "Ver catálogo completo",
-      "check_catalog": "Consulta nuestro catálogo de productos",
+      "check_catalog": "Consulte nuestro catálogo de productos",
       "subtitle": "Máquinas y Equipos de Alta Calidad",
-      "banner_01_title": "Innovaciones\npara tu empresa",
-      "banner_01_description": "Explora las máquinas y equipos más recientes\nque revolucionarán tu línea de producción.",
-      "banner_02_title": "Flexibilidad\npara tu negocio",
-      "banner_02_description": "Accede a los mejores equipos cuando lo necesites.\n¡Alquila con practicidad y eficiencia!",
-      "banner_03_title": "Alianzas\nque generan resultados",
-      "banner_03_description": "Descubre cómo nuestras soluciones pueden agregar valor a tu negocio.\n¡Juntos, somos más fuertes!"
+      "banner_01_title": "Innovaciones para su Empresa",
+      "banner_01_description": "Explore las últimas máquinas y equipos que revolucionarán su línea de producción.",
+      "banner_02_title": "Flexibilidad para su Negocio",
+      "banner_02_description": "Acceda a los mejores equipos cuando los necesite. ¡Alquile con practicidad y eficiencia!",
+      "banner_03_title": "Asociaciones que Generan Resultados",
+      "banner_03_description": "Descubra cómo nuestras soluciones pueden agregar valor a su negocio. ¡Juntos somos más fuertes!",
+      "categories": {
+        "stranders": "Stranders/Torcedores",
+        "pay_offs": "Desenrolladores y Enrolladores",
+        "wire_drawing": "Estirado de Alambre",
+        "caterpillar_capstans": "Caterpillar Capstans",
+        "sz_line": "Línea SZ"
+      }
     },
     "news": {
-      "title": "Destacados",
-      "subtitle": "Mantente al día con las últimas noticias"
+      "title": "Noticias",
+      "subtitle": "Manténgase al día con las últimas noticias"
     },
     "service": {
-      "subtitle": "Soluciones Industriales Personalizadas para tu negocio",
+      "subtitle": "Soluciones Industriales Personalizadas para su Negocio",
       "manufacturing_title": "Fabricación",
-      "manufacturing_description": "Proporcionamos máquinas y equipos especializados para diversos sectores industriales, como procesamiento de madera, industria gráfica y refinación de petróleo.",
+      "manufacturing_description": "Proporcionamos máquinas y equipos especializados para varios sectores industriales, como aserraderos, la industria gráfica y la refinación de petróleo.",
       "rent_title": "Alquiler",
-      "rent_description": "Ofrecemos alquiler de maquinaria y equipos comerciales e industriales sin operador, adecuados para diversas necesidades.",
+      "rent_description": "Ofrecemos alquiler de máquinas y equipos comerciales e industriales sin operador, adecuados para diversas necesidades.",
       "maintenance_title": "Mantenimiento",
-      "maintenance_description": "Ofrecemos servicios de mantenimiento y reparación de maquinaria industrial, asegurando la máxima eficiencia y longevidad de los equipos.",
+      "maintenance_description": "Brindamos servicios de mantenimiento y reparación de máquinas industriales, garantizando la máxima eficiencia y longevidad de los equipos.",
       "development_title": "Desarrollo",
-      "development_description": "Desarrollamos proyectos industriales personalizados, desde la planificación hasta la ejecución, garantizando soluciones innovadoras y eficientes para tu negocio."
+      "development_description": "Desarrollamos proyectos industriales personalizados, desde la planificación hasta la ejecución, garantizando soluciones innovadoras y eficientes para su negocio."
     },
     "faq": {
-      "title": "Preguntas frecuentes",
-      "subtitle": "¿No encontraste lo que necesitabas?",
+      "title": "Preguntas Frecuentes",
+      "subtitle": "¿No encontró lo que necesitaba?",
       "question_01_title": "Una pregunta frecuente",
-      "question_01_description": "Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen."
+      "question_01_description": "Lorem Ipsum es simplemente el texto ficticio de la industria de la impresión y la composición tipográfica. Lorem Ipsum ha sido el texto estándar ficticio de la industria desde el siglo XVI, cuando un impresor desconocido tomó una galera de tipos y los mezcló para hacer un libro de muestras tipográficas. Ha sobrevivido no solo cinco siglos, sino también el salto a la composición tipográfica electrónica, permaneciendo esencialmente sin cambios. Fue popularizado en la década de 1960 con el lanzamiento de hojas de Letraset que contenían pasajes de Lorem Ipsum"
     },
     "contact": {
-      "description": "Contáctanos para soporte, enviar sugerencias o discutir alianzas. Siempre estamos listos para ayudar.",
+      "description": "Contáctenos para soporte, envíe sugerencias o discuta asociaciones. Siempre estamos listos para ayudar.",
       "customer_support": "Soporte al Cliente",
-      "customer_support_description": "¿Tienes dudas o necesitas ayuda? Contáctanos para asistencia inmediata.",
+      "customer_support_description": "¿Tienes preguntas o necesitas ayuda? Contáctanos para soporte inmediato.",
       "suggestions": "Sugerencias",
-      "suggestions_description": "Envía tus sugerencias y ayúdanos a mejorar nuestros servicios.",
-      "partnerships": "Alianzas",
-      "partnerships_description": "¿Interesado en alianzas? Contáctanos para explorar oportunidades de colaboración.",
+      "suggestions_description": "Envíanos tus sugerencias y ayúdanos a mejorar nuestros servicios.",
+      "partnerships": "Asociaciones",
+      "partnerships_description": "¿Interesado en asociaciones? Contáctenos para explorar oportunidades de colaboración.",
       "form": {
         "title": "Ponte en contacto",
-        "subtitle": "Rellena el siguiente formulario y describe tu solicitud. ¡Nuestro equipo te responderá pronto!"
+        "subtitle": "Complete el siguiente formulario y describa su solicitud. ¡Nuestro equipo se pondrá en contacto pronto!"
       }
     },
     "request_quote": {
-      "title": "Solicitar una cotización",
-      "subtitle": "Ingresa tus datos y un representante se pondrá en contacto contigo en breve."
+      "title": "Solicitar Cotización",
+      "subtitle": "Ingrese sus datos y en unos momentos un representante se pondrá en contacto con usted"
     },
     "footer": {
-      "site_map": "Mapa del sitio",
+      "site_map": "Mapa del Sitio",
       "institutional": "Institucional",
       "treatment": "Atención"
     }

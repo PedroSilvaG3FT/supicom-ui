@@ -2,7 +2,7 @@ import { EQuoteStatus } from "../enums/quote.enum";
 
 export const QUOTE_STATUS_LABEL = {
   [EQuoteStatus.SOLD]: "Vendido",
-  [EQuoteStatus.CREATED]: "Criado",
+  [EQuoteStatus.CREATED]: "Novo",
   [EQuoteStatus.VIEWED]: "Visualizado",
   [EQuoteStatus.NOT_SOLD]: "Não vendida",
 };

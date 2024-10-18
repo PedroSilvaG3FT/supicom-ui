@@ -5,9 +5,9 @@
     "portuguese": "Portuguese"
   },
   "example": {
-    "title": "Hello World!",
+    "title": "Hello world!",
     "subtitle": "This is a text in Portuguese (pt-BR)",
-    "description": "In recent years, web development has significantly evolved, and the demand for efficient and scalable applications has increased. To meet this need, we created a boilerplate project that combines Next.js, Tailwind CSS, Shadcn UI, and Firebase. This stack allows developers to build modern web applications quickly and effectively.\n\nNext.js is a powerful React framework offering server-side rendering and static site generation. It enhances performance and SEO, making it an excellent choice for developers. Tailwind CSS, on the other hand, is a utility-first CSS framework that enables fast UI development with a focus on customization and responsiveness. Shadcn UI complements this by providing pre-designed components that are easy to integrate and customize.\n\nAceternity is another UI component library that excels in creating impressive and interactive visual experiences. Like Shadcn UI, Aceternity offers a collection of pre-designed components, simplifying the creation of modern and responsive interfaces. What sets Aceternity apart is its integration with Framer, allowing developers to create 3D and perspective-based UI elements. This innovative approach enriches the user experience, offering dynamic interactions and visually attractive designs.\n\nFirebase serves as the backend solution, offering real-time database, authentication, and hosting features. By leveraging Firebase, developers can focus on building features without worrying about server management. This boilerplate project serves as a solid foundation for anyone looking to start their web development journey with these modern technologies."
+    "description": "In recent years, web development has evolved significantly, and the demand for efficient and scalable applications has increased.\nTo meet this need, we created a boilerplate project that combines Next.js, Tailwind CSS, Shadcn UI, and Firebase. This stack enables developers to quickly and effectively build modern web applications.\n\nNext.js is a powerful React framework that offers server-side rendering and static site generation. It enhances performance and SEO, making it an excellent choice for developers. Tailwind CSS, in turn, is a utility-first CSS framework that allows rapid user interface development with a focus on customization and responsiveness. Shadcn UI complements this by providing pre-designed components that are easy to integrate and customize.\n\nAceternity is another UI component library that stands out for its ability to create impressive and interactive visual experiences. Like Shadcn UI, Aceternity offers a collection of pre-designed components that facilitate building modern and responsive interfaces. However, what sets Aceternity apart is its integration with Framer, allowing developers to create 3D and perspective UI elements. This innovative approach enriches the user experience, providing dynamic interactions and visually appealing designs.\n\nFirebase serves as the backend solution, offering real-time database features, authentication, and hosting. By leveraging Firebase, developers can focus on building features without worrying about server management. This boilerplate project serves as a solid foundation for anyone looking to start their journey in web development with these modern technologies."
   },
   "phrases": {
     "industrial_innovation": "Industrial Innovation",
@@ -26,46 +26,68 @@
     "high_performance_machines": "High-Performance Machines"
   },
   "base": {
+    "all": "All",
     "name": "Name",
     "years": "Years",
     "today": "Today",
     "send": "Send",
     "contact": "Contact",
+    "select": "Select",
     "catalog": "Catalog",
     "products": "Products",
-    "see_more": "See More",
+    "see_more": "See more",
     "services": "Services",
     "customers": "Customers",
-    "smart_phone": "Cell Phone",
+    "smart_phone": "Smartphone",
     "description": "Description",
     "consulting": "Consulting",
     "observation": "Observation",
-    "on_the_market": "On the Market",
+    "on_the_market": "On the market",
     "developed_by": "Developed by",
-    "get_in_touch": "Get in Touch",
+    "get_in_touch": "Get in touch",
     "quality_supicom": "Supicom Quality",
-    "request_quote": "Request a Quote"
+    "request_quote": "Request a quote",
+    "add_products_to_quote": "Add products to the quote"
   },
   "portal": {
-    "about_us": "About Us",
+    "about_us": {
+      "title": "About Us",
+      "description": "We are a company committed to providing solutions for the energy cable and conductor industry, with equipment and services that ensure the efficiency and continuity of your operations.\n\nWith decades of market experience, we manufacture high-performance equipment to meet the customized demands of energy conductor cable manufacturers.\n\nOur commitment goes beyond manufacturing. We offer technical support and specialized maintenance, ensuring that your equipment is always in full operation, minimizing downtime and maximizing your business's productivity. We know that each industry has unique challenges, which is why we develop personalized solutions to meet the specific needs of each client."
+    },
+    "our_departments": {
+      "title": "Our Departments",
+      "engineering_title": "Engineering",
+      "engineering_description": "Our engineering department is responsible for developing innovative solutions, designing equipment and systems that meet the specific needs of each client, ensuring high efficiency and quality.",
+      "machining_title": "Machining",
+      "machining_description": "Our Machining department is dedicated to manufacturing high-precision parts using CNC machining centers, CNC lathes, conventional machines, and state-of-the-art equipment. We handle everything from small demands to complex and custom projects, always focusing on quality, efficiency, and strict deadlines.\n\nOur expertise guarantees solutions that meet the highest standards, from development to final production, with special attention to detail and finishing.",
+      "assembly_title": "Mechanical and Electronic Assembly",
+      "assembly_description": "We integrate mechanical and electronic components, delivering complete and customized systems.\n\nOur qualified team performs the assembly of devices, machines, and high-complexity equipment, always ensuring the perfect interaction between the components. We ensure that each solution delivered operates efficiently, safely, and in accordance with the technical standards required by the market."
+    },
     "where_are_we": "Where are we?",
     "hero": {
-      "title": "We Move\nIndustry Forward",
-      "description": "In the industry, every second counts. We provide complete solutions\nto ensure your operation never stops.",
+      "title": "We Move the Industry",
+      "description": "In the industry, every second counts. We offer complete solutions to ensure that your operation never stops.",
       "satisfaction": "Satisfaction"
     },
     "product": {
       "title": "Products",
-      "not_fount": "Product Not Found",
-      "see_full_catalog": "See Full Catalog",
+      "not_fount": "Product not found",
+      "see_full_catalog": "View full catalog",
       "check_catalog": "Check out our product catalog",
       "subtitle": "High-Quality Machines and Equipment",
-      "banner_01_title": "Innovations\nfor Your Business",
-      "banner_01_description": "Explore the latest machines and equipment\nthat will revolutionize your production line!",
-      "banner_02_title": "Flexibility\nfor Your Business",
-      "banner_02_description": "Access the best equipment when you need it.\nRent with ease and efficiency!",
-      "banner_03_title": "Partnerships\nThat Deliver Results",
-      "banner_03_description": "Discover how our solutions can add value to your business.\nTogether, we are stronger!"
+      "banner_01_title": "Innovations for Your Company",
+      "banner_01_description": "Explore the latest machines and equipment that will revolutionize your production line!",
+      "banner_02_title": "Flexibility for Your Business",
+      "banner_02_description": "Access the best equipment when you need it. Rent with practicality and efficiency!",
+      "banner_03_title": "Partnerships that Generate Results",
+      "banner_03_description": "Discover how our solutions can add value to your business. Together, we are stronger!",
+      "categories": {
+        "stranders": "Stranders/Twisters",
+        "pay_offs": "Pay-Offs and Take-Ups",
+        "wire_drawing": "Wire Drawing",
+        "caterpillar_capstans": "Caterpillar Capstans",
+        "sz_line": "SZ Line"
+      }
     },
     "news": {
       "title": "Highlights",
@@ -74,41 +96,41 @@
     "service": {
       "subtitle": "Customized Industrial Solutions for Your Business",
       "manufacturing_title": "Manufacturing",
-      "manufacturing_description": "We provide specialized machines and equipment for various industrial sectors, such as wood processing, graphic industry, and oil refining.",
+      "manufacturing_description": "We provide specialized machines and equipment for various industrial sectors, such as sawmills, the graphic industry, and oil refining.",
       "rent_title": "Rent",
-      "rent_description": "We offer rental of commercial and industrial machinery and equipment without an operator, suitable for various needs.",
+      "rent_description": "We offer rental of commercial and industrial machines and equipment without an operator, suitable for various needs.",
       "maintenance_title": "Maintenance",
-      "maintenance_description": "We provide maintenance and repair services for industrial machines, ensuring maximum efficiency and equipment longevity.",
+      "maintenance_description": "We provide maintenance and repair services for industrial machines, ensuring maximum efficiency and longevity of the equipment.",
       "development_title": "Development",
       "development_description": "We develop customized industrial projects, from planning to execution, ensuring innovative and efficient solutions for your business."
     },
     "faq": {
       "title": "Frequently Asked Questions",
       "subtitle": "Couldn't find what you needed?",
-      "question_01_title": "A Common Question",
-      "question_01_description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
+      "question_01_title": "A frequent question",
+      "question_01_description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages"
     },
     "contact": {
       "description": "Contact us for support, send suggestions, or discuss partnerships. We are always ready to help.",
       "customer_support": "Customer Support",
-      "customer_support_description": "Have questions or need help? Contact us for immediate assistance.",
+      "customer_support_description": "Do you have questions or need help? Contact us for immediate support.",
       "suggestions": "Suggestions",
       "suggestions_description": "Send your suggestions and help us improve our services.",
       "partnerships": "Partnerships",
-      "partnerships_description": "Interested in partnerships? Get in touch to explore collaboration opportunities.",
+      "partnerships_description": "Interested in partnerships? Contact us to explore collaboration opportunities.",
       "form": {
-        "title": "Get in Touch",
+        "title": "Contact Us",
         "subtitle": "Fill out the form below and describe your request. Our team will get back to you soon!"
       }
     },
     "request_quote": {
       "title": "Request a Quote",
-      "subtitle": "Enter your details, and a representative will contact you shortly."
+      "subtitle": "Enter your details, and a representative will contact you shortly"
     },
     "footer": {
       "site_map": "Site Map",
       "institutional": "Institutional",
-      "treatment": "Service"
+      "treatment": "Treatment"
     }
   }
 }

@@ -62,7 +62,7 @@ export default function PortalTimeline() {
   return (
     <section id={PORTAL_SECTION_ID.aboutUs} className="w-full">
       <section className="app-container">
-        <h2 className="mt-4">{t("portal.about_us")}</h2>
+        <h2 className="mt-4">{t("portal.about_us.title")}</h2>
       </section>
 
       <Timeline data={data} />

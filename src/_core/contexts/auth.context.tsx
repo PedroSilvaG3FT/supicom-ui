@@ -61,8 +61,6 @@ const AuthProvider: React.FC<IAuthProviderProps> = ({ children }) => {
         creationDate: Timestamp.now(),
       });
 
-      console.log(response);
-
       _loadingStore.setShow(false);
     } catch (error) {
       _loadingStore.setShow(false);
