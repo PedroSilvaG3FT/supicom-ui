@@ -144,11 +144,6 @@ export function RequestQuoteSheet(props: IProps) {
     setProducts(updated);
   };
 
-  const isSubmitDisabled = () => {
-    const hasProduct = products.some((product) => product.trim() !== "");
-    return !form.formState.isValid || !hasProduct;
-  };
-
   useEffect(() => {
     if (newProductAdded && scrollContainerRef.current) {
       scrollContainerRef.current.scrollTop =
@@ -209,7 +204,7 @@ export function RequestQuoteSheet(props: IProps) {
                 required
                 name="observation"
                 control={form.control}
-                label={t("base.observation")}
+                label={t("base.description")}
               />
 
               <h5 className="font-semibold flex items-center justify-between">
@@ -249,7 +244,7 @@ export function RequestQuoteSheet(props: IProps) {
             </section>
 
             <SheetFooter className="w-full py-2 mt-auto sticky bottom-0 bg-secondary">
-              <Button disabled={isSubmitDisabled()} className="w-full">
+              <Button disabled={!form.formState.isValid} className="w-full">
                 {descriptions.submitButton}
               </Button>
             </SheetFooter>

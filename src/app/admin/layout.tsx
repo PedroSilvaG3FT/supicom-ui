@@ -26,6 +26,10 @@ export default function AdminLayout({ children }: IBaseLayoutProps) {
   useEffect(() => {
     setLocale(ELocale.PT_BR);
     document.body.style.overflow = "hidden";
+
+    return () => {
+      document.body.style.overflow = "auto";
+    };
   }, []);
 
   const handleSignOut = () => {

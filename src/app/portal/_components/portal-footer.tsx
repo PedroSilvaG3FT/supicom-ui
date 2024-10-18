@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import { Dot } from "lucide-react";
 import { useTranslations } from "next-intl";
 import Each from "@/_shared/components/app-each";
 
@@ -68,15 +69,24 @@ export default function PortalFooter() {
       </section>
 
       <div className="mt-auto py-2 bg-black/95 text-white text-sm flex gap-1 items-center justify-center">
-        <small className="text-xs">{t("base.developed_by")}</small>
+        <section className="flex gap-2 items-center mobile:flex-col">
+          <Link
+            target="_blank"
+            className="text-xs cursor-pointer hover:underline"
+            href="https://www.linkedin.com/in/pedro-silva-65996a181/"
+          >
+            {t("base.developed_by")} Pedro Silva
+          </Link>
 
-        <Link
-          target="_blank"
-          className="text-xs"
-          href="https://www.linkedin.com/in/pedro-silva-65996a181/"
-        >
-          Pedro Silva
-        </Link>
+          <Dot className="mobile:hidden" />
+
+          <Link
+            href="/admin"
+            className="text-xs cursor-pointer hover:underline"
+          >
+            Admin
+          </Link>
+        </section>
       </div>
     </footer>
   );

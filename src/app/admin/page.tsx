@@ -16,7 +16,7 @@ export default function AdminRootPage() {
           <section>
             <h5 className="font-medium mb-4">Configurações - {group.title}</h5>
 
-            <section className="flex gap-4 items-center">
+            <section className="flex gap-4 items-center mobile:grid grid-cols-2">
               <Each
                 data={group.items}
                 render={(item) => {
@@ -24,7 +24,7 @@ export default function AdminRootPage() {
                   return (
                     <Link
                       href={item.url}
-                      className="transition-transform duration-500 hover:scale-95 gap-4 cursor-pointer rounded-md bg-secondary shadow-md h-36 w-36 flex flex-col items-center justify-center"
+                      className="transition-transform duration-500 hover:scale-95 gap-4 cursor-pointer rounded-md bg-secondary shadow-md h-36 w-36 flex flex-col items-center justify-center mobile:w-full"
                     >
                       <ItemIcon className="scale-125" />
                       <span className="font-medium">{item.title}</span>
