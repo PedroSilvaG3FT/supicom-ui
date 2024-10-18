@@ -36,6 +36,7 @@ import AppFormInputPhone from "../form/form-input-phone";
 const formSchema = z.object({
   name: z.string().min(1, ""),
   email: z.string().min(1, ""),
+  companyName: z.string().min(1, ""),
   phoneNumber: z.string().min(1, ""),
   observation: z.string().min(1, ""),
 });
@@ -81,6 +82,7 @@ export function RequestQuoteSheet(props: IProps) {
     defaultValues: {
       name: "",
       email: "",
+      companyName: "",
       observation: "",
       phoneNumber: "",
     },
@@ -108,6 +110,7 @@ export function RequestQuoteSheet(props: IProps) {
       customer: {
         name: values.name,
         email: values.email,
+        companyName: values.companyName,
         phoneNumber: values.phoneNumber,
       },
     });
@@ -183,6 +186,13 @@ export function RequestQuoteSheet(props: IProps) {
                 name="name"
                 label={t("base.name")}
                 control={form.control}
+              />
+
+              <AppFormInput
+                required
+                name="companyName"
+                control={form.control}
+                label={t("base.company_name")}
               />
 
               <AppFormInput

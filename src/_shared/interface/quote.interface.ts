@@ -5,6 +5,7 @@ export interface IQuoteCustomer {
   name: string;
   email: string;
   phoneNumber: string;
+  companyName: string;
 }
 
 export interface IQuoteDB {

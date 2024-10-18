@@ -9,6 +9,8 @@ import Show from "@/_shared/components/app-show";
 import { NewsService } from "@/_core/firebase/services/news.service";
 import { INewsDB, INewsItem } from "@/_shared/interface/news.interface";
 import AppLoadingIndicator from "@/_shared/components/loading/app-loading-indicator";
+import AppEmptyList from "@/_shared/components/app-empty-list";
+import { SquareChartGantt } from "lucide-react";
 
 const _newsService = new NewsService();
 
@@ -51,6 +53,7 @@ export default function PortalNews() {
               <Each
                 data={items}
                 render={(item) => <PortalNewsCard data={item} />}
+                empty={<AppEmptyList icon={SquareChartGantt} message={""} />}
               />
             </section>
           </Show.Else>

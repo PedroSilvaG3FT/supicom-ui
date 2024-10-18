@@ -22,7 +22,7 @@ export default function PortalDepartamentModal(props: IProps) {
   return (
     <Dialog>
       <DialogTrigger asChild>{children}</DialogTrigger>
-      <DialogContent className="lg:max-w-2xl mobile:text-sm">
+      <DialogContent className="lg:max-w-4xl mobile:text-sm">
         <DialogHeader>
           <DialogTitle className="text-left">{data.title}</DialogTitle>
         </DialogHeader>

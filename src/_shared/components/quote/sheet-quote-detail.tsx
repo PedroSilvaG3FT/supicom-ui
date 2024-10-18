@@ -39,6 +39,7 @@ export default function QuoteDetailSheet(props: IProps) {
 
   const customerData = [
     { title: `Nome`, text: data.customer?.name },
+    { title: `Nome empresa`, text: data.customer?.companyName },
     { title: `e-mail`, text: data.customer?.email },
     { title: `Celular`, text: data.customer?.phoneNumber },
   ];

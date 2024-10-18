@@ -16,8 +16,12 @@ export default function PortalDepartaments() {
     contentClassName: `h-full flex flex-col`,
     className: `border-r pb-0 flex flex-col justify-between mobile:border-none`,
     images: [
-      "/images/departaments/engenharia.jpg",
-      "/images/departaments/engenharia-2.jpg",
+      "/images/departaments/engenharia_01.jpg",
+      "/images/departaments/engenharia_02.jpg",
+      "/images/departaments/engenharia_03.jpg",
+      "/images/departaments/engenharia_04.jpg",
+      "/images/departaments/engenharia_05.jpg",
+      "/images/departaments/engenharia_06.jpg",
     ],
   };
 
@@ -30,8 +34,16 @@ export default function PortalDepartaments() {
     className: `border-b h-2/4 pb-0 mobile:border-none mobile:h-auto`,
     figureClassName: `h-56 w-[30%] relative top-2 rounded-none rounded-t-2xl shadow-lg mobile:order-1 mobile:w-full mobile:rounded-md`,
     images: [
-      "/images/departaments/usinagem.jpg",
-      "/images/departaments/usinagem-2.jpg",
+      "/images/departaments/usinagem_01.jpg",
+      "/images/departaments/usinagem_02.jpg",
+      "/images/departaments/usinagem_03.jpg",
+      "/images/departaments/usinagem_04.jpg",
+      "/images/departaments/usinagem_05.jpg",
+      "/images/departaments/usinagem_06.jpg",
+      "/images/departaments/usinagem_07.jpg",
+      "/images/departaments/usinagem_08.jpg",
+      "/images/departaments/usinagem_09.jpg",
+      "/images/departaments/usinagem_10.jpg",
     ],
   };
 
@@ -45,8 +57,14 @@ export default function PortalDepartaments() {
     className: `border-b h-2/4 pb-0 mobile:border-none mobile:h-auto`,
     figureClassName: `h-56 w-[30%] relative top-2 rounded-none rounded-t-2xl shadow-lg mobile:w-full mobile:rounded-md`,
     images: [
-      "/images/departaments/montagem-mecanica.jpg",
-      "/images/departaments/montagem-mecanica-3.jpg",
+      "/images/departaments/montagem_mecanica_01.jpg",
+      "/images/departaments/montagem_mecanica_02.jpg",
+      "/images/departaments/montagem_mecanica_03.jpg",
+
+      "/images/departaments/montagem_eletrica_01.jpg",
+      "/images/departaments/montagem_eletrica_02.jpg",
+      "/images/departaments/montagem_eletrica_03.jpg",
+      "/images/departaments/montagem_eletrica_04.jpg",
     ],
   };
 

@@ -40,7 +40,8 @@ export default function NewsPage() {
 
         _loadingStore.setShow(false);
       })
-      .catch(() => {
+      .catch((error) => {
+        console.log(error);
         ToastUtil.error("Ocorreu uma falha ao processar a solicitação");
         _loadingStore.setShow(false);
       });
