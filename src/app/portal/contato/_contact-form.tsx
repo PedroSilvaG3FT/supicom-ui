@@ -13,6 +13,7 @@ import AppFormTextarea from "@/_shared/components/form/form-textarea";
 import { ContactService } from "@/_core/firebase/services/contact.service";
 import { IContactDB } from "@/_shared/interface/contact.interface";
 import { ToastUtil } from "@/_shared/utils/toast.util";
+import AppFormInputPhone from "@/_shared/components/form/form-input-phone";
 
 const formSchema = z.object({
   name: z.string().min(1, "Campo obrigatório"),
@@ -97,7 +98,7 @@ export default function ContactForm() {
             control={form.control}
           />
 
-          <AppFormInput
+          <AppFormInputPhone
             required
             name="phoneNumber"
             control={form.control}

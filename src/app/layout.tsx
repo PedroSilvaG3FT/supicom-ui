@@ -1,5 +1,6 @@
 import "./globals.scss";
 import "react-quill/dist/quill.snow.css";
+import "react-phone-number-input/style.css";
 
 import type { Metadata } from "next";
 import { enviroments } from "@/env/enviroments";

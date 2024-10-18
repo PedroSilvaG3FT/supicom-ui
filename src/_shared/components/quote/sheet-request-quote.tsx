@@ -31,6 +31,7 @@ import AppFormInput from "@/_shared/components/form/form-input";
 import { FormContainer } from "@/_core/components/fragments/form";
 import AppFormTextarea from "@/_shared/components/form/form-textarea";
 import { QuoteService } from "@/_core/firebase/services/quote.service";
+import AppFormInputPhone from "../form/form-input-phone";
 
 const formSchema = z.object({
   name: z.string().min(1, ""),
@@ -197,7 +198,7 @@ export function RequestQuoteSheet(props: IProps) {
                 control={form.control}
               />
 
-              <AppFormInput
+              <AppFormInputPhone
                 required
                 name="phoneNumber"
                 control={form.control}

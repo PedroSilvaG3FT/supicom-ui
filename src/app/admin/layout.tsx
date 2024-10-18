@@ -2,11 +2,13 @@
 
 import Link from "next/link";
 import { LogOut } from "lucide-react";
+import { setLocale } from "@/i18n/service";
 import { useEffect, useState } from "react";
 import Each from "@/_shared/components/app-each";
 import Show from "@/_shared/components/app-show";
 import { cn } from "@/_core/components/lib/utils";
 import MenuGroup from "./_components/ui/menu-group";
+import { ELocale } from "@/_shared/enums/locale.enum";
 import { useAuth } from "@/_core/contexts/auth.context";
 import { Button } from "@/_core/components/fragments/button";
 import { ADMIN_MENU_GROUPS } from "./_constants/menu.contant";
@@ -19,6 +21,7 @@ export default function AdminLayout({ children }: IBaseLayoutProps) {
   const { signOut } = useAuth();
 
   useEffect(() => {
+    setLocale(ELocale.PT_BR);
     document.body.style.overflow = "hidden";
   }, []);
 

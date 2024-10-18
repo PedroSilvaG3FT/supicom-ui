@@ -43,7 +43,7 @@ export default function ContactContent() {
         </Button>
 
         <Button variant="secondary" asChild className="rounded-full">
-          <Link href="mailto:supicom@uol.com.br">
+          <Link href="mailto:gerencia@supicom.com.br">
             <Mail />
           </Link>
         </Button>
