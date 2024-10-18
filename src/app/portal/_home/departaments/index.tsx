@@ -14,19 +14,6 @@ export default function PortalDepartaments() {
     images: [
       "/images/departaments/engenharia.jpg",
       "/images/departaments/engenharia-2.jpg",
-
-      "/images/departaments/engenharia.jpg",
-      "/images/departaments/engenharia-2.jpg",
-
-      "/images/departaments/engenharia.jpg",
-      "/images/departaments/engenharia-2.jpg",
-
-      "/images/departaments/engenharia.jpg",
-      "/images/departaments/engenharia-2.jpg",
-      "/images/departaments/engenharia.jpg",
-      "/images/departaments/engenharia-2.jpg",
-      "/images/departaments/engenharia.jpg",
-      "/images/departaments/engenharia-2.jpg",
     ],
   };
 
