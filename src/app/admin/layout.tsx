@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { LogOut } from "lucide-react";
 import { setLocale } from "@/i18n/service";
+import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import Each from "@/_shared/components/app-each";
 import Show from "@/_shared/components/app-show";
@@ -18,12 +19,19 @@ import { Sidebar, SidebarBody } from "@/_core/components/fragments/ui/sidebar";
 
 export default function AdminLayout({ children }: IBaseLayoutProps) {
   const [open, setOpen] = useState(false);
+
+  const router = useRouter();
   const { signOut } = useAuth();
 
   useEffect(() => {
     setLocale(ELocale.PT_BR);
     document.body.style.overflow = "hidden";
   }, []);
+
+  const handleSignOut = () => {
+    signOut();
+    router.push("/login");
+  };
 
   return (
     <section
@@ -67,7 +75,7 @@ export default function AdminLayout({ children }: IBaseLayoutProps) {
               <Button
                 size="icon"
                 variant="ghost"
-                onClick={signOut}
+                onClick={handleSignOut}
                 className="text-red-400"
               >
                 <LogOut />

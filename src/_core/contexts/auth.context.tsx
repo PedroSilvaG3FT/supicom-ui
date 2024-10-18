@@ -55,7 +55,7 @@ const AuthProvider: React.FC<IAuthProviderProps> = ({ children }) => {
     try {
       _loadingStore.setShow(true);
 
-      const response = await _userService.signUp({
+      await _userService.signUp({
         ...data,
         uid: "",
         creationDate: Timestamp.now(),
