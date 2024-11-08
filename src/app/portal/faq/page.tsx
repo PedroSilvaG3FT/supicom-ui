@@ -21,20 +21,28 @@ export default function FaqPage() {
       text: t("portal.faq.question_01_description"),
     },
     {
-      title: t("portal.faq.question_01_title"),
-      text: t("portal.faq.question_01_description"),
+      title: t("portal.faq.question_02_title"),
+      text: t("portal.faq.question_02_description"),
     },
     {
-      title: t("portal.faq.question_01_title"),
-      text: t("portal.faq.question_01_description"),
+      title: t("portal.faq.question_03_title"),
+      text: t("portal.faq.question_03_description"),
     },
     {
-      title: t("portal.faq.question_01_title"),
-      text: t("portal.faq.question_01_description"),
+      title: t("portal.faq.question_04_title"),
+      text: t("portal.faq.question_04_description"),
     },
     {
-      title: t("portal.faq.question_01_title"),
-      text: t("portal.faq.question_01_description"),
+      title: t("portal.faq.question_05_title"),
+      text: t("portal.faq.question_05_description"),
+    },
+    {
+      title: t("portal.faq.question_06_title"),
+      text: t("portal.faq.question_06_description"),
+    },
+    {
+      title: t("portal.faq.question_07_title"),
+      text: t("portal.faq.question_07_description"),
     },
   ];
 
@@ -75,9 +83,7 @@ export default function FaqPage() {
             render={(item, index) => (
               <AccordionItem value={String(index)}>
                 <AccordionTrigger>
-                  <span className="truncate mobile:max-w-[90%]">
-                    {item.title} {index + 1}
-                  </span>
+                  <span className="text-base text-left">{item.title}</span>
                 </AccordionTrigger>
                 <AccordionContent>{item.text}</AccordionContent>
               </AccordionItem>

@@ -166,10 +166,28 @@
       "development_description": "Desarrollamos proyectos industriales personalizados, desde la planificación hasta la ejecución, garantizando soluciones innovadoras y eficientes para su negocio."
     },
     "faq": {
-      "title": "Preguntas frecuentes",
-      "subtitle": "No encontró lo que necesitaba",
-      "question_01_title": "Una pregunta frecuente",
-      "question_01_description": "Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas 'Letraset', las cuales contenian pasajes de Lorem Ipsum"
+      "title": "Preguntas Frecuentes",
+      "subtitle": "¿No encontraste lo que necesitabas? Consulta respuestas a algunas preguntas comunes.",
+      "question_01_title": "¿A qué industrias sirve principalmente Supicom?",
+      "question_01_description": "Supicom atiende a industrias en el sector de cables, alambres conductores y otras áreas de metalurgia que requieren equipos de alto rendimiento para sus operaciones.",
+
+      "question_02_title": "¿Qué servicios ofrece Supicom?",
+      "question_02_description": "Ofrecemos desde el desarrollo y fabricación de equipos personalizados hasta soporte técnico, mantenimiento especializado y un servicio personalizado para garantizar la máxima eficiencia y durabilidad de los equipos de nuestros clientes.",
+
+      "question_03_title": "¿Supicom trabaja con clientes fuera de Brasil?",
+      "question_03_description": "Sí, tenemos presencia internacional con clientes en países como Chile, Argentina y España, consolidando nuestra reputación más allá de Brasil.",
+
+      "question_04_title": "¿Cuáles son las características únicas de los productos de Supicom?",
+      "question_04_description": "Nuestros productos están desarrollados con tecnología de punta, diseñados para durabilidad, eficiencia y personalización a fin de satisfacer las necesidades específicas de cada cliente. También ofrecemos soporte técnico continuo.",
+
+      "question_05_title": "¿Cómo puedo solicitar una cotización?",
+      "question_05_description": "Puedes solicitar una cotización a través de nuestro sitio web añadiendo productos a la solicitud de cotización o contactándonos directamente. Un representante se pondrá en contacto contigo con los detalles necesarios.",
+
+      "question_06_title": "¿Supicom ofrece mantenimiento y soporte para el equipo?",
+      "question_06_description": "Sí, brindamos servicios de mantenimiento especializado y soporte técnico para asegurar que tu equipo opere eficientemente con el menor tiempo de inactividad posible.",
+
+      "question_07_title": "¿Puedo personalizar el equipo para mi línea de producción?",
+      "question_07_description": "Sí, nuestros equipos se pueden adaptar a los requisitos específicos de tu operación, asegurando que se ajusten a tus procesos de producción."
     },
     "contact": {
       "description": "Póngase en contacto con nosotros para obtener soporte, enviar sugerencias o discutir asociaciones. Siempre estamos listos para ayudar.",

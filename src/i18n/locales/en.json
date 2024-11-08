@@ -166,10 +166,28 @@
       "development_description": "We develop customized industrial projects, from planning to execution, ensuring innovative and efficient solutions for your business."
     },
     "faq": {
-      "title": "Frequently asked questions",
-      "subtitle": "Didn't find what you needed",
-      "question_01_title": "A frequent question",
-      "question_01_description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages"
+      "title": "Frequently Asked Questions",
+      "subtitle": "Didn't find what you needed? Check out answers to some common questions.",
+      "question_01_title": "What industries does Supicom primarily serve?",
+      "question_01_description": "Supicom serves industries in the cable, conductor wire, and other metallurgy sectors that require high-performance equipment for their operations.",
+
+      "question_02_title": "What services does Supicom offer?",
+      "question_02_description": "We provide everything from custom equipment development and manufacturing to technical support, specialized maintenance, and personalized service to ensure maximum efficiency and longevity of our clients' equipment.",
+
+      "question_03_title": "Does Supicom serve clients outside of Brazil?",
+      "question_03_description": "Yes, we have an international presence with clients in countries such as Chile, Argentina, and Spain, solidifying our reputation beyond Brazil.",
+
+      "question_04_title": "What are the unique features of Supicom’s products?",
+      "question_04_description": "Our products are developed with cutting-edge technology, designed for durability, efficiency, and customization to meet each client's specific needs. We also provide ongoing technical support.",
+
+      "question_05_title": "How can I request a quote?",
+      "question_05_description": "You can request a quote through our website by adding products to the quote request or by directly contacting us. A representative will get back to you with the necessary details.",
+
+      "question_06_title": "Does Supicom offer maintenance and support for the equipment?",
+      "question_06_description": "Yes, we provide specialized maintenance services and technical support to ensure that your equipment operates efficiently with minimal downtime.",
+
+      "question_07_title": "Can I customize equipment for my production line?",
+      "question_07_description": "Yes, our equipment can be tailored to meet the specific requirements of your operation, ensuring they are aligned with your production processes."
     },
     "contact": {
       "description": "Get in touch with us for support, send suggestions, or discuss partnerships. We are always ready to help.",
