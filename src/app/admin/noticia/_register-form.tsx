@@ -1,7 +1,7 @@
 "use client";
 
 import { z } from "zod";
-import { Save } from "lucide-react";
+import { Save, X } from "lucide-react";
 import ReactQuill from "react-quill";
 import { useForm } from "react-hook-form";
 import { useEffect, useState } from "react";
@@ -15,6 +15,9 @@ import { FormContainer } from "@/_core/components/fragments/form";
 import AppFormSwitch from "@/_shared/components/form/form-switch";
 import { Separator } from "@/_core/components/fragments/separator";
 import { IBaseLocaleDB } from "@/_shared/interface/locale.interface";
+import { FileUpload } from "@/_core/components/fragments/ui/file-upload";
+import Each from "@/_shared/components/app-each";
+import Image from "next/image";
 
 const formSchema = z.object({
   active: z.boolean(),
@@ -28,13 +31,17 @@ interface IFormData extends z.infer<typeof formSchema> {}
 
 interface IProps {
   initialData?: INewsItem;
-  onSubmit: (data: INewsItem, file?: Blob) => void;
+  onSubmit: (data: INewsItem, file?: Blob, galleryFiles?: Blob[]) => void;
 }
 
 export default function NewsRegisterForm(props: IProps) {
   const { onSubmit, initialData } = props;
 
   const [bannerImage, setBannerFile] = useState<Blob | undefined>(undefined);
+  const [galleryImages, setGalleryImages] = useState<Blob[]>([]);
+  const [existingGalleryImages, setExistingGalleryImages] = useState<string[]>(
+    []
+  );
   const [content, setContent] = useState<IBaseLocaleDB>({
     pt: "",
     en: "",
@@ -73,9 +80,11 @@ export default function NewsRegisterForm(props: IProps) {
         updateDate: new Date(),
         creationDate: new Date(),
         id: initialData?.id ?? "",
+        imagesURL: existingGalleryImages,
         imageBannerURL: initialData?.imageBannerURL ?? "",
       },
-      bannerImage
+      bannerImage,
+      galleryImages
     );
   }
 
@@ -91,6 +100,10 @@ export default function NewsRegisterForm(props: IProps) {
       en: initialData?.content?.en || prevContent.en || "",
       es: initialData?.content?.es || prevContent.es || "",
     }));
+
+    if (initialData?.imagesURL) {
+      setExistingGalleryImages(initialData.imagesURL);
+    }
   };
 
   useEffect(() => {
@@ -107,6 +120,14 @@ export default function NewsRegisterForm(props: IProps) {
     );
 
     return !form.formState.isValid || !isImageValid || !isContentValid;
+  };
+
+  const handleRemoveExistingImage = (index: number) => {
+    setExistingGalleryImages((prev) => prev.filter((_, i) => i !== index));
+  };
+
+  const handleRemoveNewImage = (index: number) => {
+    setGalleryImages((prev) => prev.filter((_, i) => i !== index));
   };
 
   return (
@@ -198,6 +219,74 @@ export default function NewsRegisterForm(props: IProps) {
               onChange={(data) => handleContentChange(data, "es")}
             />
           </article>
+        </section>
+
+        <Separator className="mb-7 mt-24" />
+
+        <section>
+          <h5 className="mb-2 text-sm font-medium">Galeria</h5>
+
+          <section className="mt-6 grid gap-6 grid-cols-1">
+            <article className="grid gap-4 grid-cols-6 ">
+              <Each
+                data={existingGalleryImages}
+                render={(item, index) => (
+                  <figure key={`existing-${index}`} className="relative border">
+                    <Button
+                      size="icon"
+                      type="button"
+                      variant="destructive"
+                      className="absolute -top-4 -left-4 rounded-full scale-90"
+                      onClick={() => handleRemoveExistingImage(index)}
+                    >
+                      <X />
+                    </Button>
+
+                    <Image
+                      src={item}
+                      width={200}
+                      height={200}
+                      alt={`noticia_galeria_${index + 1}`}
+                      className="rounded-lg w-full h-full bg-black object-contain"
+                    />
+                  </figure>
+                )}
+              />
+
+              <Each
+                data={galleryImages}
+                render={(item, index) => (
+                  <figure key={`new-${index}`} className="relative">
+                    <Button
+                      size="icon"
+                      type="button"
+                      variant="destructive"
+                      className="absolute -top-4 -left-4 rounded-full scale-90"
+                      onClick={() => handleRemoveNewImage(index)}
+                    >
+                      <X />
+                    </Button>
+
+                    <Image
+                      src={URL.createObjectURL(item)}
+                      width={200}
+                      height={200}
+                      alt={`nova_imagem_${index + 1}`}
+                      className="rounded-lg bg-black object-contain"
+                    />
+                  </figure>
+                )}
+              />
+            </article>
+
+            <FileUpload
+              maxFiles={6}
+              title="Fotos"
+              accept="image/*"
+              onChange={(files) => setGalleryImages(files)}
+              description="Insira fotos para a galeria de imagens"
+            />
+          </section>
         </section>
       </form>
     </FormContainer>

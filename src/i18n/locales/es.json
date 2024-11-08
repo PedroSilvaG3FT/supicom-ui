@@ -6,22 +6,22 @@
   },
   "example": {
     "title": "¡Hola mundo!",
-    "subtitle": "Este es un texto en portugués (pt-BR)",
-    "description": "En los últimos años, el desarrollo web ha evolucionado significativamente y la demanda de aplicaciones eficientes y escalables ha aumentado.\nPara satisfacer esta necesidad, creamos un proyecto boilerplate que combina Next.js, Tailwind CSS, Shadcn UI y Firebase. Este stack permite a los desarrolladores crear aplicaciones web modernas de manera rápida y eficaz.\n\nNext.js es un potente framework de React que ofrece renderización del lado del servidor y generación de sitios estáticos. Mejora el rendimiento y el SEO, lo que lo convierte en una excelente opción para los desarrolladores. Tailwind CSS, por su parte, es un framework CSS basado en utilidades que permite un desarrollo rápido de la interfaz de usuario, con un enfoque en la personalización y la capacidad de respuesta. Shadcn UI complementa esto, proporcionando componentes prediseñados que son fáciles de integrar y personalizar.\n\nAceternity es otra biblioteca de componentes de interfaz de usuario que destaca por su capacidad para crear experiencias visuales impresionantes e interactivas. Al igual que Shadcn UI, Aceternity ofrece una colección de componentes prediseñados que facilitan la construcción de interfaces modernas y receptivas. Sin embargo, lo que distingue a Aceternity es su integración con Framer, lo que permite a los desarrolladores crear elementos de interfaz de usuario en 3D y con perspectiva. Este enfoque innovador enriquece la experiencia del usuario, proporcionando interacciones dinámicas y diseños visualmente atractivos.\n\nFirebase sirve como la solución backend, ofreciendo características de base de datos en tiempo real, autenticación y alojamiento. Al aprovechar Firebase, los desarrolladores pueden centrarse en construir funciones sin preocuparse por la gestión del servidor. Este proyecto de boilerplate sirve como una base sólida para cualquiera que desee comenzar su viaje en el desarrollo web con estas tecnologías modernas."
+    "subtitle": "Este es un texto en Español (es-ES)",
+    "description": "En los últimos años, el desarrollo web ha evolucionado significativamente"
   },
   "phrases": {
     "industrial_innovation": "Innovación Industrial",
     "superior_quality": "Calidad Superior",
     "advanced_technology": "Tecnología Avanzada",
     "customized_solutions": "Soluciones Personalizadas",
-    "operational_efficiency": "Eficiencia Operacional",
+    "operational_efficiency": "Eficiencia Operativa",
     "specific_equipment": "Equipos Específicos",
     "specialized_maintenance": "Mantenimiento Especializado",
     "reliable_performance": "Rendimiento Confiable",
     "parts_accessories": "Piezas y Accesorios",
-    "excellence_services": "Excelencia en Servicios",
+    "excellence_services": "Servicios de Excelencia",
     "commitment_quality": "Compromiso con la Calidad",
-    "personalized_service": "Servicio Personalizado",
+    "personalized_service": "Atención Personalizada",
     "sustainability_innovation": "Sostenibilidad e Innovación",
     "high_performance_machines": "Máquinas de Alto Rendimiento"
   },
@@ -32,44 +32,49 @@
     "today": "Hoy",
     "send": "Enviar",
     "contact": "Contacto",
-    "select": "Seleccionar",
+    "select": "Seleccione",
     "catalog": "Catálogo",
     "products": "Productos",
     "see_more": "Ver más",
     "services": "Servicios",
+    "machines": "Máquinas",
     "customers": "Clientes",
-    "smart_phone": "Teléfono inteligente",
+    "smart_phone": "Celular",
     "see_routes": "Ver rutas",
     "description": "Descripción",
     "consulting": "Consultando",
     "observation": "Observación",
     "on_the_market": "En el mercado",
-    "company_name": "Nome empresa",
+    "company_name": "Nombre de la empresa",
     "developed_by": "Desarrollado por",
-    "get_in_touch": "Ponte en contacto",
+    "get_in_touch": "Póngase en contacto",
     "quality_supicom": "Calidad Supicom",
-    "request_quote": "Solicitar una cotización",
-    "add_products_to_quote": "Añadir productos a la cotización"
+    "request_quote": "Solicite una cotización",
+    "more_info": "Para más información, consúltenos.",
+    "add_products_to_quote": "Añada productos a la cotización"
   },
   "portal": {
     "about_us": {
-      "title": "Sobre Nosotros",
-      "description": "Somos una empresa comprometida en proporcionar soluciones para el sector industrial de cables y conductores de energía, con equipos y servicios que garantizan la eficiencia y la continuidad de sus operaciones.\n\nCon décadas de experiencia en el mercado, fabricamos equipos de alto rendimiento para satisfacer las demandas personalizadas de las fábricas de cables conductores de energía.\n\nNuestro compromiso va más allá de la fabricación. Ofrecemos soporte técnico y mantenimiento especializado, garantizando que sus equipos siempre estén en pleno funcionamiento, minimizando el tiempo de inactividad y maximizando la productividad de su negocio. Sabemos que cada industria tiene desafíos únicos, por eso desarrollamos soluciones personalizadas para satisfacer las necesidades específicas de cada cliente."
+      "title": "Sobre nosotros",
+      "description": "Somos una empresa comprometida en proporcionar soluciones para el sector industrial de hilos y cables conductores de energía, con equipos y servicios que garantizan la eficiencia y la continuidad de sus operaciones.\n\nCon décadas de experiencia en el mercado, fabricamos equipos de alto rendimiento para atender demandas personalizadas de manufacturas de cables conductores de energía. Nuestra actuación se extiende más allá de las fronteras nacionales, con contratos establecidos en países como Chile, Argentina y España, consolidando nuestra presencia internacional.\n\nNuestro compromiso va más allá de la fabricación. Ofrecemos soporte técnico y mantenimiento especializado, garantizando que sus equipos estén siempre en pleno funcionamiento, minimizando paradas y maximizando la productividad de su negocio. Sabemos que cada industria tiene desafíos únicos, y por eso desarrollamos soluciones personalizadas que atienden las necesidades específicas de cada cliente, ya sea en el mercado nacional o internacional."
     },
     "our_departments": {
-      "title": "Nuestros Departamentos",
+      "title": "Nuestros departamentos",
       "engineering_title": "Ingeniería",
       "engineering_description": "Nuestro departamento de ingeniería es responsable de desarrollar soluciones innovadoras, diseñando equipos y sistemas que satisfacen las necesidades específicas de cada cliente, garantizando alta eficiencia y calidad.",
+
       "machining_title": "Mecanizado",
-      "machining_description": "Nuestro departamento de Mecanizado está dedicado a la fabricación de piezas de alta precisión, utilizando centros de mecanizado CNC, tornos CNC, máquinas convencionales y equipos de última tecnología. Atendemos desde pequeñas demandas hasta proyectos complejos y a medida, siempre con un enfoque en la calidad, la eficiencia y los plazos estrictos.\n\nNuestra experiencia garantiza soluciones que cumplen con los más altos estándares, desde el desarrollo hasta la producción final, con especial atención a los detalles y los acabados.",
+      "machining_description": "Nuestro departamento de Mecanizado está dedicado a la fabricación de piezas de alta precisión, utilizando centros de mecanizado CNC, tornos CNC, máquinas convencionales y equipos de vanguardia. Atendemos desde pequeñas demandas hasta proyectos complejos y a medida, siempre con enfoque en calidad, eficiencia y plazos rigurosos.\n\nNuestra experiencia garantiza soluciones que cumplen con las más altas exigencias, desde el desarrollo hasta la producción final, con especial atención a los detalles y acabados.",
+
       "assembly_title": "Montaje Mecánico y Electrónico",
-      "assembly_description": "Integramos componentes mecánicos y electrónicos, entregando sistemas completos y personalizados.\n\nNuestro equipo cualificado realiza montajes de dispositivos, máquinas y equipos de alta complejidad, siempre garantizando la perfecta interacción entre los componentes. Nos aseguramos de que cada solución entregada funcione de manera eficiente, segura y cumpla con las normas técnicas exigidas por el mercado."
+      "assembly_description": "Integramos componentes mecánicos y electrónicos, entregando sistemas completos y personalizados.\n\nNuestro equipo cualificado realiza montajes de dispositivos, máquinas y equipos de alta complejidad, siempre garantizando la perfecta interacción entre los componentes. Aseguramos que cada solución entregada opere de forma eficiente, segura y dentro de las normas técnicas exigidas por el mercado."
     },
     "where_are_we": "¿Dónde estamos?",
     "hero": {
-      "title": "Movemos la Industria",
-      "description": "En la industria, cada segundo cuenta. Ofrecemos soluciones completas para garantizar que su operación nunca se detenga.",
-      "satisfaction": "Satisfacción"
+      "title": "Movemos\nla industria",
+      "description": "Ofrecemos soluciones completas para garantizar que\nsu operación nunca se detenga.",
+      "satisfaction": "Satisfacción",
+      "machines_sold": "Máquinas vendidas"
     },
     "product": {
       "title": "Productos",
@@ -77,60 +82,114 @@
       "see_full_catalog": "Ver catálogo completo",
       "check_catalog": "Consulte nuestro catálogo de productos",
       "subtitle": "Máquinas y Equipos de Alta Calidad",
-      "banner_01_title": "Innovaciones para su Empresa",
-      "banner_01_description": "Explore las últimas máquinas y equipos que revolucionarán su línea de producción.",
-      "banner_02_title": "Flexibilidad para su Negocio",
-      "banner_02_description": "Acceda a los mejores equipos cuando los necesite. ¡Alquile con practicidad y eficiencia!",
-      "banner_03_title": "Asociaciones que Generan Resultados",
-      "banner_03_description": "Descubra cómo nuestras soluciones pueden agregar valor a su negocio. ¡Juntos somos más fuertes!",
+      "banner_01_title": "Innovaciones\npara su empresa",
+      "banner_01_description": "¡Explore las máquinas y equipos más recientes\nque revolucionarán su línea de producción!",
+      "banner_02_title": "Flexibilidad\npara Su Negocio",
+      "banner_02_description": "Acceda a los mejores equipos cuando los necesite.\n¡Alquile con practicidad y eficiencia!",
+      "banner_03_title": "Alianzas\nque Generan Resultados",
+      "banner_03_description": "Descubra cómo nuestras soluciones pueden agregar valor a su negocio.\n¡Juntos somos más fuertes!",
       "categories": {
-        "stranders": "Stranders/Torcedores",
-        "pay_offs": "Desenrolladores y Enrolladores",
-        "wire_drawing": "Estirado de Alambre",
-        "caterpillar_capstans": "Caterpillar Capstans",
+        "stranders": "Torcedoras/Trenzadoras",
+        "pay_offs": "Desbobinadores y Bobinadores",
+        "wire_drawing": "Trefilado",
+        "caterpillar_capstans": "Tiradores",
         "sz_line": "Línea SZ"
+      },
+      "catalog": {
+        "torcedeira_rigida": {
+          "title": "Torcedora Rígida",
+          "description": "Este equipo puede contener módulos (jaulas) con 6 bobinas, 12 bobinas, 18 bobinas, y otras bajo consulta.\n\nEsta máquina fue desarrollada para la torsión de hilos o cables de cobre y aluminio utilizando bobinas estandarizadas de 630mm de diámetro dispuestas linealmente sobre el eje principal en partes llamadas jaulas.\n\nTenemos línea de torsión compuesta por tres etapas, una unidad con seis bobinas, una unidad con doce bobinas y una con dieciocho bobinas y otras bajo consulta.\nAdecuada tanto para la formación de cables como para el blindaje."
+        },
+        "buncher_630_1800": {
+          "title": "Buncher's 630 - 1800",
+          "description": "Los Buncher's son máquinas de doble torsión para la fabricación de cables conductores de cobre y aluminio, con alto rendimiento y con potencias que varían entre 20KW y 180KW, con velocidades lineales de hasta 300m/min y torsiones de 5000T/min según el equipo.\n\nTenemos Buncher 630, Buncher 800, Buncher 1000, Buncher 1250, Buncher 1600."
+        },
+        "desenrolador_duplo": {
+          "title": "Desbobinador Doble B630/800/B1000/1250",
+          "description": "Este desbobinador motorizado fue desarrollado para alimentar Buncher's y otros equipos que necesitan un suministro continuo, con tensión controlada, de hilos desnudos o aislados.\n\nSu velocidad máxima es de 300m/min, utilizando bobinas estandarizadas de 630mm-800mm de diámetro, y de 1000mm a 1250mm de diámetro."
+        },
+        "bobinador_desbobinador_portal": {
+          "title": "Bobinador y Desbobinador Pórtico",
+          "description": "Estos equipos tipo pórtico fueron desarrollados para alojar una amplia gama de bobinas, donde su estructura se mueve automáticamente a través de transmisión mecánica motorizada, tanto para el cierre como para la elevación y distribución del cable para el tipo bobinador, siendo controlado simultáneamente con la velocidad de la línea de producción a instalar.\n\nSe desarrollan de acuerdo a las necesidades de cada cliente."
+        },
+        "desenrolador_multiplo": {
+          "title": "Desbobinador Múltiple 6 Bobinas",
+          "description": "Este desbobinador motorizado fue diseñado para alimentar buncher's y otros equipos que requieren un suministro continuo, con tensión controlada, de hilos desnudos o aislados.\n\nEste equipo aloja múltiples bobinas de 600mm a 800mm de diámetro, su velocidad lineal máxima es de 300 m/min."
+        },
+        "planetaria_1000": {
+          "title": "Planetaria 1000",
+          "description": "Esta línea reunidora planetaria fue desarrollada para realizar la reunión de cables de aluminio para bobinas de 1000mm de diámetro."
+        },
+        "multifilar_8_fios": {
+          "title": "Multifilar de 8 Hilos (TM8)",
+          "description": "La línea de trefilado multihilos fue desarrollada para la producción de hilos de cobre para cables conductores, incluyendo cables flexibles, cables automotrices, cables de batería, cables de instalación de edificios, fotovoltaicos, cables de datos, cables especiales, entre otros.\n\nLa línea de trefilado SUPICOM está compuesta por la unidad de Trefilado, Recocedor y Bobinador, una línea compacta, trabajando en sincronismo, utilizando tecnología avanzada y actualizada en el mercado industrial."
+        },
+        "desenrolador_vergalhao": {
+          "title": "Desbobinador de Varillas",
+          "description": "Desbobinador especializado para varillas, diseñado para proporcionar un desenrollado suave y controlado de materiales pesados como varillas de metal."
+        },
+        "enfitadeira": {
+          "title": "Encintadora",
+          "description": "Máquina diseñada para aplicar cintas de forma precisa y eficiente en diversos tipos de cables e hilos, garantizando una protección y aislamiento adecuados."
+        },
+        "aplicadores_de_linhas": {
+          "title": "Aplicadores de Líneas",
+          "description": "Equipos especializados para la aplicación precisa de líneas en procesos de producción de cables, garantizando alineación y tensión adecuadas."
+        },
+        "catterpila_volante": {
+          "title": "Oruga y Volante",
+          "description": "Sistema de tracción y control para líneas de producción de cables, ofreciendo precisión en el control de velocidad y tensión durante el proceso de fabricación."
+        },
+        "bobinadores": {
+          "title": "Bobinadores",
+          "description": "Equipos diseñados para enrollar cables e hilos de forma uniforme y controlada en bobinas, garantizando un almacenamiento y transporte eficientes."
+        },
+        "desbobinadores": {
+          "title": "Desbobinadores",
+          "description": "Máquinas especializadas para desenrollar cables e hilos de bobinas de forma controlada, alimentando líneas de producción o procesos de instalación."
+        }
       }
     },
     "news": {
-      "title": "Noticias",
+      "title": "Destacados",
       "subtitle": "Manténgase al día con las últimas noticias"
     },
     "service": {
-      "subtitle": "Soluciones Industriales Personalizadas para su Negocio",
+      "subtitle": "Soluciones Industriales Personalizadas para su negocio",
       "manufacturing_title": "Fabricación",
-      "manufacturing_description": "Proporcionamos máquinas y equipos especializados para varios sectores industriales, como aserraderos, la industria gráfica y la refinación de petróleo.",
+      "manufacturing_description": "Suministramos máquinas y equipos especializados para diversos sectores industriales, como madereras, industria gráfica y refinación de petróleo.",
       "rent_title": "Alquiler",
       "rent_description": "Ofrecemos alquiler de máquinas y equipos comerciales e industriales sin operador, adecuados para diversas necesidades.",
       "maintenance_title": "Mantenimiento",
-      "maintenance_description": "Brindamos servicios de mantenimiento y reparación de máquinas industriales, garantizando la máxima eficiencia y longevidad de los equipos.",
+      "maintenance_description": "Prestamos servicios de mantenimiento y reparación de máquinas industriales, garantizando la máxima eficiencia y longevidad de los equipos.",
       "development_title": "Desarrollo",
       "development_description": "Desarrollamos proyectos industriales personalizados, desde la planificación hasta la ejecución, garantizando soluciones innovadoras y eficientes para su negocio."
     },
     "faq": {
-      "title": "Preguntas Frecuentes",
-      "subtitle": "¿No encontró lo que necesitaba?",
+      "title": "Preguntas frecuentes",
+      "subtitle": "No encontró lo que necesitaba",
       "question_01_title": "Una pregunta frecuente",
-      "question_01_description": "Lorem Ipsum es simplemente el texto ficticio de la industria de la impresión y la composición tipográfica. Lorem Ipsum ha sido el texto estándar ficticio de la industria desde el siglo XVI, cuando un impresor desconocido tomó una galera de tipos y los mezcló para hacer un libro de muestras tipográficas. Ha sobrevivido no solo cinco siglos, sino también el salto a la composición tipográfica electrónica, permaneciendo esencialmente sin cambios. Fue popularizado en la década de 1960 con el lanzamiento de hojas de Letraset que contenían pasajes de Lorem Ipsum"
+      "question_01_description": "Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas 'Letraset', las cuales contenian pasajes de Lorem Ipsum"
     },
     "contact": {
-      "description": "Contáctenos para soporte, envíe sugerencias o discuta asociaciones. Siempre estamos listos para ayudar.",
-      "customer_support": "Soporte al Cliente",
-      "customer_support_description": "¿Tienes preguntas o necesitas ayuda? Contáctanos para soporte inmediato.",
+      "description": "Póngase en contacto con nosotros para obtener soporte, enviar sugerencias o discutir asociaciones. Siempre estamos listos para ayudar.",
+      "customer_support": "Atención al cliente",
+      "customer_support_description": "¿Tiene dudas o necesita ayuda? Hable con nosotros para obtener soporte inmediato.",
       "suggestions": "Sugerencias",
-      "suggestions_description": "Envíanos tus sugerencias y ayúdanos a mejorar nuestros servicios.",
+      "suggestions_description": "Envíe sus sugerencias y ayúdenos a mejorar nuestros servicios.",
       "partnerships": "Asociaciones",
-      "partnerships_description": "¿Interesado en asociaciones? Contáctenos para explorar oportunidades de colaboración.",
+      "partnerships_description": "¿Interesado en asociaciones? Hable con nosotros para explorar oportunidades de colaboración.",
       "form": {
-        "title": "Ponte en contacto",
-        "subtitle": "Complete el siguiente formulario y describa su solicitud. ¡Nuestro equipo se pondrá en contacto pronto!"
+        "title": "Contáctenos",
+        "subtitle": "Complete el formulario a continuación y describa su solicitud. ¡Nuestro equipo le responderá pronto!"
       }
     },
     "request_quote": {
-      "title": "Solicitar Cotización",
-      "subtitle": "Ingrese sus datos y en unos momentos un representante se pondrá en contacto con usted"
+      "title": "Solicitar cotización",
+      "subtitle": "Ingrese sus datos, en breve un representante se pondrá en contacto con usted"
     },
     "footer": {
-      "site_map": "Mapa del Sitio",
+      "site_map": "Mapa del sitio",
       "institutional": "Institucional",
       "treatment": "Atención"
     }

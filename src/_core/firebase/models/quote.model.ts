@@ -27,6 +27,7 @@ export class QuoteModel {
       note: model.note || "",
       status: model.status || "",
       observation: model.observation || "",
+      responsibleName: model.responsibleName || "",
 
       customer: model.customer,
       productsSlug: model.productsSlug,

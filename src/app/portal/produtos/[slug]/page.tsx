@@ -14,6 +14,7 @@ import AppStarsLabel from "@/_shared/components/app-stars-label";
 import { Separator } from "@/_core/components/fragments/separator";
 import { IProductItem } from "@/_shared/interface/product.interface";
 import RequestQuoteButton from "../../_components/request-quote-button";
+import AppLoadingIndicator from "@/_shared/components/loading/app-loading-indicator";
 
 export default function ProductDetail() {
   const params = useParams();
@@ -46,7 +47,7 @@ export default function ProductDetail() {
       <Show>
         <Show.When condition={!isLoaded}>
           <section className="min-h-[80dvh] flex flex-col items-center justify-center">
-            <Search className="w-12 h-12 mb-4" />
+            <AppLoadingIndicator />
             <h3>{t("base.consulting")}...</h3>
           </section>
         </Show.When>
@@ -115,6 +116,8 @@ export default function ProductDetail() {
                 <Separator className="my-4" />
 
                 <p className="whitespace-pre-line">{product.description}</p>
+                <br />
+                <p className="font-semibold">{t("base.more_info")}</p>
               </section>
             </section>
           </section>

@@ -62,9 +62,7 @@ export default function PortalHeader() {
                 width={120}
                 height={120}
                 alt="Supicom"
-                src={
-                  isApplyStyles ? "/images/logo.svg" : "/images/logo-white.svg"
-                }
+                src={isApplyStyles ? "/images/logo.svg" : "/images/logo.svg"}
               />
             </Link>
 

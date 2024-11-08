@@ -36,7 +36,7 @@ export default function NewsUpdatePage() {
       .then((response) => {
         const data = _newsService._model.buildItem(response);
         setData(data);
-
+        console.log("NEWS : ", data);
         _loadingStore.setShow(false);
       })
       .catch(() => {
@@ -46,11 +46,15 @@ export default function NewsUpdatePage() {
       });
   };
 
-  const handleSubmit = async (data: INewsItem, file?: Blob) => {
+  const handleSubmit = async (
+    updatedData: INewsItem,
+    file?: Blob,
+    galleryImages?: Blob[]
+  ) => {
     try {
       _loadingStore.setShow(true);
 
-      if (!!file) {
+      if (file) {
         const fileDTO = FileUtil.blobToFile(file);
         const fileResponse = await _firebaseStorageService.upload(
           fileDTO,
@@ -62,12 +66,45 @@ export default function NewsUpdatePage() {
           true
         );
 
-        data.imageBannerURL = fileURL;
+        updatedData.imageBannerURL = fileURL;
       }
 
-      const modelDTO = _newsService._model.buildRegisterDTO(data);
+      const existingImages = data.imagesURL || [];
+      const updatedImages = updatedData.imagesURL || [];
 
-      await _newsService.update<INewsDB>(String(data.id), modelDTO);
+      const imagesToKeep = existingImages.filter((url) =>
+        updatedImages.includes(url)
+      );
+      const imagesToDelete = existingImages.filter(
+        (url) => !updatedImages.includes(url)
+      );
+      const imagesToCreate = galleryImages || [];
+
+      for (const imageUrl of imagesToDelete) {
+        await _firebaseStorageService.delete(imageUrl);
+      }
+
+      const newImageUrls: string[] = [];
+      for (const image of imagesToCreate) {
+        const imageDTO = FileUtil.blobToFile(image);
+        const imageResponse = await _firebaseStorageService.upload(
+          imageDTO,
+          "news/gallery"
+        );
+
+        const imageURL = await _firebaseStorageService.download(
+          imageResponse.metadata.fullPath,
+          true
+        );
+
+        newImageUrls.push(imageURL);
+      }
+
+      updatedData.imagesURL = [...imagesToKeep, ...newImageUrls];
+
+      const modelDTO = _newsService._model.buildRegisterDTO(updatedData);
+
+      await _newsService.update<INewsDB>(String(updatedData.id), modelDTO);
       ToastUtil.success("Item atualizado com sucesso");
 
       _loadingStore.setShow(false);

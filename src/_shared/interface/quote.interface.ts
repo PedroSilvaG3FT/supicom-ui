@@ -14,6 +14,7 @@ export interface IQuoteDB {
   status: string;
   observation: string;
   productsSlug: string[];
+  responsibleName: string;
   customer: IQuoteCustomer;
 
   updateDate: Timestamp;

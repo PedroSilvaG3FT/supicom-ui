@@ -24,7 +24,11 @@ export default function NewsRegisterPage() {
   const router = useRouter();
   const _loadingStore = loadingStore((state) => state);
 
-  const handleSubmit = async (data: INewsItem, file?: Blob) => {
+  const handleSubmit = async (
+    data: INewsItem,
+    file?: Blob,
+    galleryImages?: Blob[]
+  ) => {
     try {
       _loadingStore.setShow(true);
 
@@ -42,6 +46,39 @@ export default function NewsRegisterPage() {
 
         data.imageBannerURL = fileURL;
       }
+
+      const existingImages = data.imagesURL || [];
+      const updatedImages = data.imagesURL || [];
+
+      const imagesToKeep = existingImages.filter((url) =>
+        updatedImages.includes(url)
+      );
+      const imagesToDelete = existingImages.filter(
+        (url) => !updatedImages.includes(url)
+      );
+      const imagesToCreate = galleryImages || [];
+
+      for (const imageUrl of imagesToDelete) {
+        await _firebaseStorageService.delete(imageUrl);
+      }
+
+      const newImageUrls: string[] = [];
+      for (const image of imagesToCreate) {
+        const imageDTO = FileUtil.blobToFile(image);
+        const imageResponse = await _firebaseStorageService.upload(
+          imageDTO,
+          "news/gallery"
+        );
+
+        const imageURL = await _firebaseStorageService.download(
+          imageResponse.metadata.fullPath,
+          true
+        );
+
+        newImageUrls.push(imageURL);
+      }
+
+      data.imagesURL = [...imagesToKeep, ...newImageUrls];
 
       const modelDTO = _newsService._model.buildRegisterDTO(data);
 

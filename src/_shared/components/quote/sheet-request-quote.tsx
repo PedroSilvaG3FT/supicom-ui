@@ -103,6 +103,7 @@ export function RequestQuoteSheet(props: IProps) {
       note: "",
       products: [],
       productsSlug,
+      responsibleName: "",
       updateDate: new Date(),
       creationDate: new Date(),
       status: EQuoteStatus.CREATED,

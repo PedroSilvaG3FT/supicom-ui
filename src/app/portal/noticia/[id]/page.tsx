@@ -14,6 +14,8 @@ import { Button } from "@/_core/components/fragments/button";
 import { Separator } from "@/_core/components/fragments/separator";
 import { NewsService } from "@/_core/firebase/services/news.service";
 import { INewsDB, INewsItem } from "@/_shared/interface/news.interface";
+import Each from "@/_shared/components/app-each";
+import Show from "@/_shared/components/app-show";
 
 const _newsService = new NewsService();
 
@@ -87,6 +89,33 @@ export default function NewsUpdatePage() {
 
             <Separator className="my-4" />
             <AppSafeHTML html={content} />
+
+            <Show>
+              <Show.When condition={!!data?.imagesURL?.length}>
+                <>
+                  <Separator className="my-4" />
+
+                  <h5 className="mb-4 font-semibold">Galeria</h5>
+
+                  <article className="mobile:max-w-[calc(100vw-64px)] grid gap-4 grid-cols-3 tablet:grid-cols-2 relative z-10 app-scroll-snap__mobile">
+                    <Each
+                      data={data.imagesURL || []}
+                      render={(item, index) => (
+                        <figure className="mobile:snap-center overflow-hidden rounded-2xl group bg-black flex items-center justify-center">
+                          <Image
+                            src={item}
+                            width={200}
+                            height={200}
+                            alt={`${title} - ${index}`}
+                            className="w-full h-full object-contain transition-all duration-500 group-hover:scale-105"
+                          />
+                        </figure>
+                      )}
+                    />
+                  </article>
+                </>
+              </Show.When>
+            </Show>
           </section>
         </section>
       </section>

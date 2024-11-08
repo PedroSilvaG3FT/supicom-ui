@@ -22,6 +22,7 @@ export class NewsModel {
       title: model.title || {},
       author: model.author || "",
       content: model.content || {},
+      imagesURL: model.imagesURL || [],
       imageBannerURL: model.imageBannerURL || "",
 
       updateDate: Timestamp.now(),

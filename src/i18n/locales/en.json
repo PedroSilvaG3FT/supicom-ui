@@ -6,8 +6,8 @@
   },
   "example": {
     "title": "Hello world!",
-    "subtitle": "This is a text in Portuguese (pt-BR)",
-    "description": "In recent years, web development has evolved significantly, and the demand for efficient and scalable applications has increased.\nTo meet this need, we created a boilerplate project that combines Next.js, Tailwind CSS, Shadcn UI, and Firebase. This stack enables developers to quickly and effectively build modern web applications.\n\nNext.js is a powerful React framework that offers server-side rendering and static site generation. It enhances performance and SEO, making it an excellent choice for developers. Tailwind CSS, in turn, is a utility-first CSS framework that allows rapid user interface development with a focus on customization and responsiveness. Shadcn UI complements this by providing pre-designed components that are easy to integrate and customize.\n\nAceternity is another UI component library that stands out for its ability to create impressive and interactive visual experiences. Like Shadcn UI, Aceternity offers a collection of pre-designed components that facilitate building modern and responsive interfaces. However, what sets Aceternity apart is its integration with Framer, allowing developers to create 3D and perspective UI elements. This innovative approach enriches the user experience, providing dynamic interactions and visually appealing designs.\n\nFirebase serves as the backend solution, offering real-time database features, authentication, and hosting. By leveraging Firebase, developers can focus on building features without worrying about server management. This boilerplate project serves as a solid foundation for anyone looking to start their journey in web development with these modern technologies."
+    "subtitle": "This is a text in English (en-US)",
+    "description": "In recent years, web development has evolved significantly"
   },
   "phrases": {
     "industrial_innovation": "Industrial Innovation",
@@ -18,11 +18,11 @@
     "specific_equipment": "Specific Equipment",
     "specialized_maintenance": "Specialized Maintenance",
     "reliable_performance": "Reliable Performance",
-    "parts_accessories": "Parts & Accessories",
-    "excellence_services": "Excellence in Services",
+    "parts_accessories": "Parts and Accessories",
+    "excellence_services": "Excellence Services",
     "commitment_quality": "Commitment to Quality",
     "personalized_service": "Personalized Service",
-    "sustainability_innovation": "Sustainability & Innovation",
+    "sustainability_innovation": "Sustainability and Innovation",
     "high_performance_machines": "High-Performance Machines"
   },
   "base": {
@@ -37,8 +37,9 @@
     "products": "Products",
     "see_more": "See more",
     "services": "Services",
+    "machines": "Machines",
     "customers": "Customers",
-    "smart_phone": "Smartphone",
+    "smart_phone": "Mobile",
     "see_routes": "See routes",
     "description": "Description",
     "consulting": "Consulting",
@@ -49,57 +50,115 @@
     "get_in_touch": "Get in touch",
     "quality_supicom": "Supicom Quality",
     "request_quote": "Request a quote",
-    "add_products_to_quote": "Add products to the quote"
+    "more_info": "For more information, please consult us.",
+    "add_products_to_quote": "Add products to quote"
   },
   "portal": {
     "about_us": {
-      "title": "About Us",
-      "description": "We are a company committed to providing solutions for the energy cable and conductor industry, with equipment and services that ensure the efficiency and continuity of your operations.\n\nWith decades of market experience, we manufacture high-performance equipment to meet the customized demands of energy conductor cable manufacturers.\n\nOur commitment goes beyond manufacturing. We offer technical support and specialized maintenance, ensuring that your equipment is always in full operation, minimizing downtime and maximizing your business's productivity. We know that each industry has unique challenges, which is why we develop personalized solutions to meet the specific needs of each client."
+      "title": "About us",
+      "description": "We are a company committed to providing solutions for the industrial sector of power conducting wires and cables, with equipment and services that ensure the efficiency and continuity of your operations.\n\nWith decades of experience in the market, we manufacture high-performance equipment to meet customized demands of power conductor cable manufacturers. Our operations extend beyond national borders, with contracts established in countries such as Chile, Argentina, and Spain, consolidating our international presence.\n\nOur commitment goes beyond manufacturing. We offer technical support and specialized maintenance, ensuring that your equipment is always in full operation, minimizing downtime and maximizing your business productivity. We know that each industry has unique challenges, and that's why we develop customized solutions that meet the specific needs of each client, whether in the national or international market."
     },
     "our_departments": {
-      "title": "Our Departments",
+      "title": "Our departments",
       "engineering_title": "Engineering",
       "engineering_description": "Our engineering department is responsible for developing innovative solutions, designing equipment and systems that meet the specific needs of each client, ensuring high efficiency and quality.",
+
       "machining_title": "Machining",
-      "machining_description": "Our Machining department is dedicated to manufacturing high-precision parts using CNC machining centers, CNC lathes, conventional machines, and state-of-the-art equipment. We handle everything from small demands to complex and custom projects, always focusing on quality, efficiency, and strict deadlines.\n\nOur expertise guarantees solutions that meet the highest standards, from development to final production, with special attention to detail and finishing.",
+      "machining_description": "Our Machining department is dedicated to manufacturing high-precision parts, using CNC machining centers, CNC lathes, conventional machines, and state-of-the-art equipment. We cater to small demands as well as complex and custom projects, always focusing on quality, efficiency, and strict deadlines.\n\nOur expertise ensures solutions that meet the highest requirements, from development to final production, with special attention to details and finishes.",
+
       "assembly_title": "Mechanical and Electronic Assembly",
-      "assembly_description": "We integrate mechanical and electronic components, delivering complete and customized systems.\n\nOur qualified team performs the assembly of devices, machines, and high-complexity equipment, always ensuring the perfect interaction between the components. We ensure that each solution delivered operates efficiently, safely, and in accordance with the technical standards required by the market."
+      "assembly_description": "We integrate mechanical and electronic components, delivering complete and customized systems.\n\nOur qualified team performs assemblies of highly complex devices, machines, and equipment, always ensuring perfect interaction between components. We ensure that each delivered solution operates efficiently, safely, and within the technical standards required by the market."
     },
     "where_are_we": "Where are we?",
     "hero": {
-      "title": "We Move the Industry",
-      "description": "In the industry, every second counts. We offer complete solutions to ensure that your operation never stops.",
-      "satisfaction": "Satisfaction"
+      "title": "We move\nthe industry",
+      "description": "We offer complete solutions to ensure that\nyour operation never stops.",
+      "satisfaction": "Satisfaction",
+      "machines_sold": "Machines sold"
     },
     "product": {
       "title": "Products",
       "not_fount": "Product not found",
-      "see_full_catalog": "View full catalog",
-      "check_catalog": "Check out our product catalog",
+      "see_full_catalog": "See full catalog",
+      "check_catalog": "Check our product catalog",
       "subtitle": "High-Quality Machines and Equipment",
-      "banner_01_title": "Innovations for Your Company",
-      "banner_01_description": "Explore the latest machines and equipment that will revolutionize your production line!",
-      "banner_02_title": "Flexibility for Your Business",
-      "banner_02_description": "Access the best equipment when you need it. Rent with practicality and efficiency!",
-      "banner_03_title": "Partnerships that Generate Results",
-      "banner_03_description": "Discover how our solutions can add value to your business. Together, we are stronger!",
+      "banner_01_title": "Innovations\nfor your company",
+      "banner_01_description": "Explore the latest machines and equipment\nthat will revolutionize your production line!",
+      "banner_02_title": "Flexibility\nfor Your Business",
+      "banner_02_description": "Access the best equipment when you need it.\nRent with practicality and efficiency!",
+      "banner_03_title": "Partnerships\nthat Generate Results",
+      "banner_03_description": "Discover how our solutions can add value to your business.\nTogether, we are stronger!",
       "categories": {
-        "stranders": "Stranders/Twisters",
-        "pay_offs": "Pay-Offs and Take-Ups",
+        "stranders": "Stranders/Braiders",
+        "pay_offs": "Pay-offs and Take-ups",
         "wire_drawing": "Wire Drawing",
         "caterpillar_capstans": "Caterpillar Capstans",
         "sz_line": "SZ Line"
+      },
+      "catalog": {
+        "torcedeira_rigida": {
+          "title": "Rigid Strander",
+          "description": "This equipment can contain modules (cages) with 6 bobbins, 12 bobbins, 18 bobbins, and others upon request.\n\nThis machine was developed for twisting copper and aluminum wires or cables using standardized bobbins with a diameter of 630mm arranged linearly on the main axis in parts called cages.\n\nWe have a twisting line composed of three stages, a unit with six bobbins, a unit with twelve bobbins, and one with eighteen bobbins, and others upon request.\nSuitable for both cable formation and shielding."
+        },
+        "buncher_630_1800": {
+          "title": "Buncher's 630 - 1800",
+          "description": "Buncher's are double twist machines for manufacturing copper and aluminum conductor cables, with high performance and power ranging from 20KW to 180KW, with linear speeds of up to 300m/min and twists of 5000T/min according to the equipment.\n\nWe have Buncher 630, Buncher 800, Buncher 1000, Buncher 1250, Buncher 1600."
+        },
+        "desenrolador_duplo": {
+          "title": "Double Pay-off B630/800/B1000/1250",
+          "description": "This motorized pay-off was developed to feed Buncher's and other equipment that require continuous supply, with controlled tension, of bare or insulated wires.\n\nIts maximum speed is 300m/min, using standardized bobbins with diameters of 630mm-800mm, and diameters of 1000mm to 1250mm."
+        },
+        "bobinador_desbobinador_portal": {
+          "title": "Gantry Take-up and Pay-off",
+          "description": "These gantry-type equipment were developed to accommodate a wide range of bobbins, where their structure moves automatically through motorized mechanical transmission, both for closing and for lifting and spreading the cable for the take-up type, being controlled simultaneously with the speed of the production line to be installed.\n\nThey are developed according to the needs of each client."
+        },
+        "desenrolador_multiplo": {
+          "title": "Multiple Pay-off 6 Bobbins",
+          "description": "This motorized pay-off was made to feed buncher's and other equipment that require continuous supply, with controlled tension, of bare or insulated wires.\n\nThis equipment accommodates multiple bobbins with diameters from 600mm to 800mm, its maximum linear speed is 300 m/min."
+        },
+        "planetaria_1000": {
+          "title": "Planetary 1000",
+          "description": "This planetary stranding line was developed to perform the stranding of aluminum cables for bobbins with a diameter of 1000mm."
+        },
+        "multifilar_8_fios": {
+          "title": "8-Wire Multiwire (TM8)",
+          "description": "The multiwire drawing line was developed for the production of copper wires for conductor cables, including flexible cables, automotive cables, battery cables, building installation cables, photovoltaic cables, data cables, special cables, among others.\n\nThe SUPICOM drawing line is composed of the Drawing unit, Annealer, and Take-up, a compact line, working in synchronism, using advanced and updated technology in the industrial market."
+        },
+        "desenrolador_vergalhao": {
+          "title": "Rod Pay-off",
+          "description": "Specialized pay-off for rods, designed to provide smooth and controlled unwinding of heavy materials such as metal rods."
+        },
+        "enfitadeira": {
+          "title": "Taping Machine",
+          "description": "Machine designed to apply tapes precisely and efficiently to various types of cables and wires, ensuring proper protection and insulation."
+        },
+        "aplicadores_de_linhas": {
+          "title": "Line Applicators",
+          "description": "Specialized equipment for precise application of lines in cable production processes, ensuring proper alignment and tension."
+        },
+        "catterpila_volante": {
+          "title": "Caterpillar and Capstan",
+          "description": "Traction and control system for cable production lines, offering precision in speed and tension control during the manufacturing process."
+        },
+        "bobinadores": {
+          "title": "Take-ups",
+          "description": "Equipment designed to wind cables and wires uniformly and controllably onto bobbins, ensuring efficient storage and transport."
+        },
+        "desbobinadores": {
+          "title": "Pay-offs",
+          "description": "Specialized machines for unwinding cables and wires from bobbins in a controlled manner, feeding production lines or installation processes."
+        }
       }
     },
     "news": {
       "title": "Highlights",
-      "subtitle": "Stay updated with the latest news"
+      "subtitle": "Stay up to date with the latest news"
     },
     "service": {
-      "subtitle": "Customized Industrial Solutions for Your Business",
+      "subtitle": "Customized Industrial Solutions for your business",
       "manufacturing_title": "Manufacturing",
-      "manufacturing_description": "We provide specialized machines and equipment for various industrial sectors, such as sawmills, the graphic industry, and oil refining.",
-      "rent_title": "Rent",
+      "manufacturing_description": "We provide specialized machines and equipment for various industrial sectors, such as woodworking, graphic industry, and oil refining.",
+      "rent_title": "Rental",
       "rent_description": "We offer rental of commercial and industrial machines and equipment without an operator, suitable for various needs.",
       "maintenance_title": "Maintenance",
       "maintenance_description": "We provide maintenance and repair services for industrial machines, ensuring maximum efficiency and longevity of the equipment.",
@@ -107,32 +166,32 @@
       "development_description": "We develop customized industrial projects, from planning to execution, ensuring innovative and efficient solutions for your business."
     },
     "faq": {
-      "title": "Frequently Asked Questions",
-      "subtitle": "Couldn't find what you needed?",
+      "title": "Frequently asked questions",
+      "subtitle": "Didn't find what you needed",
       "question_01_title": "A frequent question",
       "question_01_description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages"
     },
     "contact": {
-      "description": "Contact us for support, send suggestions, or discuss partnerships. We are always ready to help.",
-      "customer_support": "Customer Support",
-      "customer_support_description": "Do you have questions or need help? Contact us for immediate support.",
+      "description": "Get in touch with us for support, send suggestions, or discuss partnerships. We are always ready to help.",
+      "customer_support": "Customer support",
+      "customer_support_description": "Have questions or need help? Talk to us for immediate support.",
       "suggestions": "Suggestions",
       "suggestions_description": "Send your suggestions and help us improve our services.",
       "partnerships": "Partnerships",
-      "partnerships_description": "Interested in partnerships? Contact us to explore collaboration opportunities.",
+      "partnerships_description": "Interested in partnerships? Talk to us to explore collaboration opportunities.",
       "form": {
-        "title": "Contact Us",
+        "title": "Get in touch",
         "subtitle": "Fill out the form below and describe your request. Our team will get back to you soon!"
       }
     },
     "request_quote": {
-      "title": "Request a Quote",
-      "subtitle": "Enter your details, and a representative will contact you shortly"
+      "title": "Request a quote",
+      "subtitle": "Enter your details, and an attendant will contact you shortly"
     },
     "footer": {
-      "site_map": "Site Map",
+      "site_map": "Site map",
       "institutional": "Institutional",
-      "treatment": "Treatment"
+      "treatment": "Customer Service"
     }
   }
 }

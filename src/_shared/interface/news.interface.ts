@@ -5,6 +5,7 @@ export interface INewsDB {
   id?: string;
   author: string;
   active: boolean;
+  imagesURL: string[];
   title: IBaseLocaleDB;
   content: IBaseLocaleDB;
   imageBannerURL: string;

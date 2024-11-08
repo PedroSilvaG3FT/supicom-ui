@@ -62,9 +62,9 @@ export default function PortalDepartaments() {
       "/images/departaments/montagem_mecanica_03.jpg",
 
       "/images/departaments/montagem_eletrica_01.jpg",
-      "/images/departaments/montagem_eletrica_02.jpg",
+      // "/images/departaments/montagem_eletrica_02.jpg",
       "/images/departaments/montagem_eletrica_03.jpg",
-      "/images/departaments/montagem_eletrica_04.jpg",
+      // "/images/departaments/montagem_eletrica_04.jpg",
     ],
   };
 

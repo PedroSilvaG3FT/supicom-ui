@@ -24,6 +24,7 @@ import { IQuoteDB, IQuoteItem } from "@/_shared/interface/quote.interface";
 import { useEffect, useState } from "react";
 import { Textarea } from "@/_core/components/fragments/textarea";
 import { ToastUtil } from "@/_shared/utils/toast.util";
+import { Input } from "@/_core/components/fragments/input";
 
 interface IProps extends IDrawerProps {
   data: IQuoteItem;
@@ -36,6 +37,7 @@ export default function QuoteDetailSheet(props: IProps) {
   const { isOpen, onOpenChange, onUpdated, data } = props;
 
   const [note, setNote] = useState("");
+  const [responsibleName, setResponsibleName] = useState("");
 
   const customerData = [
     { title: `Nome`, text: data.customer?.name },
@@ -46,6 +48,7 @@ export default function QuoteDetailSheet(props: IProps) {
 
   useEffect(() => {
     setNote(data?.note || "");
+    setResponsibleName(data?.responsibleName || "");
   }, [data]);
 
   const handleUpdateStatus = (status: EQuoteStatus) => {
@@ -59,9 +62,11 @@ export default function QuoteDetailSheet(props: IProps) {
 
   const handleUpdateNote = () => {
     _quoteService
-      .update<Partial<IQuoteDB>>(String(data.id), { note })
+      .update<Partial<IQuoteDB>>(String(data.id), { note, responsibleName })
       .then(() => {
         data.note = note;
+        data.responsibleName = responsibleName;
+
         onUpdated?.(data);
         ToastUtil.success("Nota atualizada com sucesso");
       })
@@ -123,6 +128,13 @@ export default function QuoteDetailSheet(props: IProps) {
             </p>
           </div>
 
+          <Input
+            className="mt-4"
+            value={responsibleName}
+            placeholder="Pessoa responsável"
+            onChange={(e) => setResponsibleName(e.target.value)}
+          />
+
           <h4 className="font-semibold my-4 flex items-center justify-between">
             Cliente
             <QuoteBadgeStatus status={data.status} />
@@ -171,6 +183,7 @@ export default function QuoteDetailSheet(props: IProps) {
 
           <Textarea
             value={note}
+            placeholder="Insira uma anotação..."
             onChange={(e) => setNote(e.target.value)}
           ></Textarea>
 

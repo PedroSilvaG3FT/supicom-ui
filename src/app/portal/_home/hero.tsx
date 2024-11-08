@@ -1,5 +1,5 @@
 import { useTranslations } from "next-intl";
-import { Medal, Users } from "lucide-react";
+import { ChartNoAxesCombined, Medal, Users } from "lucide-react";
 import { PORTAL_SECTION_ID } from "./_data";
 import RequestQuoteButton from "../_components/request-quote-button";
 import { FlipWords } from "@/_core/components/fragments/ui/flip-words";
@@ -51,12 +51,12 @@ export default function PortalHero() {
 
           <section className="mt-12 flex gap-12 mobile:justify-center">
             <article className="flex gap-3 items-center mobile:flex-col mobile:justify-center">
-              <Users className="w-8 h-8 text-primary" />
+              <ChartNoAxesCombined className="w-8 h-8 text-primary" />
 
               <div>
                 <h2 className="font-semibold mobile:text-center">+1.000</h2>
                 <h5 className="text-primary mobile:text-center">
-                  {t("base.customers")}
+                  {t("portal.hero.machines_sold")}
                 </h5>
               </div>
             </article>

@@ -1,14 +1,17 @@
+"use client";
+
 import { motion } from "framer-motion";
 import { useDropzone } from "react-dropzone";
 import { IconUpload } from "@tabler/icons-react";
 import { cn } from "@/_core/components/lib/utils";
-import { LucideIcon, Upload } from "lucide-react";
+import { LucideIcon, Upload, X } from "lucide-react";
 import {
   ReactNode,
   useRef,
   useState,
   forwardRef,
   useImperativeHandle,
+  useEffect,
 } from "react";
 import { ToastUtil } from "@/_shared/utils/toast.util";
 
@@ -35,6 +38,7 @@ interface IFileUploadProps {
   description?: string;
   backgroundEl?: ReactNode;
   onChange?: (files: File[]) => void;
+  initialFiles?: File[];
 }
 
 export const FileUpload = forwardRef<FileUploadRef, IFileUploadProps>(
@@ -48,9 +52,14 @@ export const FileUpload = forwardRef<FileUploadRef, IFileUploadProps>(
       backgroundEl: BackgroundEl,
       title = "File upload",
       description = `Drag or drop your files here\nor click to upload`,
+      initialFiles = [],
     } = props;
-    const [files, setFiles] = useState<File[]>([]);
+    const [files, setFiles] = useState<File[]>(initialFiles);
     const fileInputRef = useRef<HTMLInputElement>(null);
+
+    useEffect(() => {
+      handleEmit(files);
+    }, [files]);
 
     const handleEmit = (data: File[]) => {
       onChange && onChange(data);
@@ -61,20 +70,21 @@ export const FileUpload = forwardRef<FileUploadRef, IFileUploadProps>(
 
       if (maxFiles === 1) {
         const [currentFile] = newFiles;
-
         setFiles([currentFile]);
-        handleEmit([currentFile]);
         return;
       }
 
-      if (files.length >= maxFiles) {
-        handleEmit([]);
+      const totalFiles = files.length + newFiles.length;
+      if (totalFiles > maxFiles) {
         ToastUtil.info(`Você pode selecionar no máximo ${maxFiles} arquivos.`);
         return;
       }
 
       setFiles((prevFiles) => [...prevFiles, ...newFiles]);
-      handleEmit(newFiles);
+    };
+
+    const handleRemoveFile = (index: number) => {
+      setFiles((prevFiles) => prevFiles.filter((_, i) => i !== index));
     };
 
     const handleClick = () => {
@@ -83,13 +93,12 @@ export const FileUpload = forwardRef<FileUploadRef, IFileUploadProps>(
 
     const clearFiles = () => {
       setFiles([]);
-      handleEmit([]);
     };
 
     useImperativeHandle(ref, () => ({ clearFiles }));
 
     const { getRootProps, isDragActive } = useDropzone({
-      multiple: false,
+      multiple: maxFiles > 1,
       noClick: true,
       onDrop: handleFileChange,
       onDropRejected: (error) => {
@@ -110,6 +119,7 @@ export const FileUpload = forwardRef<FileUploadRef, IFileUploadProps>(
             ref={fileInputRef}
             className="hidden"
             id="file-upload-handle"
+            multiple={maxFiles > 1}
             onChange={(e) => handleFileChange(Array.from(e.target.files || []))}
           />
           <div className="absolute inset-0 [mask-image:radial-gradient(ellipse_at_center,white,transparent)]">
@@ -172,9 +182,19 @@ export const FileUpload = forwardRef<FileUploadRef, IFileUploadProps>(
                         {new Date(file?.lastModified).toLocaleDateString()}
                       </motion.p>
                     </div>
+                    <button
+                      type="button"
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        handleRemoveFile(idx);
+                      }}
+                      className="absolute top-2 right-2 text-red-500 hover:text-red-700"
+                    >
+                      <X size={16} />
+                    </button>
                   </motion.div>
                 ))}
-              {!files.length && (
+              {files.length < maxFiles && (
                 <motion.div
                   layoutId="file-upload"
                   variants={mainVariant}
@@ -203,7 +223,7 @@ export const FileUpload = forwardRef<FileUploadRef, IFileUploadProps>(
                 </motion.div>
               )}
 
-              {!files.length && (
+              {files.length < maxFiles && (
                 <motion.div
                   variants={secondaryVariant}
                   className="absolute opacity-0 border border-dashed border-sky-400 inset-0 z-30 bg-transparent flex items-center justify-center h-32 mt-4 w-full max-w-[8rem] mx-auto rounded-md"

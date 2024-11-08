@@ -7,7 +7,7 @@
   "example": {
     "title": "Olá mundo!",
     "subtitle": "Esse é um texto em Português (pt-BR)",
-    "description": "Nos últimos anos, o desenvolvimento web evoluiu significativamente, e a demanda por aplicações eficientes e escaláveis aumentou.\nPara atender a essa necessidade, criamos um projeto de boilerplate que combina Next.js, Tailwind CSS, Shadcn UI e Firebase. Este stack permite que os desenvolvedores construam aplicações web modernas de forma rápida e eficaz.\n\nNext.js é um poderoso framework React que oferece renderização do lado do servidor e geração de sites estáticos. Ele melhora o desempenho e o SEO, tornando-se uma excelente escolha para os desenvolvedores. O Tailwind CSS, por sua vez, é um framework CSS baseado em utilitários que possibilita um desenvolvimento rápido da interface do usuário, com foco na personalização e na responsividade. O Shadcn UI complementa isso, fornecendo componentes pré-desenhados que são fáceis de integrar e personalizar.\n\nAceternity é outra biblioteca de componentes de interface do usuário que se destaca por sua capacidade de criar experiências visuais impressionantes e interativas. Assim como o Shadcn UI, o Aceternity oferece uma coleção de componentes pré-desenhados que facilitam a construção de interfaces modernas e responsivas. No entanto, o que diferencia o Aceternity é sua integração com o Framer, permitindo que os desenvolvedores criem elementos de UI em 3D e com perspectiva. Essa abordagem inovadora enriquece a experiência do usuário, proporcionando interações dinâmicas e designs visualmente atraentes.\n\nO Firebase serve como a solução de backend, oferecendo recursos de banco de dados em tempo real, autenticação e hospedagem. Ao aproveitar o Firebase, os desenvolvedores podem se concentrar na construção de recursos sem se preocupar com a gestão do servidor. Este projeto de boilerplate serve como uma base sólida para qualquer pessoa que deseje iniciar sua jornada no desenvolvimento web com essas tecnologias modernas."
+    "description": "Nos últimos anos, o desenvolvimento web evoluiu significativamente"
   },
   "phrases": {
     "industrial_innovation": "Inovação Industrial",
@@ -37,6 +37,7 @@
     "products": "Produtos",
     "see_more": "Ver mais",
     "services": "Serviços",
+    "machines": "Máquinas",
     "customers": "Clientes",
     "smart_phone": "Celular",
     "see_routes": "Ver rotas",
@@ -49,12 +50,13 @@
     "get_in_touch": "Entre em contato",
     "quality_supicom": "Qualidade Supicom",
     "request_quote": "Solicite uma cotação",
+    "more_info": "Para mais informações nos consulte.",
     "add_products_to_quote": "Adicione produtos a cotação"
   },
   "portal": {
     "about_us": {
       "title": "Sobre nós",
-      "description": "Somos uma empresa comprometida em fornecer soluções para o setor industrial de fios e cabos condutores de energia, com equipamentos e serviços que garantem a eficiência e a continuidade das suas operações.\n\nCom décadas de experiência no mercado, fabricamos equipamentos de alta performance para atender demandas personalizadas de manufaturas de cabos condutores de energia.\n\nNosso compromisso vai além da fabricação. Oferecemos suporte técnico e manutenção especializada, garantindo que seus equipamentos estejam sempre em pleno funcionamento, minimizando paradas e maximizando a produtividade do seu negócio. Sabemos que cada indústria possui desafios únicos, e por isso desenvolvemos soluções personalizadas que atendem às necessidades específicas de cada cliente."
+      "description": "Somos uma empresa comprometida em fornecer soluções para o setor industrial de fios e cabos condutores de energia, com equipamentos e serviços que garantem a eficiência e a continuidade das suas operações.\n\nCom décadas de experiência no mercado, fabricamos equipamentos de alta performance para atender demandas personalizadas de manufaturas de cabos condutores de energia. Nossa atuação se estende além das fronteiras nacionais, com contratos estabelecidos em países como Chile, Argentina e Espanha, consolidando nossa presença internacional.\n\nNosso compromisso vai além da fabricação. Oferecemos suporte técnico e manutenção especializada, garantindo que seus equipamentos estejam sempre em pleno funcionamento, minimizando paradas e maximizando a produtividade do seu negócio. Sabemos que cada indústria possui desafios únicos, e por isso desenvolvemos soluções personalizadas que atendem às necessidades específicas de cada cliente, seja no mercado nacional ou internacional."
     },
     "our_departments": {
       "title": "Nossos setores",
@@ -70,8 +72,9 @@
     "where_are_we": "Onde estamos?",
     "hero": {
       "title": "Nós movemos\na indústria",
-      "description": "Na indústria, cada segundo conta. Oferecemos soluções completas\npara garantir que sua operação nunca pare.",
-      "satisfaction": "Satisfação"
+      "description": "Oferecemos soluções completas para garantir que\nsua operação nunca pare.",
+      "satisfaction": "Satisfação",
+      "machines_sold": "Máquinas vendidas"
     },
     "product": {
       "title": "Produtos",
@@ -91,6 +94,60 @@
         "wire_drawing": "Trefilação",
         "caterpillar_capstans": "Puxadores",
         "sz_line": "Linha SZ"
+      },
+      "catalog": {
+        "torcedeira_rigida": {
+          "title": "Torcedeira Rígida",
+          "description": "Este equipamento pode conter módulos (gaiolas) com 6 bobinas, 12 bobinas, 18 bobinas, e outras sobre consulta.\n\nEsta máquina foi desenvolvida para torção de fios ou cabos de cobre e alumínio utilizando-se bobinas padronizada de diâmetro de 630mm dispostas linearmente sobre o eixo principal em partes chamadas de gaiolas.\n\nTemos linha de torção composta de três estágios, uma unidade com seis bobinas, uma unidade com doze bobinas e uma com dezoito bobinas e outras sobre consulta.\nAdequada tanto para formação de cabos quanto para blindagem."
+        },
+        "buncher_630_1800": {
+          "title": "Buncher's 630 - 1800",
+          "description": "Os Buncher's são maquinas de dupla torção para manufatura de cabos condutores de cobre e alumínio, com alta performance e com potência que variam entre 20KW à 180KW, com velocidades lineares de até 300m/min e torções de 5000T/min de acordo com equipamento.\n\nTemos Buncher 630, Buncher 800, Buncher 1000, Buncher 1250, Buncher 1600."
+        },
+        "desenrolador_duplo": {
+          "title": "Desenrolador Duplo B630/800/B1000/1250",
+          "description": "Este desenrolador motorizado foi desenvolvido para alimentar Buncher's e outros equipamentos que necessitam de fornecimento continuo, com tensão controlada, de fios nus ou isolados.\n\nSua velocidade máxima é de 300m/ min, utilizando-se bobinas padronizadas de diâmetro de 630mm-800mm, e, diâmetro de 1000mm a 1250mm."
+        },
+        "bobinador_desbobinador_portal": {
+          "title": "Bobinador e Desbobinador Portal",
+          "description": "Estes equipamentos do tipo portal foram desenvolvidos para alocar uma grande faixa de bobinas, onde sua estrutura se movimenta automaticamente através de transmissão mecânica motorizada, tanto para fechamento quanto para elevação e espalhamento do cabo para o tipo bobinador, sendo controlado simultaneamente com a velocidade da linha de produção a ser instalado.\n\nSão desenvolvidos de acordo a necessidade de cada cliente."
+        },
+        "desenrolador_multiplo": {
+          "title": "Desenrolador Múltiplo 6 Bobinas",
+          "description": "Este desenrolador motorizado foi feito para alimentar buncher's e outros equipamentos que necessitem de um fornecimento continuo, com tensão controlada, de fios nus ou isolados.\n\nEste equipamento aloca múltiplas bobinas de diâmetro de 600mm a 800mm, sua velocidade linear máxima é de 300 m/min."
+        },
+        "planetaria_1000": {
+          "title": "Planetária 1000",
+          "description": "Esta linha reunidora planetária, foi desenvolvida para fazer a reunião de cabos de alumínio para bobinas de diâmetro 1000mm."
+        },
+        "multifilar_8_fios": {
+          "title": "Multifilar de 8 Fios (TM8)",
+          "description": "A linha de trefilação  multifios, foi desenvolvida para produção de fios de cobre para cabos condutores, sendo eles, cabos flexíveis, cabos automotivos, cabos de bateria, cabos de instalação predial, fotovoltaicos, cabos de dados, cabos especiais, entre outros.\n\nA linha de trefilação SUPICOM é composta pela unidade de Trefilação, Recozedor e Bobinador, uma linha compacta, trabalhando em sincronismo, utilizando tecnologia avançada e atualizada no mercado industrial."
+        },
+        "desenrolador_vergalhao": {
+          "title": "Desenrolador Vergalhão",
+          "description": "Desenrolador especializado para vergalhões, projetado para fornecer um desenrolamento suave e controlado de materiais pesados como vergalhões de metal."
+        },
+        "enfitadeira": {
+          "title": "Enfitadeira",
+          "description": "Máquina projetada para aplicar fitas de forma precisa e eficiente em diversos tipos de cabos e fios, garantindo proteção e isolamento adequados."
+        },
+        "aplicadores_de_linhas": {
+          "title": "Aplicadores de Linhas",
+          "description": "Equipamentos especializados para aplicação precisa de linhas em processos de produção de cabos, garantindo alinhamento e tensão adequados."
+        },
+        "catterpila_volante": {
+          "title": "Catterpila e Volante",
+          "description": "Sistema de tração e controle para linhas de produção de cabos, oferecendo precisão no controle de velocidade e tensão durante o processo de fabricação."
+        },
+        "bobinadores": {
+          "title": "Bobinadores",
+          "description": "Equipamentos projetados para enrolar cabos e fios de forma uniforme e controlada em bobinas, garantindo armazenamento e transporte eficientes."
+        },
+        "desbobinadores": {
+          "title": "Desbobinadores",
+          "description": "Máquinas especializadas para desenrolar cabos e fios de bobinas de forma controlada, alimentando linhas de produção ou processos de instalação."
+        }
       }
     },
     "news": {
