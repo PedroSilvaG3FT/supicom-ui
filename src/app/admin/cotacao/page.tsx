@@ -3,13 +3,13 @@
 import { format } from "date-fns";
 import { useEffect, useState } from "react";
 import { ColumnDef } from "@tanstack/react-table";
-import { Eye, Mail, Phone, Plus, RotateCcw } from "lucide-react";
 import { loadingStore } from "@/_store/loading.store";
 import { ToastUtil } from "@/_shared/utils/toast.util";
 import { EQuoteStatus } from "@/_shared/enums/quote.enum";
 import { Button } from "@/_core/components/fragments/button";
 import { orderBy, QueryConstraint } from "firebase/firestore";
 import useProductData from "@/_shared/hooks/data/product.hook";
+import { Eye, Mail, Phone, Plus, RotateCcw } from "lucide-react";
 import { Separator } from "@/_core/components/fragments/separator";
 import { QuoteService } from "@/_core/firebase/services/quote.service";
 import SelectMonth from "@/_shared/components/form/select/select-month";
@@ -24,6 +24,8 @@ import {
   DataTableHeader,
 } from "@/_core/components/fragments/datatable";
 import Link from "next/link";
+import { IconBrandWhatsapp } from "@tabler/icons-react";
+import { WhatsAppUtil } from "@/_shared/utils/whatsapp.util";
 
 const _quoteService = new QuoteService();
 
@@ -71,6 +73,7 @@ export default function QuotePage() {
         const data = _quoteService._model.buildList(response, products);
 
         setItems(data);
+        console.log(data);
         pagination.setTotalItems(data.length);
 
         _loadingStore.setShow(false);
@@ -131,14 +134,29 @@ export default function QuotePage() {
       cell: ({ row }) => {
         const data = row.original.customer.phoneNumber;
 
+        const wppNumber = data.replace("+", "");
+        const wppMessage = WhatsAppUtil.generateQuoteAnswer(row.original);
+        const whatsappLink = WhatsAppUtil.buildLink(wppNumber, wppMessage);
+
         return (
-          <Link
-            href={`tel:${data}`}
-            className="hover:underline flex gap-2.5 items-center"
-          >
+          <div className="flex gap-2">
+            <Link
+              href={`tel:${data}`}
+              className="hover:underline flex gap-2.5 items-center"
+            >
+              <Phone className="w-4 h-4" />
+            </Link>
+
+            <Link
+              target="_blank"
+              href={whatsappLink}
+              className="hover:underline flex gap-2.5 items-center"
+            >
+              <IconBrandWhatsapp className="w-5 h-5" />
+            </Link>
+
             {data}
-            <Phone className="w-4 h-4" />
-          </Link>
+          </div>
         );
       },
     },
