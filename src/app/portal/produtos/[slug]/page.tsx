@@ -79,21 +79,25 @@ export default function ProductDetail() {
                     className="mb-4 w-full h-96 object-contain rounded-lg bg-black mobile:h-64"
                   />
 
-                  <section className="mb-4 grid gap-2 grid-cols-5 mobile:grid-cols-4">
-                    <Each
-                      data={gallery}
-                      render={(item) => (
-                        <Image
-                          src={item}
-                          width={200}
-                          height={200}
-                          alt={product.title}
-                          onClick={() => setCurrentImage(item)}
-                          className="object-cover h-20 object-center rounded-md cursor-pointer transition-transform duration-500 hover:scale-95"
+                  <Show>
+                    <Show.When condition={gallery.length > 1}>
+                      <section className="mb-4 grid gap-2 grid-cols-5 mobile:grid-cols-4">
+                        <Each
+                          data={gallery}
+                          render={(item) => (
+                            <Image
+                              src={item}
+                              width={200}
+                              height={200}
+                              alt={product.title}
+                              onClick={() => setCurrentImage(item)}
+                              className="object-cover h-20 object-center rounded-md cursor-pointer transition-transform duration-500 hover:scale-95"
+                            />
+                          )}
                         />
-                      )}
-                    />
-                  </section>
+                      </section>
+                    </Show.When>
+                  </Show>
 
                   <RequestQuoteButton
                     className="w-full rounded-full"

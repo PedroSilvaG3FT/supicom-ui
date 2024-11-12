@@ -147,6 +147,10 @@
         "desbobinadores": {
           "title": "Pay-offs",
           "description": "Specialized machines for unwinding cables and wires from bobbins in a controlled manner, feeding production lines or installation processes."
+        },
+        "mono_torcao": {
+          "title": "Single Twist",
+          "description": "This machine was developed to provide single twist for cables or the assembly of multiple cables requiring twist, ensuring that the final diameter of the cables does not exceed 40 mm. Ideal for the production of flexible cables and the assembly of special cables. For more information, please contact us."
         }
       }
     },

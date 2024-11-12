@@ -39,11 +39,19 @@ export default function useProductData() {
       images: [],
     },
     {
-      slug: `desenrolador-duplo`,
-      title: t("portal.product.catalog.desenrolador_duplo.title"),
-      category: getCategoryById(2)!,
-      bannerImage: `/images/products/machines/18.png`,
-      description: t("portal.product.catalog.desenrolador_duplo.description"),
+      slug: `multifilar-8-fios`,
+      title: t("portal.product.catalog.multifilar_8_fios.title"),
+      category: getCategoryById(3)!,
+      bannerImage: `/images/products/machines/20.png`,
+      description: t("portal.product.catalog.multifilar_8_fios.description"),
+      images: [],
+    },
+    {
+      slug: `mono-torcao`,
+      category: getCategoryById(1)!,
+      bannerImage: `/images/products/machines/21.png`,
+      title: t("portal.product.catalog.mono_torcao.title"),
+      description: t("portal.product.catalog.mono_torcao.description"),
       images: [],
     },
     {
@@ -60,7 +68,7 @@ export default function useProductData() {
       slug: `desenrolador-multiplo`,
       title: t("portal.product.catalog.desenrolador_multiplo.title"),
       category: getCategoryById(2)!,
-      bannerImage: `/images/products/machines/03.jpg`,
+      bannerImage: `/images/products/machines/18.png`,
       description: t(
         "portal.product.catalog.desenrolador_multiplo.description"
       ),
@@ -74,24 +82,16 @@ export default function useProductData() {
       description: t("portal.product.catalog.planetaria_1000.description"),
       images: [],
     },
-    {
-      slug: `multifilar-8-fios`,
-      title: t("portal.product.catalog.multifilar_8_fios.title"),
-      category: getCategoryById(3)!,
-      bannerImage: `/images/products/machines/08.jpg`,
-      description: t("portal.product.catalog.multifilar_8_fios.description"),
-      images: [],
-    },
-    {
-      slug: `desenrolador-vergalhao`,
-      title: t("portal.product.catalog.desenrolador_vergalhao.title"),
-      category: getCategoryById(2)!,
-      bannerImage: `/images/products/machines/07.jpg`,
-      description: t(
-        "portal.product.catalog.desenrolador_vergalhao.description"
-      ),
-      images: [],
-    },
+    // {
+    //   slug: `desenrolador-vergalhao`,
+    //   title: t("portal.product.catalog.desenrolador_vergalhao.title"),
+    //   category: getCategoryById(2)!,
+    //   bannerImage: `/images/products/machines/07.jpg`,
+    //   description: t(
+    //     "portal.product.catalog.desenrolador_vergalhao.description"
+    //   ),
+    //   images: [],
+    // },
     {
       slug: `sz`,
       title: t("portal.product.catalog.enfitadeira.title"),

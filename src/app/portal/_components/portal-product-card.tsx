@@ -46,6 +46,13 @@ export default function PortalProductCard(props: IProps) {
           {data.description}
         </p>
 
+        <Link
+          href={`/portal/produtos/${data.slug}`}
+          className="mt-1 underline font-semibold text-xs text-foreground/60 flex gap-2 items-center"
+        >
+          {t("base.see_more")}
+        </Link>
+
         <Separator className="my-2" />
 
         <footer className="flex gap-6 flex-col items-center justify-between pr-2 pb-1.5">
@@ -55,13 +62,6 @@ export default function PortalProductCard(props: IProps) {
             className="pl-0"
             initialProductsSlug={[data.slug]}
           />
-
-          <Link
-            href={`/portal/produtos/${data.slug}`}
-            className="font-semibold text-xs text-foreground/60 flex gap-2 items-center"
-          >
-            {t("base.see_more")}
-          </Link>
         </footer>
       </section>
     </article>

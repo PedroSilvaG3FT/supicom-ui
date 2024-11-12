@@ -1,8 +1,5 @@
-import Link from "next/link";
-import { Route } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { PORTAL_SECTION_ID } from "./_data";
-import { Button } from "@/_core/components/fragments/button";
 
 export default function PortalAddress() {
   const t = useTranslations();
@@ -12,16 +9,6 @@ export default function PortalAddress() {
       <h2 className="mb-4">{t("portal.where_are_we")}</h2>
 
       <article className="relative">
-        <Button asChild className="absolute top-2 right-2">
-          <Link
-            target="_blank"
-            href="https://maps.app.goo.gl/vKn7qJakNexVLfaA9"
-          >
-            {t("base.see_routes")}
-            <Route className="w-4 h-4 ml-3" />
-          </Link>
-        </Button>
-
         <iframe
           width="600"
           height="450"

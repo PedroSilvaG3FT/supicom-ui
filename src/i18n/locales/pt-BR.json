@@ -147,6 +147,10 @@
         "desbobinadores": {
           "title": "Desbobinadores",
           "description": "Máquinas especializadas para desenrolar cabos e fios de bobinas de forma controlada, alimentando linhas de produção ou processos de instalação."
+        },
+        "mono_torcao": {
+          "title": "Mono torção",
+          "description": "Esta máquina foi desenvolvida para proporcionar torsão simples de cabos ou reunião de vários cabos que necessitam de torção de tal modo que o diâmetro final dos cabos não ultrapasse 40 mm. Ideal para produção de cabos Flexíveis e Reunião de cabos especiais. Para mais informações nos consulte."
         }
       }
     },
