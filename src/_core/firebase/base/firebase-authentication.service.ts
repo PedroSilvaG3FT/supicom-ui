@@ -27,7 +27,9 @@ export class FirebaseAuthenticationService extends FirebaseCollectionBase {
     this.auth = getAuth();
 
     this.auth.onAuthStateChanged((data) => {
-      if (!data) TokenUtil.setAccessToken("");
+      if (!data) {
+        console.log("USER PERMISSIONS");
+      }
     });
   }
 

@@ -74,10 +74,6 @@ const AuthProvider: React.FC<IAuthProviderProps> = ({ children }) => {
     _userService.signOut();
   };
 
-  useEffect(() => {
-    if (!TokenUtil.getAccessToken()) signOut();
-  }, [TokenUtil.getAccessToken()]);
-
   return (
     <AuthContext.Provider
       value={{
