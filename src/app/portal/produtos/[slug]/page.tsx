@@ -76,7 +76,7 @@ export default function ProductDetail() {
                     height={400}
                     src={currentImage}
                     alt={product?.title}
-                    className="mb-4 w-full h-96 object-contain rounded-lg bg-black mobile:h-64"
+                    className="mb-4 w-full h-96 object-contain rounded-lg mobile:h-64"
                   />
 
                   <Show>
