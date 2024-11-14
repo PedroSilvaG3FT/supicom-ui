@@ -9,5 +9,6 @@ export interface IProductItem {
   images: string[];
   description: string;
   bannerImage: string;
+  bannerTitle?: string;
   category: IProductCategory;
 }

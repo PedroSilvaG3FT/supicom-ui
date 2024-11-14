@@ -136,8 +136,8 @@
           "title": "Aplicadores de Líneas",
           "description": "Equipos especializados para la aplicación precisa de líneas en procesos de producción de cables, garantizando alineación y tensión adecuadas."
         },
-        "catterpila_volante": {
-          "title": "Oruga y Volante",
+        "puxadores": {
+          "title": "Cabrestantes",
           "description": "Sistema de tracción y control para líneas de producción de cables, ofreciendo precisión en el control de velocidad y tensión durante el proceso de fabricación."
         },
         "bobinadores": {
@@ -151,6 +151,10 @@
         "mono_torcao": {
           "title": "Mono Torsión",
           "description": "Esta máquina fue desarrollada para proporcionar torsión simple para cables o la reunión de varios cables que requieren torsión, asegurando que el diámetro final de los cables no supere los 40 mm. Ideal para la producción de cables flexibles y la reunión de cables especiales. Para más información, consúltenos."
+        },
+        "others": {
+          "title": "Otros Equipos",
+          "description": "Supicom desarrolla equipos específicos, tales como:\n\n- Fraccionadora de Rollos\n- Líneas de Respase 6\n- Aplicadores de Cinta Lineal con Uno o Dos Cabezas\n- Recocedores\n- Catterpillas"
         }
       }
     },

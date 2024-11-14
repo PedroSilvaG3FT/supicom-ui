@@ -55,26 +55,6 @@ export default function useProductData() {
       images: [],
     },
     {
-      slug: `bobinador-desbobinador-portal`,
-      title: t("portal.product.catalog.bobinador_desbobinador_portal.title"),
-      category: getCategoryById(2)!,
-      bannerImage: `/images/products/machines/09.jpg`,
-      description: t(
-        "portal.product.catalog.bobinador_desbobinador_portal.description"
-      ),
-      images: [],
-    },
-    {
-      slug: `desenrolador-multiplo`,
-      title: t("portal.product.catalog.desenrolador_multiplo.title"),
-      category: getCategoryById(2)!,
-      bannerImage: `/images/products/machines/18.png`,
-      description: t(
-        "portal.product.catalog.desenrolador_multiplo.description"
-      ),
-      images: [],
-    },
-    {
       slug: `planetaria-1000`,
       title: t("portal.product.catalog.planetaria_1000.title"),
       category: getCategoryById(1)!,
@@ -82,16 +62,34 @@ export default function useProductData() {
       description: t("portal.product.catalog.planetaria_1000.description"),
       images: [],
     },
-    // {
-    //   slug: `desenrolador-vergalhao`,
-    //   title: t("portal.product.catalog.desenrolador_vergalhao.title"),
-    //   category: getCategoryById(2)!,
-    //   bannerImage: `/images/products/machines/07.jpg`,
-    //   description: t(
-    //     "portal.product.catalog.desenrolador_vergalhao.description"
-    //   ),
-    //   images: [],
-    // },
+    {
+      slug: `bobinador-desbobinador-portal`,
+      title: t("portal.product.catalog.bobinador_desbobinador_portal.title"),
+      category: getCategoryById(2)!,
+      bannerImage: `/images/products/machines/23.png`,
+      description: t(
+        "portal.product.catalog.bobinador_desbobinador_portal.description"
+      ),
+      images: [],
+    },
+    {
+      slug: `desenrolador-duplo`,
+      category: getCategoryById(2)!,
+      bannerImage: `/images/products/machines/22.png`,
+      title: t("portal.product.catalog.desenrolador_duplo.title"),
+      description: t("portal.product.catalog.desenrolador_duplo.description"),
+      images: [],
+    },
+    {
+      slug: `desenrolador-multiplo`,
+      category: getCategoryById(2)!,
+      title: t("portal.product.catalog.desenrolador_multiplo.title"),
+      bannerImage: `/images/products/machines/18.png`,
+      description: t(
+        "portal.product.catalog.desenrolador_multiplo.description"
+      ),
+      images: [],
+    },
     {
       slug: `sz`,
       title: t("portal.product.catalog.enfitadeira.title"),
@@ -111,27 +109,20 @@ export default function useProductData() {
       images: [],
     },
     {
-      slug: `catterpila-volante`,
-      title: t("portal.product.catalog.catterpila_volante.title"),
+      slug: `puxador`,
       category: getCategoryById(4)!,
-      bannerImage: `/images/mockup.jpg`,
-      description: t("portal.product.catalog.catterpila_volante.description"),
+      bannerImage: `/images/products/machines/24.png`,
+      title: t("portal.product.catalog.puxadores.title"),
+      description: t("portal.product.catalog.puxadores.description"),
       images: [],
     },
     {
-      slug: `bobinadores`,
-      title: t("portal.product.catalog.bobinadores.title"),
+      slug: `outros`,
       category: getCategoryById(5)!,
-      bannerImage: `/images/mockup.jpg`,
-      description: t("portal.product.catalog.bobinadores.description"),
-      images: [],
-    },
-    {
-      slug: `desbobinadores`,
-      title: t("portal.product.catalog.desbobinadores.title"),
-      category: getCategoryById(5)!,
-      bannerImage: `/images/mockup.jpg`,
-      description: t("portal.product.catalog.desbobinadores.description"),
+      bannerImage: `/images/products/others.png`,
+      title: t("portal.product.catalog.others.title"),
+      bannerTitle: t("portal.product.catalog.others.title"),
+      description: t("portal.product.catalog.others.description"),
       images: [],
     },
   ];

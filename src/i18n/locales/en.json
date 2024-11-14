@@ -136,8 +136,8 @@
           "title": "Line Applicators",
           "description": "Specialized equipment for precise application of lines in cable production processes, ensuring proper alignment and tension."
         },
-        "catterpila_volante": {
-          "title": "Caterpillar and Capstan",
+        "puxadores": {
+          "title": "Capstans",
           "description": "Traction and control system for cable production lines, offering precision in speed and tension control during the manufacturing process."
         },
         "bobinadores": {
@@ -151,6 +151,10 @@
         "mono_torcao": {
           "title": "Single Twist",
           "description": "This machine was developed to provide single twist for cables or the assembly of multiple cables requiring twist, ensuring that the final diameter of the cables does not exceed 40 mm. Ideal for the production of flexible cables and the assembly of special cables. For more information, please contact us."
+        },
+        "others": {
+          "title": "Other Equipment",
+          "description": "Supicom develops specialized equipment, such as:\n\n- Roll Splitters\n- 6 Respasse Lines\n- Linear Tape Applicators with One or Two Heads\n- Annealers\n- Caterpillars"
         }
       }
     },

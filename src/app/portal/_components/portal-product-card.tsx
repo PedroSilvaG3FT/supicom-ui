@@ -17,7 +17,11 @@ export default function PortalProductCard(props: IProps) {
 
   return (
     <article className="bg-secondary overflow-hidden rounded group">
-      <figure className={cn("h-56 relative overflow-hidden")}>
+      <figure
+        className={cn(
+          "h-56 flex items-center justify-center relative overflow-hidden"
+        )}
+      >
         <Image
           layout="fill"
           alt={data.title}
@@ -25,6 +29,12 @@ export default function PortalProductCard(props: IProps) {
           src={data.bannerImage}
           className="w-full h-full"
         />
+
+        {data.bannerTitle && (
+          <h3 className="z-1 relative w-full text-center font-semibold text-white">
+            {data.bannerTitle}
+          </h3>
+        )}
       </figure>
 
       <section className="px-4 py-2">
