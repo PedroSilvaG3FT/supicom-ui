@@ -31,6 +31,7 @@
     "years": "Anos",
     "today": "Hoje",
     "send": "Enviar",
+    "author": "Autor",
     "contact": "Contato",
     "select": "Selecione",
     "catalog": "Catálogo",
@@ -101,7 +102,7 @@
           "description": "Este equipamento pode conter módulos (gaiolas) com 6 bobinas, 12 bobinas, 18 bobinas, e outras sobre consulta.\n\nEsta máquina foi desenvolvida para torção de fios ou cabos de cobre e alumínio utilizando-se bobinas padronizada de diâmetro de 630mm dispostas linearmente sobre o eixo principal em partes chamadas de gaiolas.\n\nTemos linha de torção composta de três estágios, uma unidade com seis bobinas, uma unidade com doze bobinas e uma com dezoito bobinas e outras sobre consulta.\nAdequada tanto para formação de cabos quanto para blindagem."
         },
         "buncher_630_1800": {
-          "title": "Buncher's 630 - 1800",
+          "title": "Buncher's 630 - 1600",
           "description": "Os Buncher's são maquinas de dupla torção para manufatura de cabos condutores de cobre e alumínio, com alta performance e com potência que variam entre 20KW à 180KW, com velocidades lineares de até 300m/min e torções de 5000T/min de acordo com equipamento.\n\nTemos Buncher 630, Buncher 800, Buncher 1000, Buncher 1250, Buncher 1600."
         },
         "desenrolador_duplo": {
@@ -133,8 +134,8 @@
           "description": "Máquina projetada para aplicar fitas de forma precisa e eficiente em diversos tipos de cabos e fios, garantindo proteção e isolamento adequados."
         },
         "aplicadores_de_linhas": {
-          "title": "Aplicadores de Linhas",
-          "description": "Equipamentos especializados para aplicação precisa de linhas em processos de produção de cabos, garantindo alinhamento e tensão adequados."
+          "title": "Linha SZ",
+          "description": "Equipamentos especializados para torção e aplicação precisa de linhas em processos de produção de cabos, garantindo alinhamento e tensão adequados."
         },
         "puxadores": {
           "title": "Puxadores",
@@ -154,7 +155,7 @@
         },
         "others": {
           "title": "Outros equipamentos",
-          "description": "A Supicom desenvolve equipamentos específicos , como:\n\n- Francionadora de rolos\n- Linhas de respasse 6\n- Aplicadores linear de fitas com um ou dois cabeçotes\n- Recozedor\n- Catterpila"
+          "description": "A Supicom desenvolve equipamentos específicos , como:\n\n- Francionadora de rolos\n- Linhas de respasse\n- Aplicadores linear de fitas com um ou dois cabeçotes\n- Recozedor\n- Caterpillar"
         }
       }
     },
@@ -165,7 +166,7 @@
     "service": {
       "subtitle": "Soluções Industriais Personalizadas para o seu negócio",
       "manufacturing_title": "Fabricação",
-      "manufacturing_description": "Fornecemos máquinas e equipamentos especializados para a produção de fios e cabos de cobre e alumínio, como flexíveis, de comunicação, controle, bateria, fotovoltaicos, dados, especiais e outros.",
+      "manufacturing_description": "Fornecemos máquinas e equipamentos especializados para a produção de fios e cabos de cobre e alumínio e suas ligas como flexíveis, de comunicação, controle, bateria, fotovoltaicos, dados, especiais e outros.",
       "rent_title": "Aluguel",
       "rent_description": "Oferecemos locação de máquinas e equipamentos comerciais e industriais sem operador, adequados para diversas necessidades.",
       "maintenance_title": "Manutenção",

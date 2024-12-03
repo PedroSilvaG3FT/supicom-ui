@@ -16,10 +16,12 @@ import { NewsService } from "@/_core/firebase/services/news.service";
 import { INewsDB, INewsItem } from "@/_shared/interface/news.interface";
 import Each from "@/_shared/components/app-each";
 import Show from "@/_shared/components/app-show";
+import { useTranslations } from "next-intl";
 
 const _newsService = new NewsService();
 
 export default function NewsUpdatePage() {
+  const t = useTranslations();
   const router = useRouter();
   const params = useParams();
   const locale = useAppLocale();
@@ -78,7 +80,9 @@ export default function NewsUpdatePage() {
               className="mb-4 aspect-[1.3 / 1] rounded-lg bg-black mobile:h-64"
             />
 
-            <h6 className="text-foreground/60">{data.author}</h6>
+            <h6 className="text-foreground/60 text-sm">
+              {t("base.author")}: {data.author}
+            </h6>
             <small className="text-foreground/60">
               {data?.creationDate && format(data?.creationDate, "dd/MM/yyyy")}
             </small>

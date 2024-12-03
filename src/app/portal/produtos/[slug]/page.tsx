@@ -8,6 +8,7 @@ import { useParams } from "next/navigation";
 import Show from "@/_shared/components/app-show";
 import Each from "@/_shared/components/app-each";
 import { ArrowLeft, Search } from "lucide-react";
+import useAppLocale from "@/_shared/hooks/locale.hook";
 import { Button } from "@/_core/components/fragments/button";
 import useProductData from "@/_shared/hooks/data/product.hook";
 import AppStarsLabel from "@/_shared/components/app-stars-label";
@@ -19,6 +20,7 @@ import AppLoadingIndicator from "@/_shared/components/loading/app-loading-indica
 export default function ProductDetail() {
   const params = useParams();
   const t = useTranslations();
+  const locale = useAppLocale();
 
   const { getProductyBySlug } = useProductData();
   const [isLoaded, setIsLoaded] = useState(false);
@@ -29,7 +31,7 @@ export default function ProductDetail() {
 
   const hasProduct = !!Object.keys(product).length;
 
-  useEffect(() => {
+  const initProductData = () => {
     const data = getProductyBySlug(String(params.slug));
     const hasData = !!Object.keys(data).length;
 
@@ -40,7 +42,11 @@ export default function ProductDetail() {
     }
 
     setIsLoaded(true);
-  }, []);
+  };
+
+  useEffect(() => {
+    initProductData();
+  }, [locale]);
 
   return (
     <section className="portal-page-container">

@@ -1,223 +1,130 @@
 {
   "locales": {
-    "english": "Inglés",
-    "spanish": "Español",
-    "portuguese": "Portugués"
+    "english": "English",
+    "spanish": "Spanish",
+    "portuguese": "Portuguese"
   },
   "example": {
-    "title": "¡Hola mundo!",
-    "subtitle": "Este es un texto en Español (es-ES)",
-    "description": "En los últimos años, el desarrollo web ha evolucionado significativamente"
+    "title": "Hello World!",
+    "subtitle": "This is a text in Portuguese (pt-BR)",
+    "description": "In recent years, web development has evolved significantly"
   },
   "phrases": {
-    "industrial_innovation": "Innovación Industrial",
-    "superior_quality": "Calidad Superior",
-    "advanced_technology": "Tecnología Avanzada",
-    "customized_solutions": "Soluciones Personalizadas",
-    "operational_efficiency": "Eficiencia Operativa",
-    "specific_equipment": "Equipos Específicos",
-    "specialized_maintenance": "Mantenimiento Especializado",
-    "reliable_performance": "Rendimiento Confiable",
-    "parts_accessories": "Piezas y Accesorios",
-    "excellence_services": "Servicios de Excelencia",
-    "commitment_quality": "Compromiso con la Calidad",
-    "personalized_service": "Atención Personalizada",
-    "sustainability_innovation": "Sostenibilidad e Innovación",
-    "high_performance_machines": "Máquinas de Alto Rendimiento"
+    "industrial_innovation": "Industrial Innovation",
+    "superior_quality": "Superior Quality",
+    "advanced_technology": "Advanced Technology",
+    "customized_solutions": "Customized Solutions",
+    "operational_efficiency": "Operational Efficiency",
+    "specific_equipment": "Specific Equipment",
+    "specialized_maintenance": "Specialized Maintenance",
+    "reliable_performance": "Reliable Performance",
+    "parts_accessories": "Parts and Accessories",
+    "excellence_services": "Excellence Services",
+    "commitment_quality": "Commitment to Quality",
+    "personalized_service": "Personalized Service",
+    "sustainability_innovation": "Sustainability and Innovation",
+    "high_performance_machines": "High-Performance Machines"
   },
   "base": {
-    "all": "Todos",
-    "name": "Nombre",
-    "years": "Años",
-    "today": "Hoy",
-    "send": "Enviar",
-    "contact": "Contacto",
-    "select": "Seleccione",
-    "catalog": "Catálogo",
-    "products": "Productos",
-    "see_more": "Ver más",
-    "services": "Servicios",
-    "machines": "Máquinas",
-    "customers": "Clientes",
-    "smart_phone": "Celular",
-    "see_routes": "Ver rutas",
-    "description": "Descripción",
-    "consulting": "Consultando",
-    "observation": "Observación",
-    "on_the_market": "En el mercado",
-    "company_name": "Nombre de la empresa",
-    "developed_by": "Desarrollado por",
-    "get_in_touch": "Póngase en contacto",
-    "quality_supicom": "Calidad Supicom",
-    "request_quote": "Solicite una cotización",
-    "more_info": "Para más información, consúltenos.",
-    "add_products_to_quote": "Añada productos a la cotización"
+    "all": "All",
+    "name": "Name",
+    "years": "Years",
+    "today": "Today",
+    "send": "Send",
+    "author": "Author",
+    "contact": "Contact",
+    "select": "Select",
+    "catalog": "Catalog",
+    "products": "Products",
+    "see_more": "See More",
+    "services": "Services",
+    "machines": "Machines",
+    "customers": "Customers",
+    "smart_phone": "Smartphone",
+    "see_routes": "See Routes",
+    "description": "Description",
+    "consulting": "Consulting",
+    "observation": "Observation",
+    "on_the_market": "On the Market",
+    "company_name": "Company Name",
+    "developed_by": "Developed by",
+    "get_in_touch": "Get in Touch",
+    "quality_supicom": "Supicom Quality",
+    "request_quote": "Request a Quote",
+    "more_info": "For more information, contact us.",
+    "add_products_to_quote": "Add Products to Quote"
   },
   "portal": {
     "about_us": {
-      "title": "Sobre nosotros",
-      "description": "Somos una empresa comprometida en proporcionar soluciones para el sector industrial de hilos y cables conductores de energía, con equipos y servicios que garantizan la eficiencia y la continuidad de sus operaciones.\n\nCon décadas de experiencia en el mercado, fabricamos equipos de alto rendimiento para atender demandas personalizadas de manufacturas de cables conductores de energía. Nuestra actuación se extiende más allá de las fronteras nacionales, con contratos establecidos en países como Chile, Argentina y España, consolidando nuestra presencia internacional.\n\nNuestro compromiso va más allá de la fabricación. Ofrecemos soporte técnico y mantenimiento especializado, garantizando que sus equipos estén siempre en pleno funcionamiento, minimizando paradas y maximizando la productividad de su negocio. Sabemos que cada industria tiene desafíos únicos, y por eso desarrollamos soluciones personalizadas que atienden las necesidades específicas de cada cliente, ya sea en el mercado nacional o internacional."
+      "title": "About Us",
+      "description": "We are a company committed to providing solutions for the industrial sector of energy-conducting wires and cables, offering equipment and services that ensure efficiency and continuity of operations.\n\nWith decades of market experience, we manufacture high-performance equipment to meet customized demands for energy-conducting cable manufacturing. Our operations extend beyond national borders, with established contracts in countries like Chile, Argentina, and Spain, consolidating our international presence.\n\nOur commitment goes beyond manufacturing. We provide technical support and specialized maintenance to ensure your equipment is always in perfect working order, minimizing downtime and maximizing productivity. We understand that each industry has unique challenges, which is why we develop tailored solutions to meet the specific needs of each client, whether in the domestic or international market."
     },
     "our_departments": {
-      "title": "Nuestros departamentos",
-      "engineering_title": "Ingeniería",
-      "engineering_description": "Nuestro departamento de ingeniería es responsable de desarrollar soluciones innovadoras, diseñando equipos y sistemas que satisfacen las necesidades específicas de cada cliente, garantizando alta eficiencia y calidad.",
+      "title": "Our Departments",
+      "engineering_title": "Engineering",
+      "engineering_description": "Our engineering department is responsible for developing innovative solutions, designing equipment and systems that meet each client's specific needs, ensuring high efficiency and quality.",
 
-      "machining_title": "Mecanizado",
-      "machining_description": "Nuestro departamento de Mecanizado está dedicado a la fabricación de piezas de alta precisión, utilizando centros de mecanizado CNC, tornos CNC, máquinas convencionales y equipos de vanguardia. Atendemos desde pequeñas demandas hasta proyectos complejos y a medida, siempre con enfoque en calidad, eficiencia y plazos rigurosos.\n\nNuestra experiencia garantiza soluciones que cumplen con las más altas exigencias, desde el desarrollo hasta la producción final, con especial atención a los detalles y acabados.",
+      "machining_title": "Machining",
+      "machining_description": "Our Machining department is dedicated to manufacturing high-precision parts using CNC machining centers, CNC lathes, conventional machines, and cutting-edge equipment. We handle everything from small-scale demands to complex, customized projects, always focusing on quality, efficiency, and strict deadlines.\n\nOur expertise guarantees solutions that meet the highest standards, from development to final production, with special attention to details and finishing.",
 
-      "assembly_title": "Montaje Mecánico y Electrónico",
-      "assembly_description": "Integramos componentes mecánicos y electrónicos, entregando sistemas completos y personalizados.\n\nNuestro equipo cualificado realiza montajes de dispositivos, máquinas y equipos de alta complejidad, siempre garantizando la perfecta interacción entre los componentes. Aseguramos que cada solución entregada opere de forma eficiente, segura y dentro de las normas técnicas exigidas por el mercado."
+      "assembly_title": "Mechanical and Electronic Assembly",
+      "assembly_description": "We integrate mechanical and electronic components, delivering complete and customized systems.\n\nOur qualified team performs assemblies of devices, machines, and highly complex equipment, always ensuring perfect interaction between components. We guarantee that every delivered solution operates efficiently, safely, and within the technical standards required by the market."
     },
-    "where_are_we": "¿Dónde estamos?",
+    "where_are_we": "Where Are We?",
     "hero": {
-      "title": "Movemos\nla industria",
-      "description": "Ofrecemos soluciones completas para garantizar que\nsu operación nunca se detenga.",
-      "satisfaction": "Satisfacción",
-      "machines_sold": "Máquinas vendidas"
+      "title": "We Move\nthe Industry",
+      "description": "We offer complete solutions to ensure\nyour operation never stops.",
+      "satisfaction": "Satisfaction",
+      "machines_sold": "Machines Sold"
     },
     "product": {
-      "title": "Productos",
-      "not_fount": "Producto no encontrado",
-      "see_full_catalog": "Ver catálogo completo",
-      "check_catalog": "Consulte nuestro catálogo de productos",
-      "subtitle": "Máquinas y Equipos de Alta Calidad",
-      "banner_01_title": "Innovaciones\npara su empresa",
-      "banner_01_description": "¡Explore las máquinas y equipos más recientes\nque revolucionarán su línea de producción!",
-      "banner_02_title": "Flexibilidad\npara Su Negocio",
-      "banner_02_description": "Acceda a los mejores equipos cuando los necesite.\n¡Alquile con practicidad y eficiencia!",
-      "banner_03_title": "Alianzas\nque Generan Resultados",
-      "banner_03_description": "Descubra cómo nuestras soluciones pueden agregar valor a su negocio.\n¡Juntos somos más fuertes!",
+      "title": "Products",
+      "not_found": "Product Not Found",
+      "see_full_catalog": "View Full Catalog",
+      "check_catalog": "Check out our product catalog",
+      "subtitle": "High-Quality Machines and Equipment",
+      "banner_01_title": "Innovations\nfor Your Company",
+      "banner_01_description": "Explore the latest machines and equipment\nthat will revolutionize your production line!",
+      "banner_02_title": "Flexibility\nfor Your Business",
+      "banner_02_description": "Access the best equipment when you need it.\nRent with convenience and efficiency!",
+      "banner_03_title": "Partnerships\nThat Deliver Results",
+      "banner_03_description": "Discover how our solutions can add value to your business.\nTogether, we are stronger!",
       "categories": {
-        "stranders": "Torcedoras/Trenzadoras",
-        "pay_offs": "Desbobinadores y Bobinadores",
-        "wire_drawing": "Trefilado",
-        "caterpillar_capstans": "Tiradores",
-        "sz_line": "Línea SZ"
+        "stranders": "Stranders/Braiders",
+        "pay_offs": "Pay-Offs and Take-Ups",
+        "wire_drawing": "Wire Drawing",
+        "caterpillar_capstans": "Pullers",
+        "sz_line": "SZ Line"
       },
       "catalog": {
         "torcedeira_rigida": {
-          "title": "Torcedora Rígida",
-          "description": "Este equipo puede contener módulos (jaulas) con 6 bobinas, 12 bobinas, 18 bobinas, y otras bajo consulta.\n\nEsta máquina fue desarrollada para la torsión de hilos o cables de cobre y aluminio utilizando bobinas estandarizadas de 630mm de diámetro dispuestas linealmente sobre el eje principal en partes llamadas jaulas.\n\nTenemos línea de torsión compuesta por tres etapas, una unidad con seis bobinas, una unidad con doce bobinas y una con dieciocho bobinas y otras bajo consulta.\nAdecuada tanto para la formación de cables como para el blindaje."
+          "title": "Rigid Strander",
+          "description": "This equipment can feature modules (cages) with 6 bobbins, 12 bobbins, 18 bobbins, and others upon request.\n\nThis machine is designed for twisting copper or aluminum wires or cables, using standardized bobbins with a diameter of 630mm, arranged linearly on the main shaft in sections called cages.\n\nWe offer twisting lines consisting of three stages: a unit with six bobbins, a unit with twelve bobbins, and one with eighteen bobbins, among others upon request. Suitable for both cable formation and shielding."
         },
         "buncher_630_1800": {
-          "title": "Buncher's 630 - 1800",
-          "description": "Los Buncher's son máquinas de doble torsión para la fabricación de cables conductores de cobre y aluminio, con alto rendimiento y con potencias que varían entre 20KW y 180KW, con velocidades lineales de hasta 300m/min y torsiones de 5000T/min según el equipo.\n\nTenemos Buncher 630, Buncher 800, Buncher 1000, Buncher 1250, Buncher 1600."
-        },
-        "desenrolador_duplo": {
-          "title": "Desbobinador Doble B630/800/B1000/1250",
-          "description": "Este desbobinador motorizado fue desarrollado para alimentar Buncher's y otros equipos que necesitan un suministro continuo, con tensión controlada, de hilos desnudos o aislados.\n\nSu velocidad máxima es de 300m/min, utilizando bobinas estandarizadas de 630mm-800mm de diámetro, y de 1000mm a 1250mm de diámetro."
-        },
-        "bobinador_desbobinador_portal": {
-          "title": "Bobinador y Desbobinador Pórtico",
-          "description": "Estos equipos tipo pórtico fueron desarrollados para alojar una amplia gama de bobinas, donde su estructura se mueve automáticamente a través de transmisión mecánica motorizada, tanto para el cierre como para la elevación y distribución del cable para el tipo bobinador, siendo controlado simultáneamente con la velocidad de la línea de producción a instalar.\n\nSe desarrollan de acuerdo a las necesidades de cada cliente."
-        },
-        "desenrolador_multiplo": {
-          "title": "Desbobinador Múltiple 6 Bobinas",
-          "description": "Este desbobinador motorizado fue diseñado para alimentar buncher's y otros equipos que requieren un suministro continuo, con tensión controlada, de hilos desnudos o aislados.\n\nEste equipo aloja múltiples bobinas de 600mm a 800mm de diámetro, su velocidad lineal máxima es de 300 m/min."
-        },
-        "planetaria_1000": {
-          "title": "Planetaria 1000",
-          "description": "Esta línea reunidora planetaria fue desarrollada para realizar la reunión de cables de aluminio para bobinas de 1000mm de diámetro."
-        },
-        "multifilar_8_fios": {
-          "title": "Multifilar de 8 Hilos (TM8)",
-          "description": "La línea de trefilado multihilos fue desarrollada para la producción de hilos de cobre para cables conductores, incluyendo cables flexibles, cables automotrices, cables de batería, cables de instalación de edificios, fotovoltaicos, cables de datos, cables especiales, entre otros.\n\nLa línea de trefilado SUPICOM está compuesta por la unidad de Trefilado, Recocedor y Bobinador, una línea compacta, trabajando en sincronismo, utilizando tecnología avanzada y actualizada en el mercado industrial."
-        },
-        "desenrolador_vergalhao": {
-          "title": "Desbobinador de Varillas",
-          "description": "Desbobinador especializado para varillas, diseñado para proporcionar un desenrollado suave y controlado de materiales pesados como varillas de metal."
-        },
-        "enfitadeira": {
-          "title": "Encintadora",
-          "description": "Máquina diseñada para aplicar cintas de forma precisa y eficiente en diversos tipos de cables e hilos, garantizando una protección y aislamiento adecuados."
-        },
-        "aplicadores_de_linhas": {
-          "title": "Aplicadores de Líneas",
-          "description": "Equipos especializados para la aplicación precisa de líneas en procesos de producción de cables, garantizando alineación y tensión adecuadas."
-        },
-        "puxadores": {
-          "title": "Cabrestantes",
-          "description": "Sistema de tracción y control para líneas de producción de cables, ofreciendo precisión en el control de velocidad y tensión durante el proceso de fabricación."
-        },
-        "bobinadores": {
-          "title": "Bobinadores",
-          "description": "Equipos diseñados para enrollar cables e hilos de forma uniforme y controlada en bobinas, garantizando un almacenamiento y transporte eficientes."
-        },
-        "desbobinadores": {
-          "title": "Desbobinadores",
-          "description": "Máquinas especializadas para desenrollar cables e hilos de bobinas de forma controlada, alimentando líneas de producción o procesos de instalación."
-        },
-        "mono_torcao": {
-          "title": "Mono Torsión",
-          "description": "Esta máquina fue desarrollada para proporcionar torsión simple para cables o la reunión de varios cables que requieren torsión, asegurando que el diámetro final de los cables no supere los 40 mm. Ideal para la producción de cables flexibles y la reunión de cables especiales. Para más información, consúltenos."
-        },
-        "others": {
-          "title": "Otros Equipos",
-          "description": "Supicom desarrolla equipos específicos, tales como:\n\n- Fraccionadora de Rollos\n- Líneas de Respase 6\n- Aplicadores de Cinta Lineal con Uno o Dos Cabezas\n- Recocedores\n- Catterpillas"
+          "title": "Bunchers 630 - 1600",
+          "description": "Bunchers are double-twist machines for manufacturing copper and aluminum conductor cables with high performance, offering power ranges from 20KW to 180KW, linear speeds of up to 300m/min, and twist rates of 5000T/min, depending on the equipment.\n\nWe offer Buncher 630, Buncher 800, Buncher 1000, Buncher 1250, and Buncher 1600."
         }
       }
     },
     "news": {
-      "title": "Destacados",
-      "subtitle": "Manténgase al día con las últimas noticias"
+      "title": "Highlights",
+      "subtitle": "Stay updated with the latest news"
     },
     "service": {
-      "subtitle": "Soluciones Industriales Personalizadas para su negocio",
-      "manufacturing_title": "Fabricación",
-      "manufacturing_description": "Suministramos máquinas y equipos especializados para la fabricación de cables y alambres de cobre y aluminio, incluidos flexibles, de comunicación, control, batería, fotovoltaicos, datos, especiales y más.",
-      "rent_title": "Alquiler",
-      "rent_description": "Ofrecemos alquiler de máquinas y equipos comerciales e industriales sin operador, adecuados para diversas necesidades.",
-      "maintenance_title": "Mantenimiento",
-      "maintenance_description": "Prestamos servicios de mantenimiento y reparación de máquinas industriales, garantizando la máxima eficiencia y longevidad de los equipos.",
-      "development_title": "Desarrollo",
-      "development_description": "Desarrollamos proyectos industriales personalizados, desde la planificación hasta la ejecución, garantizando soluciones innovadoras y eficientes para su negocio."
+      "subtitle": "Customized Industrial Solutions for Your Business",
+      "manufacturing_title": "Manufacturing",
+      "manufacturing_description": "We supply specialized machines and equipment for the production of copper and aluminum wires and cables and their alloys, including flexible, communication, control, battery, photovoltaic, data, special cables, and others.",
+      "rent_title": "Rental",
+      "rent_description": "We offer rental services for commercial and industrial machines and equipment without an operator, suitable for various needs.",
+      "maintenance_title": "Maintenance",
+      "maintenance_description": "We provide industrial machinery maintenance and repair services, ensuring maximum efficiency and longevity of the equipment.",
+      "development_title": "Development",
+      "development_description": "We develop customized industrial projects, from planning to execution, guaranteeing innovative and efficient solutions for your business."
     },
     "faq": {
-      "title": "Preguntas Frecuentes",
-      "subtitle": "¿No encontraste lo que necesitabas? Consulta respuestas a algunas preguntas comunes.",
-      "question_01_title": "¿A qué industrias sirve principalmente Supicom?",
-      "question_01_description": "Supicom atiende a industrias en el sector de cables, alambres conductores y otras áreas de metalurgia que requieren equipos de alto rendimiento para sus operaciones.",
-
-      "question_02_title": "¿Qué servicios ofrece Supicom?",
-      "question_02_description": "Ofrecemos desde el desarrollo y fabricación de equipos personalizados hasta soporte técnico, mantenimiento especializado y un servicio personalizado para garantizar la máxima eficiencia y durabilidad de los equipos de nuestros clientes.",
-
-      "question_03_title": "¿Supicom trabaja con clientes fuera de Brasil?",
-      "question_03_description": "Sí, tenemos presencia internacional con clientes en países como Chile, Argentina y España, consolidando nuestra reputación más allá de Brasil.",
-
-      "question_04_title": "¿Cuáles son las características únicas de los productos de Supicom?",
-      "question_04_description": "Nuestros productos están desarrollados con tecnología de punta, diseñados para durabilidad, eficiencia y personalización a fin de satisfacer las necesidades específicas de cada cliente. También ofrecemos soporte técnico continuo.",
-
-      "question_05_title": "¿Cómo puedo solicitar una cotización?",
-      "question_05_description": "Puedes solicitar una cotización a través de nuestro sitio web añadiendo productos a la solicitud de cotización o contactándonos directamente. Un representante se pondrá en contacto contigo con los detalles necesarios.",
-
-      "question_06_title": "¿Supicom ofrece mantenimiento y soporte para el equipo?",
-      "question_06_description": "Sí, brindamos servicios de mantenimiento especializado y soporte técnico para asegurar que tu equipo opere eficientemente con el menor tiempo de inactividad posible.",
-
-      "question_07_title": "¿Puedo personalizar el equipo para mi línea de producción?",
-      "question_07_description": "Sí, nuestros equipos se pueden adaptar a los requisitos específicos de tu operación, asegurando que se ajusten a tus procesos de producción."
-    },
-    "contact": {
-      "description": "Póngase en contacto con nosotros para obtener soporte, enviar sugerencias o discutir asociaciones. Siempre estamos listos para ayudar.",
-      "customer_support": "Atención al cliente",
-      "customer_support_description": "¿Tiene dudas o necesita ayuda? Hable con nosotros para obtener soporte inmediato.",
-      "suggestions": "Sugerencias",
-      "suggestions_description": "Envíe sus sugerencias y ayúdenos a mejorar nuestros servicios.",
-      "partnerships": "Asociaciones",
-      "partnerships_description": "¿Interesado en asociaciones? Hable con nosotros para explorar oportunidades de colaboración.",
-      "form": {
-        "title": "Contáctenos",
-        "subtitle": "Complete el formulario a continuación y describa su solicitud. ¡Nuestro equipo le responderá pronto!"
-      }
-    },
-    "request_quote": {
-      "title": "Solicitar cotización",
-      "subtitle": "Ingrese sus datos, en breve un representante se pondrá en contacto con usted"
-    },
-    "footer": {
-      "site_map": "Mapa del sitio",
-      "institutional": "Institucional",
-      "treatment": "Atención"
+      "title": "Frequently Asked Questions",
+      "subtitle": "Didn't find what you were looking for? Check out some answers to the most common questions."
     }
   }
 }
