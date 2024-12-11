@@ -10,6 +10,7 @@ import Image from "next/image";
 import { ReactNode } from "react";
 import Each from "@/_shared/components/app-each";
 import { IPortalDepartamentCardProps } from "./portal-departament-card";
+import { useTranslations } from "next-intl";
 
 interface IProps {
   children: ReactNode;
@@ -18,6 +19,7 @@ interface IProps {
 
 export default function PortalDepartamentModal(props: IProps) {
   const { data, children } = props;
+  const t = useTranslations();
 
   return (
     <Dialog>
@@ -30,7 +32,9 @@ export default function PortalDepartamentModal(props: IProps) {
         <section className="grid gap-4 py-4 overflow-y-auto max-h-[70dvh]">
           <p>{data.description}</p>
 
-          <h5 className="font-medium">Confira o nosso espaço:</h5>
+          <h5 className="font-medium">
+            {t("portal.our_departments.check_our_space")}:
+          </h5>
           <section className="grid gap-4 grid-cols-2 items-stretch mobile:grid-cols-1">
             <Each
               data={data.images}
