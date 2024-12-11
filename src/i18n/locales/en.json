@@ -19,7 +19,7 @@
     "specialized_maintenance": "Specialized Maintenance",
     "reliable_performance": "Reliable Performance",
     "parts_accessories": "Parts and Accessories",
-    "excellence_services": "Excellence Services",
+    "excellence_services": "Excellence in Services",
     "commitment_quality": "Commitment to Quality",
     "personalized_service": "Personalized Service",
     "sustainability_innovation": "Sustainability and Innovation",
@@ -40,7 +40,7 @@
     "services": "Services",
     "machines": "Machines",
     "customers": "Customers",
-    "smart_phone": "Smartphone",
+    "smart_phone": "Mobile Phone",
     "see_routes": "See Routes",
     "description": "Description",
     "consulting": "Consulting",
@@ -51,87 +51,87 @@
     "get_in_touch": "Get in Touch",
     "quality_supicom": "Supicom Quality",
     "request_quote": "Request a Quote",
-    "more_info": "For more information, contact us.",
+    "more_info": "For more information, consult us.",
     "add_products_to_quote": "Add Products to Quote"
   },
   "portal": {
     "about_us": {
       "title": "About Us",
-      "description": "We are a company committed to providing solutions for the industrial sector of energy-conducting wires and cables, offering equipment and services that ensure efficiency and continuity of operations.\n\nWith decades of market experience, we manufacture high-performance equipment to meet customized demands for energy-conducting cable manufacturing. Our operations extend beyond national borders, with established contracts in countries like Chile, Argentina, and Spain, consolidating our international presence.\n\nOur commitment goes beyond manufacturing. We provide technical support and specialized maintenance to ensure your equipment is always in perfect working order, minimizing downtime and maximizing productivity. We understand that each industry has unique challenges, which is why we develop tailored solutions to meet the specific needs of each client, whether in the domestic or international market."
+      "description": "We are a company committed to providing solutions for the industrial sector of wires and power conductor cables, with equipment and services that ensure the efficiency and continuity of your operations.\n\nWith decades of experience in the market, we manufacture high-performance equipment to meet customized demands of power conductor cable manufacturers. Our reach extends beyond national borders, with established contracts in countries like Chile, Argentina, and Spain, consolidating our international presence.\n\nOur commitment goes beyond manufacturing. We offer technical support and specialized maintenance, ensuring your equipment is always in full operation, minimizing downtime, and maximizing your business productivity. We understand that each industry has unique challenges, so we develop tailored solutions to meet the specific needs of each client, whether in the national or international market."
     },
     "our_departments": {
       "title": "Our Departments",
       "engineering_title": "Engineering",
-      "engineering_description": "Our engineering department is responsible for developing innovative solutions, designing equipment and systems that meet each client's specific needs, ensuring high efficiency and quality.",
+      "engineering_description": "Our engineering department is responsible for developing innovative solutions, designing equipment and systems to meet the specific needs of each client, ensuring high efficiency and quality.",
 
       "machining_title": "Machining",
-      "machining_description": "Our Machining department is dedicated to manufacturing high-precision parts using CNC machining centers, CNC lathes, conventional machines, and cutting-edge equipment. We handle everything from small-scale demands to complex, customized projects, always focusing on quality, efficiency, and strict deadlines.\n\nOur expertise guarantees solutions that meet the highest standards, from development to final production, with special attention to details and finishing.",
+      "machining_description": "Our Machining department is dedicated to the manufacturing of high-precision parts, using CNC machining centers, CNC lathes, conventional machines, and state-of-the-art equipment. We cater to both small demands and complex, custom projects, always focusing on quality, efficiency, and strict deadlines.\n\nOur expertise ensures solutions that meet the highest standards, from development to final production, with special attention to details and finishes.",
 
       "assembly_title": "Mechanical and Electronic Assembly",
-      "assembly_description": "We integrate mechanical and electronic components, delivering complete and customized systems.\n\nOur qualified team performs assemblies of devices, machines, and highly complex equipment, always ensuring perfect interaction between components. We guarantee that every delivered solution operates efficiently, safely, and within the technical standards required by the market."
+      "assembly_description": "We integrate mechanical and electronic components, delivering complete and customized systems.\n\nOur qualified team performs assembly of devices, machines, and highly complex equipment, always ensuring perfect interaction between components. We guarantee that every delivered solution operates efficiently, safely, and within the technical standards required by the market."
     },
     "where_are_we": "Where Are We?",
     "hero": {
-      "title": "We Move\nthe Industry",
-      "description": "We offer complete solutions to ensure\nyour operation never stops.",
+      "title": "We Drive the Industry",
+      "description": "We offer complete solutions to ensure your operation never stops.",
       "satisfaction": "Satisfaction",
       "machines_sold": "Machines Sold"
     },
     "product": {
       "title": "Products",
-      "not_found": "Product Not Found",
-      "see_full_catalog": "View Full Catalog",
+      "not_fount": "Product Not Found",
+      "see_full_catalog": "See Full Catalog",
       "check_catalog": "Check out our product catalog",
       "subtitle": "High-Quality Machines and Equipment",
-      "banner_01_title": "Innovations\nfor Your Company",
-      "banner_01_description": "Explore the latest machines and equipment\nthat will revolutionize your production line!",
-      "banner_02_title": "Flexibility\nfor Your Business",
-      "banner_02_description": "Access the best equipment when you need it.\nRent with convenience and efficiency!",
-      "banner_03_title": "Partnerships\nThat Deliver Results",
-      "banner_03_description": "Discover how our solutions can add value to your business.\nTogether, we are stronger!",
+      "banner_01_title": "Innovations for Your Business",
+      "banner_01_description": "Explore the latest machines and equipment that will revolutionize your production line!",
+      "banner_02_title": "Flexibility for Your Business",
+      "banner_02_description": "Access the best equipment when needed. Rent with ease and efficiency!",
+      "banner_03_title": "Partnerships That Deliver Results",
+      "banner_03_description": "Discover how our solutions can add value to your business. Together, we are stronger!",
       "categories": {
-        "stranders": "Stranders/Braiders",
-        "pay_offs": "Pay-Offs and Take-Ups",
+        "stranders": "Stranders/Twisters",
+        "pay_offs": "Pay-Offs and Reels",
         "wire_drawing": "Wire Drawing",
         "caterpillar_capstans": "Pullers",
         "sz_line": "SZ Line"
       },
       "catalog": {
         "torcedeira_rigida": {
-          "title": "Rigid Strander",
-          "description": "This equipment can contain modules (cages) with 6 spools, 12 spools, 18 spools, and others upon request.\n\nThis machine was developed for twisting wires or cables made of copper and aluminum using standardized spools with a diameter of 630mm, arranged linearly along the main axis in parts called cages.\n\nWe offer a twisting line composed of three stages: a unit with six spools, a unit with twelve spools, and one with eighteen spools, among others upon request.\nSuitable for both cable formation and shielding."
+          "title": "Rigid Twister",
+          "description": "This equipment can include modules (cages) with 6, 12, 18 bobbins, and others upon request.\n\nThis machine is designed for twisting copper and aluminum wires or cables using standardized bobbins with a diameter of 630mm, arranged linearly along the main axis in sections called cages.\n\nWe offer a twisting line composed of three stages: one unit with six bobbins, one unit with twelve bobbins, one with eighteen bobbins, and others upon request. Suitable for both cable formation and shielding."
         },
         "buncher_630_1800": {
           "title": "Buncher's 630 - 1600",
-          "description": "The Bunchers are double-twist machines for the manufacture of copper and aluminum conductor cables, with high performance and power ranging from 20KW to 180KW, with linear speeds of up to 300m/min and twist rates of 5000T/min, depending on the equipment.\n\nWe offer Buncher 630, Buncher 800, Buncher 1000, Buncher 1250, and Buncher 1600."
+          "description": "The Buncher's are double-twist machines for manufacturing copper and aluminum conductor cables, offering high performance with power ranging from 20KW to 180KW, linear speeds up to 300m/min, and twists up to 5000T/min depending on the equipment.\n\nWe offer Buncher 630, Buncher 800, Buncher 1000, Buncher 1250, and Buncher 1600."
         },
         "desenrolador_duplo": {
-          "title": "Double Pay-Off 630-800 and 1000-1250",
-          "description": "This motorized pay-off was developed to feed Bunchers and other equipment that require continuous, tension-controlled supply of bare or insulated wires.\n\nIts maximum speed is 300m/min, using standardized spools with diameters ranging from 630mm to 800mm, and from 1000mm to 1250mm."
+          "title": "Double Payoff 630-800 and 1000-1250",
+          "description": "This motorized payoff is designed to feed Buncher's and other equipment requiring continuous supply with controlled tension of bare or insulated wires.\n\nIts maximum speed is 300m/min, using standardized bobbins with diameters from 630mm-800mm and from 1000mm to 1250mm."
         },
         "bobinador_desbobinador_portal": {
           "title": "Portal Winder and Unwinder",
-          "description": "These portal-type machines were developed to accommodate a wide range of spools, where the structure moves automatically through a motorized mechanical transmission, both for closing and lifting, as well as spreading the cable in winder mode, being simultaneously controlled with the production line speed where it will be installed.\n\nThey are developed according to the specific needs of each client."
+          "description": "These portal-type machines are designed to accommodate a wide range of bobbins. Their structure moves automatically via motorized mechanical transmission, allowing for closing, lifting, and cable spreading for the winding type. They are controlled simultaneously with the production line speed where installed.\n\nThey are developed according to each client's needs."
         },
         "desenrolador_multiplo": {
-          "title": "Multiple Pay-Off",
-          "description": "This motorized pay-off was made to feed Bunchers and other equipment requiring continuous, tension-controlled supply of bare or insulated wires.\n\nThis equipment accommodates multiple spools with diameters ranging from 600mm to 800mm, with a maximum linear speed of 300m/min."
+          "title": "Multiple Payoff",
+          "description": "This motorized payoff is designed to feed Buncher's and other equipment requiring continuous supply with controlled tension of bare or insulated wires.\n\nThis equipment accommodates multiple bobbins with diameters ranging from 600mm to 800mm. Its maximum linear speed is 300 m/min."
         },
         "planetaria_1000": {
           "title": "Planetary 1000",
-          "description": "This planetary cabling line was developed for the assembly of aluminum cables for spools with a diameter of 1000mm."
+          "description": "This planetary stranding line is designed for assembling aluminum cables into bobbins with a diameter of 1000mm."
         },
         "multifilar_8_fios": {
-          "title": "8-Wire Multi-Draw (TM8)",
-          "description": "The multi-wire drawing line was developed for the production of copper wires for conductor cables, including flexible cables, automotive cables, battery cables, building installation cables, photovoltaic cables, data cables, special cables, and others.\n\nThe SUPICOM drawing line consists of the Drawing Unit, Annealer, and Winder, forming a compact line working in sync using advanced and up-to-date industrial technology."
+          "title": "8-Wire Multifilar (TM8)",
+          "description": "The multi-wire drawing line is designed for producing copper wires for conductor cables, including flexible cables, automotive cables, battery cables, building installation cables, photovoltaic cables, data cables, special cables, and others.\n\nThe SUPICOM drawing line includes the Drawing Unit, Annealer, and Winder—a compact line working in synchronization using advanced and updated industrial technology."
         },
         "desenrolador_vergalhao": {
-          "title": "Rod Pay-Off",
-          "description": "Specialized pay-off for rods, designed to provide smooth and controlled unwinding of heavy materials such as metal rods."
+          "title": "Rod Payoff",
+          "description": "Specialized payoff for rods, designed to provide smooth and controlled unwinding of heavy materials like metal rods."
         },
         "enfitadeira": {
           "title": "Taping Machine",
-          "description": "Machine designed to precisely and efficiently apply tapes to various types of cables and wires, ensuring proper protection and insulation."
+          "description": "Machine designed to apply tapes accurately and efficiently on various types of cables and wires, ensuring proper protection and insulation."
         },
         "aplicadores_de_linhas": {
           "title": "SZ Line",
@@ -139,44 +139,86 @@
         },
         "puxadores": {
           "title": "Capstans",
-          "description": "Traction and control system for cable production lines, offering precision in speed and tension control during the manufacturing process."
+          "description": "Traction and control systems for cable production lines, providing precise control of speed and tension during the manufacturing process."
         },
         "bobinadores": {
           "title": "Winders",
-          "description": "Equipment designed to uniformly and controllably wind cables and wires onto spools, ensuring efficient storage and transportation."
+          "description": "Equipment designed to wind cables and wires uniformly and consistently onto bobbins, ensuring efficient storage and transportation."
         },
         "desbobinadores": {
           "title": "Unwinders",
-          "description": "Specialized machines for unwinding cables and wires from spools in a controlled manner, feeding production lines or installation processes."
+          "description": "Specialized machines for unwinding cables and wires from bobbins in a controlled manner, feeding production lines or installation processes."
         },
         "mono_torcao": {
           "title": "Single Twist",
-          "description": "This machine was developed to provide single-twist cabling or the assembly of multiple cables requiring twisting, ensuring the final cable diameter does not exceed 40mm. Ideal for the production of Flexible Cables and assembly of special cables. For more information, contact us."
+          "description": "This machine is designed to provide simple twisting of cables or bundling of multiple cables that require twisting, ensuring the final cable diameter does not exceed 40 mm. Ideal for producing flexible cables and bundling special cables. For more information, consult us."
         },
         "others": {
           "title": "Other Equipment",
-          "description": "Supicom develops specific equipment, such as:\n\n- Roll Fractionators\n- Re-spooling Lines\n- Linear Tape Applicators with one or two heads\n- Annealers\n- Caterpillars"
+          "description": "Supicom develops specialized equipment such as:\n\n- Roll slitters\n- Respooling lines\n- Linear tape applicators with one or two heads\n- Annealer\n- Caterpillar"
         }
       }
     },
     "news": {
       "title": "Highlights",
-      "subtitle": "Stay updated with the latest news"
+      "subtitle": "Stay up-to-date with the latest news"
     },
     "service": {
       "subtitle": "Customized Industrial Solutions for Your Business",
       "manufacturing_title": "Manufacturing",
-      "manufacturing_description": "We supply specialized machines and equipment for the production of copper and aluminum wires and cables and their alloys, including flexible, communication, control, battery, photovoltaic, data, special cables, and others.",
+      "manufacturing_description": "We provide specialized machines and equipment for the production of copper and aluminum wires and cables, including flexible, communication, control, battery, photovoltaic, data, special cables, and others.",
       "rent_title": "Rental",
-      "rent_description": "We offer rental services for commercial and industrial machines and equipment without an operator, suitable for various needs.",
+      "rent_description": "We offer rental of commercial and industrial machines and equipment without operators, suitable for various needs.",
       "maintenance_title": "Maintenance",
-      "maintenance_description": "We provide industrial machinery maintenance and repair services, ensuring maximum efficiency and longevity of the equipment.",
+      "maintenance_description": "We provide maintenance and repair services for industrial machines, ensuring maximum efficiency and longevity of the equipment.",
       "development_title": "Development",
-      "development_description": "We develop customized industrial projects, from planning to execution, guaranteeing innovative and efficient solutions for your business."
+      "development_description": "We develop customized industrial projects, from planning to execution, ensuring innovative and efficient solutions for your business."
     },
     "faq": {
       "title": "Frequently Asked Questions",
-      "subtitle": "Didn't find what you were looking for? Check out some answers to the most common questions."
+      "subtitle": "Didn't find what you needed? Check out some answers to common questions.",
+      "question_01_title": "What are the main sectors served by Supicom?",
+      "question_01_description": "Supicom serves industries in the sectors of cables, power conductor wires, and other metallurgical areas that require high-performance equipment for their operations.",
+
+      "question_02_title": "What services does Supicom offer?",
+      "question_02_description": "We offer everything from the development and manufacturing of custom equipment to technical support, specialized maintenance, and personalized service to ensure maximum efficiency and longevity of our clients' equipment.",
+
+      "question_03_title": "Does Supicom serve clients outside Brazil?",
+      "question_03_description": "Yes, we operate internationally with clients in countries such as Chile, Argentina, and Spain, consolidating our presence and trust beyond Brazil.",
+
+      "question_04_title": "What are the differentiators of Supicom's products?",
+      "question_04_description": "Our products are developed with cutting-edge technology, always focusing on durability, efficiency, and adaptation to the specific needs of each client, in addition to offering continuous technical support.",
+
+      "question_05_title": "How can I request a quote?",
+      "question_05_description": "You can request a quote through our website by adding products to the quote request or contacting us directly. A representative will respond with the necessary information.",
+
+      "question_06_title": "Does Supicom offer maintenance and support for equipment?",
+      "question_06_description": "Yes, we offer specialized maintenance services and technical support to ensure your equipment operates efficiently with minimal downtime.",
+
+      "question_07_title": "Can I customize equipment for my production line?",
+      "question_07_description": "Yes, our equipment can be tailored to meet the specific needs of your operation, ensuring alignment with your production processes."
+    },
+    "contact": {
+      "description": "Get in touch with us for support, to send suggestions, or to discuss partnerships. We are always ready to help.",
+      "customer_support": "Customer Support",
+      "customer_support_description": "Have questions or need help? Contact us for immediate support.",
+      "suggestions": "Suggestions",
+      "suggestions_description": "Send us your suggestions and help us improve our services.",
+      "partnerships": "Partnerships",
+      "partnerships_description": "Interested in partnerships? Contact us to explore collaboration opportunities.",
+      "form": {
+        "title": "Get in Touch",
+        "subtitle": "Fill out the form below and describe your request. Our team will get back to you soon!"
+      }
+    },
+    "request_quote": {
+      "title": "Request a Quote",
+      "subtitle": "Enter your details, and a representative will contact you shortly."
+    },
+    "footer": {
+      "site_map": "Site Map",
+      "institutional": "Institutional",
+      "treatment": "Support"
     }
   }
 }
