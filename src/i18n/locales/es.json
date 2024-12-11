@@ -98,12 +98,64 @@
       },
       "catalog": {
         "torcedeira_rigida": {
-          "title": "Rigid Strander",
-          "description": "This equipment can feature modules (cages) with 6 bobbins, 12 bobbins, 18 bobbins, and others upon request.\n\nThis machine is designed for twisting copper or aluminum wires or cables, using standardized bobbins with a diameter of 630mm, arranged linearly on the main shaft in sections called cages.\n\nWe offer twisting lines consisting of three stages: a unit with six bobbins, a unit with twelve bobbins, and one with eighteen bobbins, among others upon request. Suitable for both cable formation and shielding."
+          "title": "Trefiladora Rígida",
+          "description": "Este equipo puede contener módulos (jaulas) con 6 bobinas, 12 bobinas, 18 bobinas, y otras bajo consulta.\n\nEsta máquina fue desarrollada para la torsión de hilos o cables de cobre y aluminio utilizando bobinas estandarizadas con un diámetro de 630mm dispuestas linealmente sobre el eje principal en partes llamadas jaulas.\n\nOfrecemos una línea de torsión compuesta por tres etapas: una unidad con seis bobinas, una unidad con doce bobinas y otra con dieciocho bobinas, además de otras bajo consulta.\nAdecuada tanto para la formación de cables como para blindaje."
         },
         "buncher_630_1800": {
-          "title": "Bunchers 630 - 1600",
-          "description": "Bunchers are double-twist machines for manufacturing copper and aluminum conductor cables with high performance, offering power ranges from 20KW to 180KW, linear speeds of up to 300m/min, and twist rates of 5000T/min, depending on the equipment.\n\nWe offer Buncher 630, Buncher 800, Buncher 1000, Buncher 1250, and Buncher 1600."
+          "title": "Buncher's 630 - 1600",
+          "description": "Los Buncher's son máquinas de doble torsión para la fabricación de cables conductores de cobre y aluminio, con alto rendimiento y potencias que varían entre 20KW y 180KW, con velocidades lineales de hasta 300m/min y torsiones de 5000T/min según el equipo.\n\nDisponemos de Buncher 630, Buncher 800, Buncher 1000, Buncher 1250 y Buncher 1600."
+        },
+        "desenrolador_duplo": {
+          "title": "Desbobinador Doble 630-800 y 1000-1250",
+          "description": "Este desbobinador motorizado fue desarrollado para alimentar Buncher's y otros equipos que requieren un suministro continuo y controlado de tensión de hilos desnudos o aislados.\n\nSu velocidad máxima es de 300m/min, utilizando bobinas estandarizadas con diámetros de 630mm-800mm y de 1000mm a 1250mm."
+        },
+        "bobinador_desbobinador_portal": {
+          "title": "Bobinador y Desbobinador Portal",
+          "description": "Estos equipos tipo portal fueron desarrollados para alojar una amplia gama de bobinas, donde su estructura se mueve automáticamente a través de una transmisión mecánica motorizada, tanto para el cierre como para la elevación y el esparcimiento del cable en el modo bobinador, siendo controlados simultáneamente con la velocidad de la línea de producción donde se instalará.\n\nSon desarrollados según las necesidades específicas de cada cliente."
+        },
+        "desenrolador_multiplo": {
+          "title": "Desbobinador Múltiple",
+          "description": "Este desbobinador motorizado fue diseñado para alimentar Buncher's y otros equipos que requieren un suministro continuo y controlado de tensión de hilos desnudos o aislados.\n\nEste equipo aloja múltiples bobinas con diámetros de 600mm a 800mm, con una velocidad lineal máxima de 300m/min."
+        },
+        "planetaria_1000": {
+          "title": "Planetaria 1000",
+          "description": "Esta línea cabladora planetaria fue desarrollada para la reunión de cables de aluminio para bobinas con un diámetro de 1000mm."
+        },
+        "multifilar_8_fios": {
+          "title": "Multifilar de 8 Hilos (TM8)",
+          "description": "La línea de trefilado multifilar fue desarrollada para la producción de hilos de cobre para cables conductores, incluyendo cables flexibles, cables automotrices, cables de batería, cables para instalaciones residenciales, fotovoltaicos, cables de datos, cables especiales, entre otros.\n\nLa línea de trefilado SUPICOM está compuesta por la unidad de Trefilado, el Recocido y el Bobinador, formando una línea compacta que trabaja en sincronía con tecnología avanzada y actualizada del mercado industrial."
+        },
+        "desenrolador_vergalhao": {
+          "title": "Desbobinador de Barras",
+          "description": "Desbobinador especializado para barras, diseñado para un desenrollado suave y controlado de materiales pesados como barras metálicas."
+        },
+        "enfitadeira": {
+          "title": "Encintadora",
+          "description": "Máquina diseñada para aplicar cintas de forma precisa y eficiente en varios tipos de cables e hilos, garantizando la protección y el aislamiento adecuados."
+        },
+        "aplicadores_de_linhas": {
+          "title": "Línea SZ",
+          "description": "Equipos especializados para la torsión y aplicación precisa de hilos en los procesos de producción de cables, asegurando una alineación y tensión adecuadas."
+        },
+        "puxadores": {
+          "title": "Tractores",
+          "description": "Sistema de tracción y control para líneas de producción de cables, ofreciendo precisión en el control de velocidad y tensión durante el proceso de fabricación."
+        },
+        "bobinadores": {
+          "title": "Bobinadores",
+          "description": "Equipos diseñados para enrollar cables e hilos de manera uniforme y controlada en bobinas, garantizando un almacenamiento y transporte eficientes."
+        },
+        "desbobinadores": {
+          "title": "Desbobinadores",
+          "description": "Máquinas especializadas para desenrollar cables e hilos de bobinas de forma controlada, alimentando líneas de producción o procesos de instalación."
+        },
+        "mono_torcao": {
+          "title": "Mono Torsión",
+          "description": "Esta máquina fue desarrollada para proporcionar una torsión simple de cables o la reunión de varios cables que requieren torsión, de modo que el diámetro final de los cables no exceda los 40 mm. Ideal para la producción de cables flexibles y la reunión de cables especiales. Para más información, contáctenos."
+        },
+        "others": {
+          "title": "Otros Equipos",
+          "description": "Supicom desarrolla equipos específicos, como:\n\n- Fraccionadoras de rollos\n- Líneas de rebobinado\n- Aplicadores lineales de cintas con uno o dos cabezales\n- Recocedores\n- Orugas"
         }
       }
     },

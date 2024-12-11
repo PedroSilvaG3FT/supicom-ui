@@ -99,11 +99,63 @@
       "catalog": {
         "torcedeira_rigida": {
           "title": "Rigid Strander",
-          "description": "This equipment can feature modules (cages) with 6 bobbins, 12 bobbins, 18 bobbins, and others upon request.\n\nThis machine is designed for twisting copper or aluminum wires or cables, using standardized bobbins with a diameter of 630mm, arranged linearly on the main shaft in sections called cages.\n\nWe offer twisting lines consisting of three stages: a unit with six bobbins, a unit with twelve bobbins, and one with eighteen bobbins, among others upon request. Suitable for both cable formation and shielding."
+          "description": "This equipment can contain modules (cages) with 6 spools, 12 spools, 18 spools, and others upon request.\n\nThis machine was developed for twisting wires or cables made of copper and aluminum using standardized spools with a diameter of 630mm, arranged linearly along the main axis in parts called cages.\n\nWe offer a twisting line composed of three stages: a unit with six spools, a unit with twelve spools, and one with eighteen spools, among others upon request.\nSuitable for both cable formation and shielding."
         },
         "buncher_630_1800": {
-          "title": "Bunchers 630 - 1600",
-          "description": "Bunchers are double-twist machines for manufacturing copper and aluminum conductor cables with high performance, offering power ranges from 20KW to 180KW, linear speeds of up to 300m/min, and twist rates of 5000T/min, depending on the equipment.\n\nWe offer Buncher 630, Buncher 800, Buncher 1000, Buncher 1250, and Buncher 1600."
+          "title": "Buncher's 630 - 1600",
+          "description": "The Bunchers are double-twist machines for the manufacture of copper and aluminum conductor cables, with high performance and power ranging from 20KW to 180KW, with linear speeds of up to 300m/min and twist rates of 5000T/min, depending on the equipment.\n\nWe offer Buncher 630, Buncher 800, Buncher 1000, Buncher 1250, and Buncher 1600."
+        },
+        "desenrolador_duplo": {
+          "title": "Double Pay-Off 630-800 and 1000-1250",
+          "description": "This motorized pay-off was developed to feed Bunchers and other equipment that require continuous, tension-controlled supply of bare or insulated wires.\n\nIts maximum speed is 300m/min, using standardized spools with diameters ranging from 630mm to 800mm, and from 1000mm to 1250mm."
+        },
+        "bobinador_desbobinador_portal": {
+          "title": "Portal Winder and Unwinder",
+          "description": "These portal-type machines were developed to accommodate a wide range of spools, where the structure moves automatically through a motorized mechanical transmission, both for closing and lifting, as well as spreading the cable in winder mode, being simultaneously controlled with the production line speed where it will be installed.\n\nThey are developed according to the specific needs of each client."
+        },
+        "desenrolador_multiplo": {
+          "title": "Multiple Pay-Off",
+          "description": "This motorized pay-off was made to feed Bunchers and other equipment requiring continuous, tension-controlled supply of bare or insulated wires.\n\nThis equipment accommodates multiple spools with diameters ranging from 600mm to 800mm, with a maximum linear speed of 300m/min."
+        },
+        "planetaria_1000": {
+          "title": "Planetary 1000",
+          "description": "This planetary cabling line was developed for the assembly of aluminum cables for spools with a diameter of 1000mm."
+        },
+        "multifilar_8_fios": {
+          "title": "8-Wire Multi-Draw (TM8)",
+          "description": "The multi-wire drawing line was developed for the production of copper wires for conductor cables, including flexible cables, automotive cables, battery cables, building installation cables, photovoltaic cables, data cables, special cables, and others.\n\nThe SUPICOM drawing line consists of the Drawing Unit, Annealer, and Winder, forming a compact line working in sync using advanced and up-to-date industrial technology."
+        },
+        "desenrolador_vergalhao": {
+          "title": "Rod Pay-Off",
+          "description": "Specialized pay-off for rods, designed to provide smooth and controlled unwinding of heavy materials such as metal rods."
+        },
+        "enfitadeira": {
+          "title": "Taping Machine",
+          "description": "Machine designed to precisely and efficiently apply tapes to various types of cables and wires, ensuring proper protection and insulation."
+        },
+        "aplicadores_de_linhas": {
+          "title": "SZ Line",
+          "description": "Specialized equipment for twisting and precise application of lines in cable production processes, ensuring proper alignment and tension."
+        },
+        "puxadores": {
+          "title": "Capstans",
+          "description": "Traction and control system for cable production lines, offering precision in speed and tension control during the manufacturing process."
+        },
+        "bobinadores": {
+          "title": "Winders",
+          "description": "Equipment designed to uniformly and controllably wind cables and wires onto spools, ensuring efficient storage and transportation."
+        },
+        "desbobinadores": {
+          "title": "Unwinders",
+          "description": "Specialized machines for unwinding cables and wires from spools in a controlled manner, feeding production lines or installation processes."
+        },
+        "mono_torcao": {
+          "title": "Single Twist",
+          "description": "This machine was developed to provide single-twist cabling or the assembly of multiple cables requiring twisting, ensuring the final cable diameter does not exceed 40mm. Ideal for the production of Flexible Cables and assembly of special cables. For more information, contact us."
+        },
+        "others": {
+          "title": "Other Equipment",
+          "description": "Supicom develops specific equipment, such as:\n\n- Roll Fractionators\n- Re-spooling Lines\n- Linear Tape Applicators with one or two heads\n- Annealers\n- Caterpillars"
         }
       }
     },
