@@ -104,6 +104,8 @@ export default function NewsRegisterForm(props: IProps) {
     if (initialData?.imagesURL) {
       setExistingGalleryImages(initialData.imagesURL);
     }
+
+    form.setFocus("author");
   };
 
   useEffect(() => {
