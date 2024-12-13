@@ -5,7 +5,27 @@
 	xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
 	http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 	<url>
-	    <loc>https://supicom.vercel.app/</loc>
+	    <loc>https://supicom.com.br/</loc>
+	    <priority>1.0</priority>
+	</url>
+
+	<url>
+	    <loc>https://supicom.com.br/faq</loc>
+	    <priority>1.0</priority>
+	</url>
+
+	<url>
+	    <loc>https://supicom.com.br/noticia</loc>
+	    <priority>1.0</priority>
+	</url>
+
+	<url>
+	    <loc>https://supicom.com.br/contato</loc>
+	    <priority>1.0</priority>
+	</url>
+
+	<url>
+	    <loc>https://supicom.com.br/produtos</loc>
 	    <priority>1.0</priority>
 	</url>
 </urlset>

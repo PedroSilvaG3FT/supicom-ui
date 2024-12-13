@@ -7,13 +7,27 @@ import createNextIntlPlugin from "next-intl/plugin";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
-const nextConfig = {
-  images: { domains: ["api.microlink.io"] },
+const withNextIntl = createNextIntlPlugin();
+
+export default withNextIntl({
+  images: {
+    domains: [
+      "api.microlink.io",
+      "images.unsplash.com",
+      "assets.aceternity.com",
+      "firebasestorage.googleapis.com",
+    ],
+  },
   sassOptions: {
     includePaths: [join(__dirname, "styles")],
   },
-};
-
-const withNextIntl = createNextIntlPlugin();
-
-export default withNextIntl(nextConfig);
+  async redirects() {
+    return [
+      {
+        source: "/",
+        permanent: true,
+        destination: "/portal",
+      },
+    ];
+  },
+});

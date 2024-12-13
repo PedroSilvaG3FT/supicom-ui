@@ -7,6 +7,219 @@
   "example": {
     "title": "Olá mundo!",
     "subtitle": "Esse é um texto em Português (pt-BR)",
-    "description": "Nos últimos anos, o desenvolvimento web evoluiu significativamente, e a demanda por aplicações eficientes e escaláveis aumentou.\nPara atender a essa necessidade, criamos um projeto de boilerplate que combina Next.js, Tailwind CSS, Shadcn UI e Firebase. Este stack permite que os desenvolvedores construam aplicações web modernas de forma rápida e eficaz.\n\nNext.js é um poderoso framework React que oferece renderização do lado do servidor e geração de sites estáticos. Ele melhora o desempenho e o SEO, tornando-se uma excelente escolha para os desenvolvedores. O Tailwind CSS, por sua vez, é um framework CSS baseado em utilitários que possibilita um desenvolvimento rápido da interface do usuário, com foco na personalização e na responsividade. O Shadcn UI complementa isso, fornecendo componentes pré-desenhados que são fáceis de integrar e personalizar.\n\nAceternity é outra biblioteca de componentes de interface do usuário que se destaca por sua capacidade de criar experiências visuais impressionantes e interativas. Assim como o Shadcn UI, o Aceternity oferece uma coleção de componentes pré-desenhados que facilitam a construção de interfaces modernas e responsivas. No entanto, o que diferencia o Aceternity é sua integração com o Framer, permitindo que os desenvolvedores criem elementos de UI em 3D e com perspectiva. Essa abordagem inovadora enriquece a experiência do usuário, proporcionando interações dinâmicas e designs visualmente atraentes.\n\nO Firebase serve como a solução de backend, oferecendo recursos de banco de dados em tempo real, autenticação e hospedagem. Ao aproveitar o Firebase, os desenvolvedores podem se concentrar na construção de recursos sem se preocupar com a gestão do servidor. Este projeto de boilerplate serve como uma base sólida para qualquer pessoa que deseje iniciar sua jornada no desenvolvimento web com essas tecnologias modernas."
+    "description": "Nos últimos anos, o desenvolvimento web evoluiu significativamente"
+  },
+  "phrases": {
+    "industrial_innovation": "Inovação Industrial",
+    "superior_quality": "Qualidade Superior",
+    "advanced_technology": "Tecnologia Avançada",
+    "customized_solutions": "Soluções Personalizadas",
+    "operational_efficiency": "Eficiência Operacional",
+    "specific_equipment": "Equipamentos Específicos",
+    "specialized_maintenance": "Manutenção Especializada",
+    "reliable_performance": "Desempenho Confiável",
+    "parts_accessories": "Peças e Acessórios",
+    "excellence_services": "Serviços de Excelência",
+    "commitment_quality": "Compromisso com a Qualidade",
+    "personalized_service": "Atendimento Personalizado",
+    "sustainability_innovation": "Sustentabilidade e Inovação",
+    "high_performance_machines": "Máquinas de Alto Desempenho"
+  },
+  "base": {
+    "all": "Todos",
+    "name": "Nome",
+    "years": "Anos",
+    "today": "Hoje",
+    "send": "Enviar",
+    "author": "Autor",
+    "contact": "Contato",
+    "select": "Selecione",
+    "catalog": "Catálogo",
+    "products": "Produtos",
+    "see_more": "Ver mais",
+    "services": "Serviços",
+    "machines": "Máquinas",
+    "customers": "Clientes",
+    "smart_phone": "Celular",
+    "see_routes": "Ver rotas",
+    "description": "Descrição",
+    "consulting": "Consultando",
+    "observation": "Observação",
+    "on_the_market": "No mercado",
+    "company_name": "Nome empresa",
+    "developed_by": "Desenvolvido por",
+    "get_in_touch": "Entre em contato",
+    "quality_supicom": "Qualidade Supicom",
+    "request_quote": "Solicite uma cotação",
+    "more_info": "Para mais informações nos consulte.",
+    "add_products_to_quote": "Adicione produtos a cotação"
+  },
+  "portal": {
+    "about_us": {
+      "title": "Sobre nós",
+      "description": "Somos uma empresa comprometida em fornecer soluções para o setor industrial de fios e cabos condutores de energia, com equipamentos e serviços que garantem a eficiência e a continuidade das suas operações.\n\nCom décadas de experiência no mercado, fabricamos equipamentos de alta performance para atender demandas personalizadas de manufaturas de cabos condutores de energia. Nossa atuação se estende além das fronteiras nacionais, com contratos estabelecidos em países como Chile, Argentina e Espanha, consolidando nossa presença internacional.\n\nNosso compromisso vai além da fabricação. Oferecemos suporte técnico e manutenção especializada, garantindo que seus equipamentos estejam sempre em pleno funcionamento, minimizando paradas e maximizando a produtividade do seu negócio. Sabemos que cada indústria possui desafios únicos, e por isso desenvolvemos soluções personalizadas que atendem às necessidades específicas de cada cliente, seja no mercado nacional ou internacional."
+    },
+    "our_departments": {
+      "title": "Nossos setores",
+      "check_our_space": "Confira o nosso espaço",
+      "engineering_title": "Engenharia",
+      "engineering_description": "Nosso setor de engenharia é responsável por desenvolver soluções inovadoras, projetando equipamentos e sistemas que atendem às necessidades específicas de cada cliente, garantindo alta eficiência e qualidade.",
+
+      "machining_title": "Usinagem",
+      "machining_description": "Nosso setor de Usinagem é dedicado à fabricação de peças de alta precisão, utilizando centros de usinagens CNC's, tornos CNC's, maquinas convencionais e equipamentos de ponta. Atendemos desde pequenas demandas até projetos complexos e sob medida, sempre com foco em qualidade, eficiência e prazos rigorosos.\n\nNossa expertise garante soluções que atendem às mais altas exigências, desde o desenvolvimento até a produção final, com atenção especial aos detalhes e acabamentos.",
+
+      "assembly_title": "Montagem Mecânica e Eletrônica",
+      "assembly_description": "Integramos componentes mecânicos e eletrônicos, entregando sistemas completos e customizados.\n\nNossa equipe qualificada realiza montagens de dispositivos, máquinas e equipamentos de alta complexidade, sempre garantindo a perfeita interação entre os componentes. Asseguramos que cada solução entregue opere de forma eficiente, segura e dentro das normas técnicas exigidas pelo mercado."
+    },
+    "where_are_we": "Onde estamos?",
+    "hero": {
+      "title": "Nós movemos\na indústria",
+      "description": "Oferecemos soluções completas para garantir que\nsua operação nunca pare.",
+      "satisfaction": "Satisfação",
+      "machines_sold": "Máquinas vendidas"
+    },
+    "product": {
+      "title": "Produtos",
+      "not_fount": "Produto não encontrado",
+      "see_full_catalog": "Ver catálogo completo",
+      "check_catalog": "Confira nosso catálogo de produtos",
+      "subtitle": "Máquinas e Equipamentos de Alta Qualidade",
+      "banner_01_title": "Inovações\npara sua empresa",
+      "banner_01_description": "Explore as máquinas e equipamentos mais recentes\nque vão revolucionar sua linha de produção!",
+      "banner_02_title": "Flexibilidade\npara o Seu Negócio",
+      "banner_02_description": "Acesse os melhores equipamentos quando precisar.\nAlugue com praticidade e eficiência!",
+      "banner_03_title": "Parcerias\nque Geram Resultados",
+      "banner_03_description": "Descubra como nossas soluções podem agregar valor ao seu negócio.\nJuntos, somos mais fortes!",
+      "categories": {
+        "stranders": "Torcedeiras/Trançadeiras",
+        "pay_offs": "Desenroladores e Bobinadores",
+        "wire_drawing": "Trefilação",
+        "caterpillar_capstans": "Puxadores",
+        "sz_line": "Linha SZ"
+      },
+      "catalog": {
+        "torcedeira_rigida": {
+          "title": "Torcedeira Rígida",
+          "description": "Este equipamento pode conter módulos (gaiolas) com 6 bobinas, 12 bobinas, 18 bobinas, e outras sobre consulta.\n\nEsta máquina foi desenvolvida para torção de fios ou cabos de cobre e alumínio utilizando-se bobinas padronizada de diâmetro de 630mm dispostas linearmente sobre o eixo principal em partes chamadas de gaiolas.\n\nTemos linha de torção composta de três estágios, uma unidade com seis bobinas, uma unidade com doze bobinas e uma com dezoito bobinas e outras sobre consulta.\nAdequada tanto para formação de cabos quanto para blindagem."
+        },
+        "buncher_630_1800": {
+          "title": "Buncher's 630 - 1600",
+          "description": "Os Buncher's são maquinas de dupla torção para manufatura de cabos condutores de cobre e alumínio, com alta performance e com potência que variam entre 20KW à 180KW, com velocidades lineares de até 300m/min e torções de 5000T/min de acordo com equipamento.\n\nTemos Buncher 630, Buncher 800, Buncher 1000, Buncher 1250, Buncher 1600."
+        },
+        "desenrolador_duplo": {
+          "title": "Desenrolador duplo 630-800 e 1000-1250",
+          "description": "Este desenrolador motorizado foi desenvolvido para alimentar Buncher's e outros equipamentos que necessitam de fornecimento continuo, com tensão controlada, de fios nus ou isolados.\n\nSua velocidade máxima é de 300m/ min, utilizando-se bobinas padronizadas de diâmetro de 630mm-800mm, e, diâmetro de 1000mm a 1250mm."
+        },
+        "bobinador_desbobinador_portal": {
+          "title": "Bobinador e Desbobinador Portal",
+          "description": "Estes equipamentos do tipo portal foram desenvolvidos para alocar uma grande faixa de bobinas, onde sua estrutura se movimenta automaticamente através de transmissão mecânica motorizada, tanto para fechamento quanto para elevação e espalhamento do cabo para o tipo bobinador, sendo controlado simultaneamente com a velocidade da linha de produção a ser instalado.\n\nSão desenvolvidos de acordo a necessidade de cada cliente."
+        },
+        "desenrolador_multiplo": {
+          "title": "Desenrolador Múltiplo",
+          "description": "Este desenrolador motorizado foi feito para alimentar buncher's e outros equipamentos que necessitem de um fornecimento continuo, com tensão controlada, de fios nus ou isolados.\n\nEste equipamento aloca múltiplas bobinas de diâmetro de 600mm a 800mm, sua velocidade linear máxima é de 300 m/min."
+        },
+        "planetaria_1000": {
+          "title": "Planetária 1000",
+          "description": "Esta linha reunidora planetária, foi desenvolvida para fazer a reunião de cabos de alumínio para bobinas de diâmetro 1000mm."
+        },
+        "multifilar_8_fios": {
+          "title": "Multifilar de 8 Fios (TM8)",
+          "description": "A linha de trefilação  multifios, foi desenvolvida para produção de fios de cobre para cabos condutores, sendo eles, cabos flexíveis, cabos automotivos, cabos de bateria, cabos de instalação predial, fotovoltaicos, cabos de dados, cabos especiais, entre outros.\n\nA linha de trefilação SUPICOM é composta pela unidade de Trefilação, Recozedor e Bobinador, uma linha compacta, trabalhando em sincronismo, utilizando tecnologia avançada e atualizada no mercado industrial."
+        },
+        "desenrolador_vergalhao": {
+          "title": "Desenrolador Vergalhão",
+          "description": "Desenrolador especializado para vergalhões, projetado para fornecer um desenrolamento suave e controlado de materiais pesados como vergalhões de metal."
+        },
+        "enfitadeira": {
+          "title": "Enfitadeira",
+          "description": "Máquina projetada para aplicar fitas de forma precisa e eficiente em diversos tipos de cabos e fios, garantindo proteção e isolamento adequados."
+        },
+        "aplicadores_de_linhas": {
+          "title": "Linha SZ",
+          "description": "Equipamentos especializados para torção e aplicação precisa de linhas em processos de produção de cabos, garantindo alinhamento e tensão adequados."
+        },
+        "puxadores": {
+          "title": "Puxadores",
+          "description": "Sistema de tração e controle para linhas de produção de cabos, oferecendo precisão no controle de velocidade e tensão durante o processo de fabricação."
+        },
+        "bobinadores": {
+          "title": "Bobinadores",
+          "description": "Equipamentos projetados para enrolar cabos e fios de forma uniforme e controlada em bobinas, garantindo armazenamento e transporte eficientes."
+        },
+        "desbobinadores": {
+          "title": "Desbobinadores",
+          "description": "Máquinas especializadas para desenrolar cabos e fios de bobinas de forma controlada, alimentando linhas de produção ou processos de instalação."
+        },
+        "mono_torcao": {
+          "title": "Mono torção",
+          "description": "Esta máquina foi desenvolvida para proporcionar torsão simples de cabos ou reunião de vários cabos que necessitam de torção de tal modo que o diâmetro final dos cabos não ultrapasse 40 mm. Ideal para produção de cabos Flexíveis e Reunião de cabos especiais. Para mais informações nos consulte."
+        },
+        "others": {
+          "title": "Outros equipamentos",
+          "description": "A Supicom desenvolve equipamentos específicos , como:\n\n- Francionadora de rolos\n- Linhas de respasse\n- Aplicadores linear de fitas com um ou dois cabeçotes\n- Recozedor\n- Caterpillar"
+        }
+      }
+    },
+    "news": {
+      "title": "Destaques",
+      "subtitle": "Fique por dentro das últimas notícias"
+    },
+    "service": {
+      "subtitle": "Soluções Industriais Personalizadas para o seu negócio",
+      "manufacturing_title": "Fabricação",
+      "manufacturing_description": "Fornecemos máquinas e equipamentos especializados para a produção de fios e cabos de cobre e alumínio e suas ligas como flexíveis, de comunicação, controle, bateria, fotovoltaicos, dados, especiais e outros.",
+      "rent_title": "Aluguel",
+      "rent_description": "Oferecemos locação de máquinas e equipamentos comerciais e industriais sem operador, adequados para diversas necessidades.",
+      "maintenance_title": "Manutenção",
+      "maintenance_description": "Prestamos serviços de manutenção e reparação de máquinas industriais, garantindo a máxima eficiência e longevidade dos equipamentos.",
+      "development_title": "Desenvolvimento",
+      "development_description": "Desenvolvemos projetos industriais personalizados, desde o planejamento até a execução, garantindo soluções inovadoras e eficientes para o seu negócio."
+    },
+    "faq": {
+      "title": "Perguntas Frequentes",
+      "subtitle": "Não encontrou o que precisava? Confira algumas respostas para as dúvidas mais comuns.",
+      "question_01_title": "Quais são os principais setores atendidos pela Supicom?",
+      "question_01_description": "A Supicom atende indústrias dos setores de cabos, fios condutores de energia e outras áreas da metalurgia que necessitam de equipamentos de alta performance para suas operações.",
+
+      "question_02_title": "Quais são os serviços oferecidos pela Supicom?",
+      "question_02_description": "Oferecemos desde o desenvolvimento e fabricação de equipamentos sob medida até suporte técnico, manutenção especializada e atendimento personalizado para garantir a máxima eficiência e longevidade dos equipamentos de nossos clientes.",
+
+      "question_03_title": "A Supicom atende clientes fora do Brasil?",
+      "question_03_description": "Sim, temos atuação internacional com clientes em países como Chile, Argentina e Espanha, consolidando nossa presença e confiança fora do Brasil.",
+
+      "question_04_title": "Quais são os diferenciais dos produtos da Supicom?",
+      "question_04_description": "Nossos produtos são desenvolvidos com tecnologia de ponta, sempre pensando na durabilidade, eficiência e adequação às necessidades específicas de cada cliente, além de oferecermos suporte técnico contínuo.",
+
+      "question_05_title": "Como posso solicitar uma cotação?",
+      "question_05_description": "Você pode solicitar uma cotação através do nosso site, adicionando produtos ao pedido de cotação ou entrando em contato diretamente conosco. Um representante retornará com as informações necessárias.",
+
+      "question_06_title": "A Supicom oferece manutenção e suporte para os equipamentos?",
+      "question_06_description": "Sim, oferecemos serviços de manutenção especializada e suporte técnico para garantir que seus equipamentos operem de forma eficiente e com o mínimo de paradas.",
+
+      "question_07_title": "Posso personalizar um equipamento para minha linha de produção?",
+      "question_07_description": "Sim, nossos equipamentos podem ser adaptados para atender às necessidades específicas da sua operação, garantindo que estejam alinhados aos seus processos de produção."
+    },
+    "contact": {
+      "description": "Entre em contato conosco para obter suporte, enviar sugestões ou discutir parcerias. Estamos sempre prontos para ajudar.",
+      "customer_support": "Suporte ao cliente",
+      "customer_support_description": "Tem dúvidas ou precisa de ajuda? Fale conosco para suporte imediato.",
+      "suggestions": "Sugestões",
+      "suggestions_description": "Envie suas sugestões e ajude-nos a melhorar nossos serviços.",
+      "partnerships": "Parcerias",
+      "partnerships_description": "Interessado em parcerias? Fale conosco para explorar oportunidades de colaboração.",
+      "form": {
+        "title": "Entre em contato",
+        "subtitle": "Preencha o formulário abaixo e descreva sua solicitação. Nossa equipe retornará em breve!"
+      }
+    },
+    "request_quote": {
+      "title": "Solicitar cotação",
+      "subtitle": "Insira os seus dados, em instantes um atendente entrará em contato com você"
+    },
+    "footer": {
+      "site_map": "Mapa do site",
+      "institutional": "Institucional",
+      "treatment": "Atendimento"
+    }
   }
 }

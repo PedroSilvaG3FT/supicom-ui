@@ -1,5 +1,5 @@
-import { IUser, IUserDB } from "@/_shared/interface/user.interface";
 import { Timestamp } from "firebase/firestore";
+import { IUser, IUserDB } from "@/_shared/interface/user.interface";
 
 export class UserModel {
   public buildItem(model: IUserDB): IUser {

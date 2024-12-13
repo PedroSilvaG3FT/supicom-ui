@@ -25,6 +25,12 @@ export class FirebaseAuthenticationService extends FirebaseCollectionBase {
   constructor() {
     super("User");
     this.auth = getAuth();
+
+    this.auth.onAuthStateChanged((data) => {
+      if (!data) {
+        console.log("USER PERMISSIONS");
+      }
+    });
   }
 
   public async signUp(data: IUserRegister) {

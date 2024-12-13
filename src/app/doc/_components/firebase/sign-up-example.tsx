@@ -27,7 +27,6 @@ export default function SignUpExample() {
   });
 
   function onSubmit(values: IFormData) {
-    console.log(values);
     _authContext
       .signUp({
         uid: "",

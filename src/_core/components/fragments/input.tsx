@@ -1,3 +1,4 @@
+"use client";
 import * as React from "react";
 import InputMask from "react-input-mask";
 import { cn } from "@/_core/components/lib/utils";

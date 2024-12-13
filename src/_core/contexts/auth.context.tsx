@@ -3,9 +3,10 @@
 import { Timestamp } from "firebase/firestore";
 import { authStore } from "@/_store/auth.store";
 import { loadingStore } from "@/_store/loading.store";
-import React, { createContext, useContext } from "react";
+import React, { createContext, useContext, useEffect } from "react";
 import { UserService } from "../firebase/services/user.service";
 import { IUserRegister } from "@/_shared/interface/user.interface";
+import { TokenUtil } from "@/_shared/utils/token.util";
 
 interface IAuthContext {
   signOut: () => void;
@@ -55,13 +56,11 @@ const AuthProvider: React.FC<IAuthProviderProps> = ({ children }) => {
     try {
       _loadingStore.setShow(true);
 
-      const response = await _userService.signUp({
+      await _userService.signUp({
         ...data,
         uid: "",
         creationDate: Timestamp.now(),
       });
-
-      console.log(response);
 
       _loadingStore.setShow(false);
     } catch (error) {
@@ -70,7 +69,10 @@ const AuthProvider: React.FC<IAuthProviderProps> = ({ children }) => {
     }
   };
 
-  const signOut = () => {};
+  const signOut = () => {
+    _authStore.reset();
+    _userService.signOut();
+  };
 
   return (
     <AuthContext.Provider

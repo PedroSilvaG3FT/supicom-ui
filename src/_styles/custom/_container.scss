@@ -1,0 +1,18 @@
+.app-container {
+  @apply container mx-auto px-8 py-4;
+  max-width: 1400px;
+}
+
+.app-container-pt {
+  @apply pt-24;
+}
+
+.app-container-min-h-page {
+  @apply min-h-[96dvh];
+}
+
+.portal-page-container {
+  @extend .app-container;
+  @extend .app-container-pt;
+  @extend .app-container-min-h-page;
+}

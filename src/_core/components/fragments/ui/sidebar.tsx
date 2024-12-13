@@ -1,8 +1,8 @@
 import { cn } from "../../lib/utils";
-import { ChevronRight, LayoutDashboard } from "lucide-react";
 import Link, { LinkProps } from "next/link";
-import { IconMenu2, IconX } from "@tabler/icons-react";
+import { IconX } from "@tabler/icons-react";
 import { AnimatePresence, motion } from "framer-motion";
+import { ChevronRight, LayoutDashboard } from "lucide-react";
 import React, { useState, createContext, useContext } from "react";
 
 interface Links {
@@ -149,7 +149,7 @@ export const MobileSidebar = ({
             onClick={() => setOpen(!open)}
           />
 
-          <h5 className="font-semibold">Next boilerplate</h5>
+          <h5 className="font-semibold">Supicom</h5>
         </div>
         <AnimatePresence>
           {open && (
